@@ -1,0 +1,66 @@
+{
+  "servicesTop": [
+    {
+      "icon": "target",
+      "title": "Google Ads Management",
+      "desc": "End to end campaign setup, optimization, and scaling built for maximum return on ad spend."
+    },
+    {
+      "icon": "funnel",
+      "title": "Lead Generation",
+      "desc": "High converting search and call campaigns that keep your pipeline full of qualified leads."
+    },
+    {
+      "icon": "shopping-bag",
+      "title": "E-commerce & Shopping",
+      "desc": "Shopping and Performance Max campaigns engineered to grow online revenue profitably."
+    }
+  ],
+  "services": [
+    {
+      "icon": "target",
+      "title": "Google Ads Management",
+      "desc": "End to end setup, optimization, and scaling of search, display, and video campaigns."
+    },
+    {
+      "icon": "funnel",
+      "title": "Lead Generation Campaigns",
+      "desc": "Search and call campaigns that deliver qualified leads at a low cost per acquisition."
+    },
+    {
+      "icon": "shopping-bag",
+      "title": "E-commerce & Shopping Ads",
+      "desc": "Shopping and Performance Max campaigns built to grow revenue and protect ROAS."
+    },
+    {
+      "icon": "home",
+      "title": "Local Service Ads",
+      "desc": "Google Guaranteed and LSA campaigns that put your service business at the top."
+    },
+    {
+      "icon": "zap",
+      "title": "Performance Max",
+      "desc": "Full funnel PMax campaigns that reach buyers across every Google surface."
+    },
+    {
+      "icon": "bar-chart",
+      "title": "Conversion Tracking Setup",
+      "desc": "Accurate tracking with Google Tag Manager so every dollar of spend is measured."
+    },
+    {
+      "icon": "clipboard-check",
+      "title": "Google Ads Audits",
+      "desc": "A deep review of your account to uncover wasted spend and growth opportunities."
+    },
+    {
+      "icon": "graduation-cap",
+      "title": "PPC Coaching & Training",
+      "desc": "One on one coaching to help you or your team master Google Ads with confidence."
+    },
+    {
+      "icon": "search",
+      "title": "Search Engine Marketing",
+      "desc": "SEM strategy that combines keywords, bids, and creative into a revenue engine."
+    }
+  ]
+}

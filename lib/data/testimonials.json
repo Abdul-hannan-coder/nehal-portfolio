@@ -1,0 +1,62 @@
+{
+  "homeTestimonials": [
+    {
+      "id": "ts1",
+      "img": "https://picsum.photos/seed/olivia-ts1/100/100",
+      "name": "Dustin Bradley",
+      "role": "Dumpster & Trailer Rental Owner, USA",
+      "quote": "Nehal transformed our Google Ads. We are getting more qualified leads at a lower cost than ever before. Highly recommended for anyone serious about growth."
+    },
+    {
+      "id": "ts2",
+      "img": "https://picsum.photos/seed/olivia-ts2/100/100",
+      "name": "Waqas",
+      "role": "Owner, Ahmed Solutions Agency, Ireland",
+      "quote": "Working with Nehal as our Google Ads Manager was a game changer. His performance driven approach delivered consistent results for our clients."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "tm1",
+      "img": "https://picsum.photos/seed/olivia-ts1/100/100",
+      "name": "Dustin Bradley",
+      "role": "Owner, Dumpster & Trailer Rental, USA",
+      "quote": "Nehal transformed our Google Ads. We are getting more qualified leads at a lower cost than ever before. He does not just run ads, he builds a real revenue engine. Highly recommended for anyone serious about growth."
+    },
+    {
+      "id": "tm2",
+      "img": "https://picsum.photos/seed/olivia-ts2/100/100",
+      "name": "Waqas",
+      "role": "Owner, Ahmed Solutions Agency, Ireland",
+      "quote": "Working with Nehal as our Google Ads Manager was a game changer. His performance driven approach delivered consistent results for our clients and made our agency look great."
+    },
+    {
+      "id": "tm3",
+      "img": "https://picsum.photos/seed/olivia-ts3/100/100",
+      "name": "Qamar Toor",
+      "role": "Agency Owner, USA",
+      "quote": "As a Senior Google Ads Manager, Nehal handled our most demanding accounts with confidence. Clear reporting, sharp strategy, and numbers that keep improving month after month."
+    },
+    {
+      "id": "tm4",
+      "img": "https://picsum.photos/seed/olivia-ts4/100/100",
+      "name": "Sarah Whitfield",
+      "role": "Marketing Lead, Flooring Brand, USA",
+      "quote": "Our renovation products account went from unpredictable to profitable. The Shopping and Performance Max setup drove hundreds of thousands in value at an ROAS we did not think was possible."
+    },
+    {
+      "id": "tm5",
+      "img": "https://picsum.photos/seed/olivia-ts5/100/100",
+      "name": "James Carter",
+      "role": "Owner, Tree Service Company, USA",
+      "quote": "A small budget turned into serious revenue. Nehal also got us ranking number one against competitors in our local tree service niche. The phone has not stopped ringing."
+    },
+    {
+      "id": "tm6",
+      "img": "https://picsum.photos/seed/olivia-ts6/100/100",
+      "name": "Aisha Rahman",
+      "role": "Founder, E-commerce Store, Dubai",
+      "quote": "Nehal understands the Dubai market and knows how to scale spend without wasting a dirham. Our clicks, conversions, and revenue all grew together. Truly a performance marketing expert."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+/node_modules
+/.next
+/out
+/build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*.local
+.vercel
+
+# Large video files (exceed GitHub 100MB limit)
+public/projects/Video\ Testimonials/*.mp4

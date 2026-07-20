@@ -1,0 +1,339 @@
+{
+  "personal": {
+    "name": "Nehal Ahmed K",
+    "initials": "NK",
+    "title": "Google Ads Specialist & Coach",
+    "subtitle": "Google Certified Ads Specialist and Coach with 7+ years of hands on experience scaling businesses through Google Ads. I help marketers and owners master performance marketing.",
+    "tagline": "Hello There !",
+    "profileImage": "/nehal.jpeg",
+    "heroImage": "/nehal.jpeg"
+  },
+  "about": {
+    "title": "About Me",
+    "highlightedTitle": "NEHAL AHMED K",
+    "paragraphs": [
+      "I am Nehal Ahmed K, a certified Google Ads specialist and PPC coach. Over the past 7 years, I have worked hands-on to help businesses transform ad spend into predictable, profitable revenue models. My specialty is developing high-ROI Shopping and Performance Max campaigns, plus tightening tracking setups.",
+      "Beyond campaign management, I believe in empowering the marketing community. Through my coaching programs and educational video content, I have helped thousands of students master performance ads and build stable customer acquisition channels."
+    ],
+    "bioTitle": "I help brands scale their revenue through <span class=\"italic text-gold\">performance marketing</span>.",
+    "bioParagraphs": [
+      "I am Nehal Ahmed K, a certified Google Ads specialist and PPC coach. Over the past 7 years, I have worked hands-on to help businesses transform ad spend into predictable, profitable revenue models. My specialty is developing high-ROI Shopping and Performance Max campaigns, plus tightening tracking setups.",
+      "Beyond campaign management, I believe in empowering the marketing community. Through my coaching programs and educational video content, I have helped thousands of students master performance ads and build stable customer acquisition channels."
+    ],
+    "badge1": "7+ Years Experience",
+    "badge2": "Google Ads Certified",
+    "corePillars": [
+      {
+        "title": "Data-Driven Strategy",
+        "desc": "I believe in absolute tracking precision. Before scaling spend, I build clean Google Tag Manager setups to attribute every single conversion accurately."
+      },
+      {
+        "title": "Revenue Over Clicks",
+        "desc": "Traffic is vanity, revenue is sanity. I optimize bidding models and keyword matches toward target ROAS and cost-per-acquisition, not click volumes."
+      },
+      {
+        "title": "Continuous Iteration",
+        "desc": "Campaign success is built on testing. I run structured A/B tests on landing page creatives, ad copies, and match types to stay ahead of search behaviors."
+      },
+      {
+        "title": "Complete Transparency",
+        "desc": "No hidden dashboards or vague metrics. Clients receive clear reports showing exactly how search ad spend translates to bottom-line business revenue."
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "icon": "home",
+      "href": "/"
+    },
+    {
+      "label": "Services",
+      "icon": "settings",
+      "href": "/services"
+    },
+    {
+      "label": "About",
+      "icon": "person",
+      "href": "/about"
+    },
+    {
+      "label": "Projects",
+      "icon": "work",
+      "href": "/projects"
+    },
+    {
+      "label": "Testimonials",
+      "icon": "comment",
+      "href": "/testimonials"
+    }
+  ],
+  "timeline": [
+    {
+      "type": "work",
+      "icon": "work",
+      "iconColor": "blue",
+      "title": "The Launchpad",
+      "location": "Remote",
+      "period": "2017",
+      "description": [
+        "Started working in search engine marketing (SEM), mastering keyword bidding strategies and lead generation setups."
+      ],
+      "skills": ["Google Ads", "SEM", "Lead Generation"],
+      "company": "Freelance"
+    },
+    {
+      "type": "work",
+      "icon": "computer",
+      "iconColor": "teal",
+      "title": "E-commerce Scaling",
+      "location": "Remote",
+      "period": "2019",
+      "description": [
+        "Shifted focus towards scaling physical products, successfully running multi-channel performance marketing campaigns for brands in the US and Europe."
+      ],
+      "skills": ["E-commerce", "Performance Max", "Shopping Ads"],
+      "company": "Freelance"
+    },
+    {
+      "type": "work",
+      "icon": "school",
+      "iconColor": "amber",
+      "title": "Coaching & Community",
+      "location": "Remote",
+      "period": "2021",
+      "description": [
+        "Launched a dedicated PPC training program and YouTube channel, helping thousands of marketers learn performance ads (gaining 300K+ views)."
+      ],
+      "skills": ["Coaching", "PPC Training", "YouTube Content Creation"],
+      "company": "Freelance"
+    },
+    {
+      "type": "work",
+      "icon": "verified",
+      "iconColor": "green",
+      "title": "Managing Global Accounts",
+      "location": "Global",
+      "period": "2024+",
+      "description": [
+        "Overseeing Google Ads setups for high-performing lead generation and e-commerce companies across Dubai, the UK, and the USA."
+      ],
+      "skills": ["Global Campaign Management", "Account Auditing", "Scaling"],
+      "company": "Freelance"
+    }
+  ],
+  "social": [
+    {
+      "name": "facebook",
+      "href": "https://facebook.com",
+      "icon": "facebook"
+    },
+    {
+      "name": "behance",
+      "href": "https://behance.net",
+      "icon": "behance"
+    },
+    {
+      "name": "youtube",
+      "href": "https://youtube.com",
+      "icon": "youtube"
+    },
+    {
+      "name": "x",
+      "href": "https://x.com",
+      "icon": "x"
+    },
+    {
+      "name": "linkedin",
+      "href": "https://linkedin.com",
+      "icon": "linkedin"
+    },
+    {
+      "name": "instagram",
+      "href": "https://instagram.com",
+      "icon": "instagram"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Google Ads Search Certification",
+      "issuer": "Google Academy",
+      "date": "2024",
+      "credentialId": "G-ADS-12345",
+      "icon": "verified",
+      "iconColor": "blue",
+      "image": "/certificates/google-ads.jpg",
+      "skills": ["Google Ads", "Search Campaigns", "PPC"],
+      "description": "Validation of expertise in creating, managing, measuring, and optimizing Google Search campaigns."
+    }
+  ],
+  "footer": {
+    "title": "FIND ME ON",
+    "subtitle": "Feel free to <span class=\"text-gold\">connect</span> with me"
+  },
+  "testimonials": [
+    {
+      "name": "Dustin Bradley",
+      "role": "Owner, Dumpster & Trailer Rental, USA",
+      "videoSrc": "/projects/Video Testimonials/Dustin from California Video Testimonial.mp4"
+    },
+    {
+      "name": "Waqas",
+      "role": "Owner, Ahmed Solutions Agency, Ireland",
+      "videoSrc": "/projects/Video Testimonials/Waqas From Ireland Video Testimonial.mp4"
+    },
+    {
+      "name": "Qamar Toor",
+      "role": "Agency Owner, USA",
+      "videoSrc": "/projects/Video Testimonials/Qamar From Missouri Video Testimonial.mp4"
+    }
+  ],
+  "stats": [
+    { "num": "7+", "label": "Years Experience" },
+    { "num": "300K+", "label": "YouTube Views" },
+    { "num": "$250K+", "label": "Sales Generated" }
+  ],
+  "tools": [
+    { "name": "Google Ads", "pct": "98%", "mark": "G", "bg": "#188bf6" },
+    { "name": "Tag Manager", "pct": "92%", "mark": "GTM", "bg": "#2a6fb0" },
+    { "name": "Performance Max", "pct": "90%", "mark": "PM", "bg": "#0f6fd0" },
+    { "name": "Shopping Ads", "pct": "88%", "mark": "Sh", "bg": "#3aa0f5" },
+    { "name": "Search Ads", "pct": "95%", "mark": "Se", "bg": "#64b5f8" },
+    { "name": "SEM", "pct": "90%", "mark": "SEM", "bg": "#0f6fd0" }
+  ],
+  "leadGen": [
+    "Landscaping",
+    "Tree Services",
+    "Moving Companies",
+    "Storage Rentals",
+    "Locksmith Services",
+    "Roofing & Repair",
+    "Solar Installation",
+    "Junk Removal",
+    "Dental Implants",
+    "Home Improvement"
+  ],
+  "ecommerce": [
+    "Flooring & Renovation",
+    "Fashion & Apparel",
+    "Boxing Equipment",
+    "Electric Scooters",
+    "Audio Equipment",
+    "Electric Wheelchairs"
+  ],
+  "pricing": [
+    {
+      "plan": "Starter",
+      "price": "$500",
+      "unit": "/Month",
+      "bg": "#f4f6f8",
+      "tagBg": "#188bf6",
+      "tagFg": "#fff",
+      "arrowBg": "#e6f0fd",
+      "arrowFg": "#188bf6",
+      "priceColor": "#101828",
+      "unitColor": "#6b7280",
+      "featColor": "#374151",
+      "checkBg": "#188bf6",
+      "checkFg": "#fff",
+      "features": [
+        "Campaign setup & strategy",
+        "Keyword & audience research",
+        "Conversion tracking setup",
+        "Weekly optimization",
+        "Monthly reporting",
+        "Email support"
+      ]
+    },
+    {
+      "plan": "Growth",
+      "price": "$1,200",
+      "unit": "/Month",
+      "bg": "#188bf6",
+      "tagBg": "#fff",
+      "tagFg": "#188bf6",
+      "arrowBg": "#fff",
+      "arrowFg": "#188bf6",
+      "priceColor": "#fff",
+      "unitColor": "#dbeafe",
+      "featColor": "#fff",
+      "checkBg": "#fff",
+      "checkFg": "#188bf6",
+      "features": [
+        "Everything in Starter",
+        "Shopping & Performance Max",
+        "Landing page guidance",
+        "A/B testing & scaling",
+        "Bi-weekly strategy calls",
+        "Priority support"
+      ]
+    },
+    {
+      "plan": "Scale",
+      "price": "$2,500",
+      "unit": "/Month",
+      "bg": "#f4f6f8",
+      "tagBg": "#188bf6",
+      "tagFg": "#fff",
+      "arrowBg": "#e6f0fd",
+      "arrowFg": "#188bf6",
+      "priceColor": "#101828",
+      "unitColor": "#6b7280",
+      "featColor": "#374151",
+      "checkBg": "#188bf6",
+      "checkFg": "#fff",
+      "features": [
+        "Everything in Growth",
+        "Full funnel management",
+        "Multi channel expansion",
+        "Custom dashboards",
+        "Weekly strategy calls",
+        "Dedicated account manager"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What industries have you worked in as a Google Ads specialist?",
+      "a": "I have managed campaigns across lead generation and e-commerce in the USA, UK, and Dubai, focusing on high converting, ROI driven Google Ads strategies. Reach out and I will share a tailored plan for your business."
+    },
+    {
+      "q": "Can I download your resume/CV for information?",
+      "open": true,
+      "a": "I have managed campaigns across lead generation and e-commerce in the USA, UK, and Dubai, focusing on high converting, ROI driven Google Ads strategies. Reach out and I will share a tailored plan for your business."
+    },
+    {
+      "q": "Do you offer Google Ads audits?",
+      "a": "I have managed campaigns across lead generation and e-commerce in the USA, UK, and Dubai, focusing on high converting, ROI driven Google Ads strategies. Reach out and I will share a tailored plan for your business."
+    },
+    {
+      "q": "What tools do you use for campaign management?",
+      "a": "I have managed campaigns across lead generation and e-commerce in the USA, UK, and Dubai, focusing on high converting, ROI driven Google Ads strategies. Reach out and I will share a tailored plan for your business."
+    },
+    {
+      "q": "How do you measure campaign success?",
+      "a": "I have managed campaigns across lead generation and e-commerce in the USA, UK, and Dubai, focusing on high converting, ROI driven Google Ads strategies. Reach out and I will share a tailored plan for your business."
+    }
+  ],
+  "skillTags": [
+    { "label": "Google Ads", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
+    { "label": "PPC", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
+    { "label": "Lead Generation", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
+    { "label": "E-commerce Ads", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
+    { "label": "Shopping Ads", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
+    { "label": "Performance Max", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
+    { "label": "SEM", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
+    { "label": "Google AdWords", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
+    { "label": "Conversion Tracking", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
+    { "label": "ROAS Optimization", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
+    { "label": "Local Service Ads", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
+    { "label": "Google Tag Manager", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
+    { "label": "Search Ads", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" }
+  ],
+  "contactInfo": [
+    { "icon": "phone", "text": "+1(406) 555-0120" },
+    { "icon": "mail", "text": "example@gmail.com" },
+    { "icon": "youtube", "text": "300K+ views on YouTube" },
+    { "icon": "map-pin", "text": "Serving the USA, UK, and Dubai" }
+  ]
+}

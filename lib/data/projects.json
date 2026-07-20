@@ -1,0 +1,256 @@
+{
+  "portfolio": [
+    {
+      "id": "pr-a",
+      "slug": "floors-center-google-ads",
+      "img": "/projects/Floors Center/$94.3K Spent for 789K Conversion value at a ROAS of 836_.png",
+      "tags": ["E-commerce", "Flooring"],
+      "title": "Floors Center Google Ads",
+      "metrics": [
+        { "value": "$94.3K", "label": "Ad Spend" },
+        { "value": "$789K", "label": "Conv. Value" },
+        { "value": "836%", "label": "ROAS" }
+      ]
+    },
+    {
+      "id": "pr-b",
+      "slug": "tree-soldiers-campaign",
+      "img": "/projects/Tree Soliders/( 4X ROAS ) Amount Invested $2230 Amount Returned $36,000 At A Profit Margin Of 25_.PNG",
+      "tags": ["Lead Gen", "Tree Service"],
+      "title": "Tree Soldiers Campaign",
+      "metrics": [
+        { "value": "$2.2K", "label": "Invested" },
+        { "value": "$36K", "label": "Revenue" },
+        { "value": "16X", "label": "ROAS" }
+      ]
+    },
+    {
+      "id": "pr-c",
+      "slug": "upkeep-angels",
+      "img": "/projects/Upkeep Angels/$118K Spent For 522 Conversions At A Cost _ Conv Of $226.PNG",
+      "tags": ["Lead Gen", "Home Services"],
+      "title": "Upkeep Angels",
+      "metrics": [
+        { "value": "$118K", "label": "Ad Spend" },
+        { "value": "522", "label": "Conversions" },
+        { "value": "$226", "label": "Cost / Conv." }
+      ]
+    },
+    {
+      "id": "pr-d",
+      "slug": "easy-truck-rental",
+      "img": "/projects/Easy Truck Rental/1.25K Conversions At a Cost of $153K Cost _ Conv of $123.png",
+      "tags": ["Lead Gen", "Rentals"],
+      "title": "Easy Truck Rental",
+      "metrics": [
+        { "value": "$153K", "label": "Ad Spend" },
+        { "value": "1,250", "label": "Conversions" },
+        { "value": "$123", "label": "Cost / Conv." }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "pr-a",
+      "slug": "floors-center-google-ads",
+      "img": "/projects/Floors Center/$94.3K Spent for 789K Conversion value at a ROAS of 836_.png",
+      "tags": ["E-commerce", "Flooring", "USA"],
+      "title": "Floors Center Google Ads",
+      "metrics": [
+        { "value": "$94.3K", "label": "Ad Spend" },
+        { "value": "$789K", "label": "Conv. Value" },
+        { "value": "836%", "label": "ROAS" }
+      ],
+      "details": {
+        "category": "E-commerce Google Ads",
+        "client": "Floors Center",
+        "duration": "6 Months",
+        "country": "United States",
+        "intro": "Floors Center wanted to grow online sales for their flooring and renovation products without letting ad spend run away. The goal was simple: turn Google Ads into a predictable, profitable revenue channel.",
+        "description": "I rebuilt the account around Shopping and Performance Max campaigns, tightened conversion tracking, and continuously optimized bids and creative toward return on ad spend. Over the engagement, $94.3K in ad spend produced $789K in conversion value at an 836% ROAS.",
+        "challenge": "The account was spending on broad, low intent traffic with weak tracking, so it was impossible to tell which campaigns actually drove sales. Margins were thin, competition in flooring was fierce, and every wasted click ate into profit. Floors Center needed spend concentrated only where it produced real revenue.",
+        "solution": "I restructured the account around product profitability, rebuilt Shopping and Performance Max campaigns with clean product feeds, and fixed conversion tracking so every sale was measured accurately. From there it was a cycle of testing, bid optimization, and scaling the winners.",
+        "solutionItems": [
+          "Account restructure",
+          "Shopping campaigns",
+          "Performance Max",
+          "Product feed cleanup",
+          "Conversion tracking",
+          "Bid optimization",
+          "Creative testing",
+          "ROAS scaling"
+        ],
+        "images": [
+          "/projects/Floors Center/Floors Center Google Ads All Campaigns Detailed Statistics.png",
+          "/projects/Floors Center/$94.3K Spent for 789K Conversion value at a ROAS of 836_.png"
+        ],
+        "impact": "The rebuilt account turned $94.3K in ad spend into $789K in conversion value, an 836% return on ad spend. Google Ads became the brand's most reliable growth channel, scaling revenue while keeping cost of sale under control."
+      }
+    },
+    {
+      "id": "pr-b",
+      "slug": "tree-soldiers-campaign",
+      "img": "/projects/Tree Soliders/( 4X ROAS ) Amount Invested $2230 Amount Returned $36,000 At A Profit Margin Of 25_.PNG",
+      "tags": ["Lead Gen", "Tree Service"],
+      "title": "Tree Soldiers Campaign",
+      "metrics": [
+        { "value": "$2.2K", "label": "Invested" },
+        { "value": "$36K", "label": "Revenue" },
+        { "value": "16X", "label": "ROAS" }
+      ],
+      "details": {
+        "category": "Local Lead Gen Search",
+        "client": "Tree Soldiers",
+        "duration": "5 Months",
+        "country": "United States",
+        "intro": "Tree Soldiers needed local tree removal and trimming calls. They wanted to rank at the top of local search results and scale booking revenues.",
+        "description": "I ran targeted local search ads, optimized call-only campaigns, and tracked phone calls. An initial $2,230 investment returned $36,000 in booked tree services.",
+        "challenge": "Tree services are highly seasonal and local click costs are expensive. Wasted spend on out-of-service areas was eating their budget.",
+        "solution": "I built tight geo-targeted radius groups, launched optimized landing pages, and ranked call ads #1 against regional competitors.",
+        "solutionItems": [
+          "Geo-Radius Targeting",
+          "Call-Only Ads",
+          "Negative Keywords",
+          "Bid adjustments"
+        ],
+        "images": [
+          "/projects/Tree Soliders/Ranking #1 Against Competitors in Tree Service Niche in USA.png",
+          "/projects/Tree Soliders/( 4X ROAS ) Amount Invested $2230 Amount Returned $36,000 At A Profit Margin Of 25_.PNG"
+        ],
+        "impact": "Booked $36K in revenue from a $2.2K investment, ranking #1 for tree services in their niche and securing a steady volume of phone call leads."
+      }
+    },
+    {
+      "id": "pr-c",
+      "slug": "upkeep-angels",
+      "img": "/projects/Upkeep Angels/$118K Spent For 522 Conversions At A Cost _ Conv Of $226.PNG",
+      "tags": ["Lead Gen", "Home Services"],
+      "title": "Upkeep Angels",
+      "metrics": [
+        { "value": "$118K", "label": "Ad Spend" },
+        { "value": "522", "label": "Conversions" },
+        { "value": "$226", "label": "Cost / Conv." }
+      ],
+      "details": {
+        "category": "Lead Gen Google Ads",
+        "client": "Upkeep Angels",
+        "duration": "6 Months",
+        "country": "United States",
+        "intro": "Upkeep Angels wanted to scale bookings for their home restoration services in the US while keeping their cost per acquisition stable.",
+        "description": "I launched targeted search ads, optimized their responsive search ads (RSAs), and refined bids. A $118K ad spend secured 522 high-value booking conversions.",
+        "challenge": "Highly competitive national market with high bids. Booking conversion rates were low due to friction in their contact form.",
+        "solution": "I created simplified lead forms, focused bid strategies on high-conversion times, and streamlined keyword target matching.",
+        "solutionItems": [
+          "Lead Form Optimization",
+          "Ad Scheduling",
+          "Keyword Match Audit",
+          "Conversion Bidding"
+        ],
+        "images": [
+          "/projects/Upkeep Angels/Upkeep Angels Campaign Overview.PNG",
+          "/projects/Upkeep Angels/$118K Spent For 522 Conversions At A Cost _ Conv Of $226.PNG"
+        ],
+        "impact": "Secured 522 conversions at a stable CPA of $226, generating highly profitable restoration contract pipelines for Upkeep Angels."
+      }
+    },
+    {
+      "id": "pr-d",
+      "slug": "easy-truck-rental",
+      "img": "/projects/Easy Truck Rental/1.25K Conversions At a Cost of $153K Cost _ Conv of $123.png",
+      "tags": ["Lead Gen", "Rentals"],
+      "title": "Easy Truck Rental",
+      "metrics": [
+        { "value": "$153K", "label": "Ad Spend" },
+        { "value": "1,250", "label": "Conversions" },
+        { "value": "$123", "label": "Cost / Conv." }
+      ],
+      "details": {
+        "category": "Lead Gen Search",
+        "client": "Easy Truck Rental",
+        "duration": "6 Months",
+        "country": "United States",
+        "intro": "Easy Truck Rental wanted to increase commercial truck rental bookings and qualified fleet hire leads in the US.",
+        "description": "I deployed high-intent commercial rental keywords, optimized negative lists, and set up call/lead tracking. A $153K spend drove 1.25K conversions at $123 cost per lead.",
+        "challenge": "Very high search volume for general moving keywords that did not translate to commercial rentals.",
+        "solution": "I restricted targets to high-intent commercial and fleet search terms, created highly relevant ad copies, and adjusted bids by device.",
+        "solutionItems": [
+          "Fleet Search Ads",
+          "Device Optimization",
+          "Commercial Targeting",
+          "Budget Allocation"
+        ],
+        "images": [
+          "/projects/Easy Truck Rental/Easy Truck Rental Google Ads Campaign Statistics.png",
+          "/projects/Easy Truck Rental/1.25K Conversions At a Cost of $153K Cost _ Conv of $123.png"
+        ],
+        "impact": "Generated 1,250 qualified fleet rental leads at a stable acquisition cost of $123 per conversion, driving corporate fleet bookings."
+      }
+    },
+    {
+      "id": "pr-e",
+      "slug": "ava-recycling-b2b",
+      "img": "/projects/AVA Recycling B2B/$9.31K Cost Spent Got 1.03K Leads at a Cost _ Conv of $9.01.png",
+      "tags": ["Lead Gen", "Recycling", "USA"],
+      "title": "AVA Recycling B2B",
+      "metrics": [
+        { "value": "$9.31K", "label": "Ad Spend" },
+        { "value": "1,030", "label": "Leads" },
+        { "value": "$9.01", "label": "Cost / Conv." }
+      ],
+      "details": {
+        "category": "Lead Gen Google Ads",
+        "client": "AVA Recycling",
+        "duration": "3 Months",
+        "country": "United States",
+        "intro": "AVA Recycling needed high-quality B2B recycling inquiries in the US. They were struggling to generate qualified leads at a sustainable cost per acquisition.",
+        "description": "I structured high-intent search and call campaigns, refined negative keyword lists, and optimized bids toward qualified B2B recyclers. This delivered 1.03K leads for $9.31K in ad spend, achieving a $9.01 CPL.",
+        "challenge": "Competing in local recycling markets meant bids were high, and their existing setup generated personal/residential inquiries instead of profitable B2B leads.",
+        "solution": "I targeted commercial-only keywords, created dedicated B2B lead capture pages, and set up Google Tag Manager conversion events to track business inquiries exclusively.",
+        "solutionItems": [
+          "B2B Search Ads",
+          "Negative Keyword Audit",
+          "Google Tag Manager",
+          "CPL Optimization"
+        ],
+        "images": [
+          "/projects/AVA Recycling B2B/AVA Last 90 Days Campaign Statistics.png",
+          "/projects/AVA Recycling B2B/$9.31K Cost Spent Got 1.03K Leads at a Cost _ Conv of $9.01.png"
+        ],
+        "impact": "Generated 1.03K qualified B2B leads at a low CPL of $9.01, giving AVA Recycling a steady stream of contract inquiries and a highly profitable search ad engine."
+      }
+    },
+    {
+      "id": "pr-f",
+      "slug": "rafplay-uae",
+      "img": "/projects/Rafplay UAE/34.2K Clicks At a Avg.Cpc Of dh0.37 At a Cost Of dh12.7K Generating A Revenue Of dh281K .PNG",
+      "tags": ["E-commerce", "Dubai", "UAE"],
+      "title": "Rafplay UAE",
+      "metrics": [
+        { "value": "AED 12.7K", "label": "Ad Spend" },
+        { "value": "34.2K", "label": "Clicks" },
+        { "value": "AED 281K", "label": "Revenue" }
+      ],
+      "details": {
+        "category": "E-commerce Performance Max",
+        "client": "Rafplay",
+        "duration": "4 Months",
+        "country": "Dubai / UAE",
+        "intro": "Rafplay.com wanted to scale their e-commerce sales for electric rides and scooters in the UAE market without increasing their average cost per acquisition.",
+        "description": "I optimized their Product Feed in Google Merchant Center, set up targeted Shopping and Performance Max campaigns, and scaled their high-ticket items. Over the period, an AED 12.7K spend generated AED 281K in revenue.",
+        "challenge": "High competition from international sellers and high CPCs made scaling difficult. Conversion tracking was not capturing all revenue data.",
+        "solution": "I restructured campaigns to focus on high-value products, set up enhanced e-commerce tracking, and ran targeted search/shopping ad groups.",
+        "solutionItems": [
+          "Merchant Center Audit",
+          "Performance Max",
+          "CPC Optimization",
+          "Enhanced Tracking"
+        ],
+        "images": [
+          "/projects/Rafplay UAE/Rafplay Campaign Statistics .PNG",
+          "/projects/Rafplay UAE/34.2K Clicks At a Avg.Cpc Of dh0.37 At a Cost Of dh12.7K Generating A Revenue Of dh281K .PNG"
+        ],
+        "impact": "Successfully scaled e-commerce revenue to AED 281K on an AED 12.7K spend (over 22X ROAS), establishing Rafplay as a top brand for electric ride-ons in Dubai."
+      }
+    }
+  ]
+}
