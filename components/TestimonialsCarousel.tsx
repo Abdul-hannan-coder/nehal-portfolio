@@ -30,8 +30,8 @@ function slotStyle(slot: Slot): React.CSSProperties {
   // Flat, forward-facing side cards: shifted left/right, a touch smaller and
   // dimmed so they read as sitting slightly behind the centre one — no 3D turn.
   return {
-    transform: `${base} translateX(calc(${dir} * var(--translate-x))) scale(0.6)`,
-    opacity: 0.5,
+    transform: `${base} translateX(calc(${dir} * var(--translate-x))) scale(var(--side-scale))`,
+    opacity: 0.55,
     zIndex: 20,
     pointerEvents: "auto",
     filter: "brightness(0.85)",
@@ -68,18 +68,19 @@ export default function TestimonialsCarousel({
       className="relative mx-auto w-full max-w-[1240px]"
       style={
         {
-          height: "calc(var(--card-h) + 96px)",
+          height: "calc(var(--card-h) + 160px)",
           // Each video is bounded by BOTH a max height and a max width, keeping its
           // real aspect (no letterboxing) while stopping wide 16:9 clips from
           // becoming far larger than the portrait/4:3 ones.
-          ["--card-h" as string]: "clamp(300px, 46vh, 460px)",
-          ["--card-w" as string]: "clamp(240px, 34vw, 460px)",
+          ["--card-h" as string]: "clamp(340px, 62vh, 640px)",
+          ["--card-w" as string]: "clamp(260px, 44vw, 680px)",
+          ["--side-scale" as string]: "0.72",
           ["--active-aspect" as string]: String(activeAspect),
           ["--side-aspect" as string]: String(SIDE_BOX),
           ["--gap" as string]: "clamp(12px, 3.2vw, 40px)",
           ["--translate-x" as string]: `calc(
             0.5 * min(var(--card-w), calc(var(--card-h) * var(--active-aspect))) +
-            0.3 * min(var(--card-w), calc(var(--card-h) * var(--side-aspect))) +
+            0.5 * var(--side-scale) * min(var(--card-w), calc(var(--card-h) * var(--side-aspect))) +
             var(--gap)
           )`,
         } as React.CSSProperties
