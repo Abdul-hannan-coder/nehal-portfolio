@@ -43,7 +43,7 @@ const config: Config = {
       },
       animation: {
         marq: "marq 90s linear infinite",
-        omUp: "omUp .6s cubic-bezier(.2,.7,.2,1) forwards",
+        omUp: "omUp .6s cubic-bezier(.2,.7,.2,1) both",
         pageIn: "pageIn .5s cubic-bezier(.2,.7,.2,1) both",
         floaty: "floaty 4s ease-in-out infinite",
       },
