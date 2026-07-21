@@ -46,9 +46,9 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               style={{ background: socialBg[s.icon] ?? "#188bf6" }}
-              className="flex h-[34px] w-[34px] cursor-pointer items-center justify-center rounded-full text-white shadow-sm transition-transform hover:-translate-y-1"
+              className="flex h-[34px] w-[34px] cursor-pointer items-center justify-center rounded-full text-white shadow-sm transition-transform hover:-translate-y-1 hover:text-white"
             >
-              <Icon name={s.icon} className="h-[15px] w-[15px]" />
+              <Icon name={s.icon} className="h-[15px] w-[15px] text-white" />
             </a>
           ))}
         </div>
