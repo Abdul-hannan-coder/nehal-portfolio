@@ -171,8 +171,93 @@ export const milestones: Milestone[] = portfolioData.timeline.map((item) => ({
 }));
 
 // Projects (remain split in projects.json)
-export const portfolio: Project[] = projectsData.portfolio;
-export const projects: Project[] = projectsData.projects;
+const extraMetrics: Record<string, Metric[]> = {
+  "big-orange-malaga": [
+    { value: "$9.2K", label: "Ad Spend" },
+    { value: "157", label: "Leads" },
+    { value: "$58.62", label: "Cost / Conv." }
+  ],
+  "branch-specialist-rochester": [
+    { value: "$4,103", label: "Ad Spend" },
+    { value: "94", label: "Leads" },
+    { value: "$43", label: "Cost / Conv." }
+  ],
+  "closing-curtain": [
+    { value: "118", label: "Conversions" },
+    { value: "AED 41.25", label: "Cost / Conv." }
+  ],
+  "dumpster-rental": [
+    { value: "$4.58K", label: "Ad Spend" },
+    { value: "297", label: "Conversions" },
+    { value: "$15.41", label: "Cost / Conv." }
+  ],
+  "fabrica-home-llc": [
+    { value: "AED 4.51K", label: "Ad Spend" },
+    { value: "115", label: "Conversions" },
+    { value: "AED 39.22", label: "Cost / Conv." }
+  ],
+  "google-ads-turnaround-from-58-to-5-79-cpl": [
+    { value: "221", label: "Booking Leads" },
+    { value: "$5.79", label: "Cost / Conv." }
+  ],
+  "google-tag-manager": [
+    { value: "GTM Setup", label: "Tracking" },
+    { value: "Custom", label: "Conversions" }
+  ],
+  "merchant-center": [
+    { value: "76K", label: "Approved Products" },
+    { value: "GMC", label: "Feed Setup" }
+  ],
+  "norwalk-car-service": [
+    { value: "221", label: "Conversions" },
+    { value: "$200", label: "Rev. / Conversion" }
+  ],
+  "one-roof-solar": [
+    { value: "125", label: "Conversions" },
+    { value: "$8,000", label: "Rev. / Conversion" }
+  ],
+  "packers-movers-service": [
+    { value: "40", label: "Phone Calls" },
+    { value: "$116", label: "Ad Spend" },
+    { value: "$6.12", label: "Cost / Conv." }
+  ],
+  "paper-event-registration-dubai": [
+    { value: "$431", label: "Ad Spend" },
+    { value: "116", label: "Conversions" },
+    { value: "$3.72", label: "Cost / Conv." }
+  ],
+  "prime-landscaper": [
+    { value: "Rank #1", label: "Local Listing" },
+    { value: "14 Days", label: "Campaign Stats" }
+  ],
+  "soil-n-seed-landscaping": [
+    { value: "7 Days", label: "Optimization Time" },
+    { value: "Google Ads", label: "Rebuilt & Restructured" }
+  ],
+  "storage-spot": [
+    { value: "$19.6K", label: "Ad Spend" },
+    { value: "318", label: "Leads" },
+    { value: "$61.51", label: "Cost / Conv." }
+  ],
+  "tree-soldiers-rochester": [
+    { value: "$6.6K", label: "Ad Spend" },
+    { value: "865", label: "Conversions" },
+    { value: "$7.70", label: "Cost / Conv." }
+  ]
+};
+
+const enrichProject = (p: any): Project => {
+  const metrics = (p.metrics && p.metrics.length > 0)
+    ? p.metrics
+    : (extraMetrics[p.slug] || []);
+  return {
+    ...p,
+    metrics
+  } as Project;
+};
+
+export const portfolio: Project[] = projectsData.portfolio.map(enrichProject);
+export const projects: Project[] = projectsData.projects.map(enrichProject);
 
 // Services (remain split in services.json)
 export const servicesTop: Service[] = servicesData.servicesTop;

@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { personal } from "@/lib/data";
 import MobileNav from "./MobileNav";
 import PrimaryNav from "./PrimaryNav";
@@ -32,6 +35,8 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
     </a>
   );
 
+  const [scrolled, setScrolled] = useState(false);
+
   const inner =
     variant === "light" ? (
       <header className="mx-auto flex max-w-[1240px] items-center justify-between px-5 py-[18px] sm:px-8 lg:px-[60px]">
@@ -43,9 +48,13 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
         {ContactBtn}
         <MobileNav active={active} />
       </header>
-    ) : (
+      ) : (
       <div className="mx-auto max-w-[1240px] px-4 pb-2 pt-[18px] sm:px-6 lg:px-10">
-        <header className="flex items-center justify-between rounded-[44px] border border-[#e7ebf1] bg-white py-[11px] pl-5 pr-3 shadow-[0_6px_24px_rgba(16,24,40,.06)]">
+        <header className={`flex items-center justify-between rounded-[44px] py-[11px] pl-5 pr-3 transition-all ${
+          scrolled
+            ? "border border-[#e7ebf1] bg-white shadow-[0_6px_24px_rgba(16,24,40,.06)]"
+            : "bg-transparent"
+        }`}>
           <div className="flex items-center gap-[11px]">
             {Logo}
             {Wordmark}
@@ -57,8 +66,22 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
       </div>
     );
 
+  useEffect(() => {
+    const onScroll = () => {
+      // Switch to white as soon as the user scrolls even a little.
+      setScrolled(window.scrollY > 0);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
   return (
-    <div className="sticky top-0 z-50 w-full max-w-[100vw] overflow-x-clip bg-white shadow-[0_2px_16px_rgba(16,24,40,.05)]">
+    <div className="sticky top-0 z-50 w-full max-w-[100vw] overflow-x-clip bg-transparent">
       {inner}
     </div>
   );

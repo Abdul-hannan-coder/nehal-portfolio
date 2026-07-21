@@ -193,7 +193,7 @@
       "name": "Qamar Toor",
       "role": "Agency Owner, USA",
       "vimeoId": "1211649839",
-      "aspect": 1.3333
+      "aspect": 1.7778
     },
     {
       "name": "Waqas",
@@ -364,6 +364,6 @@
     { "icon": "phone", "text": "+92 320 3469521" },
     { "icon": "mail", "text": "example@gmail.com" },
     { "icon": "youtube", "text": "300K+ views on YouTube" },
-    { "icon": "map-pin", "text": "Serving the USA, UK, and Dubai" }
+    { "icon": "map-pin", "text": "Serving Australia, UAE, USA, UK, and Ireland" }
   ]
 }
