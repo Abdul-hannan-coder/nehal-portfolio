@@ -8,12 +8,16 @@ import LetsConnect from "@/components/LetsConnect";
 import Footer from "@/components/Footer";
 import Copyright from "@/components/Copyright";
 import FaqList from "@/components/FaqList";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import StatsStrip from "@/components/StatsStrip";
 import Icon from "@/components/Icon";
+import NichesExplorer from "@/components/NichesExplorer";
+import JourneyTimeline from "@/components/JourneyTimeline";
+import ProjectCard from "@/components/ProjectCard";
 import {
-  servicesTop,
-  stats,
+  services,
   tools,
-  portfolio,
+  projects,
   leadGen,
   ecommerce,
   pricing,
@@ -21,6 +25,7 @@ import {
   faqs,
   personal,
   about,
+  milestones,
 } from "@/lib/data";
 
 const toolIcons: Record<string, React.ReactNode> = {
@@ -71,37 +76,51 @@ export default function HomePage() {
       <Header active="/" />
 
       {/* HERO */}
-      <div className="mx-auto mt-5 grid max-w-[1180px] grid-cols-1 items-center gap-[30px] px-5 pb-10 pt-[30px] md:px-10 lg:grid-cols-2">
+      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] scroll-mt-[90px] grid-cols-1 items-center gap-x-[60px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.05fr_1fr]">
         <div className="animate-omUp">
           <div className="mb-[22px] inline-flex items-center gap-2 rounded-[30px] bg-[#eaf2fd] px-4 py-[7px] text-[13px] font-semibold text-[#5a5a4e]">
             {personal.tagline}
           </div>
-          <h1 className="mb-[18px] text-[32px] sm:text-[42px] lg:text-[52px] font-extrabold leading-[1.12]">
+          <h1 className="mb-[24px] text-[28px] min-[380px]:text-[34px] min-[480px]:text-[40px] sm:text-[50px] lg:text-[60px] font-extrabold leading-[1.08] tracking-tight">
             I&rsquo;m <span className="italic text-gold">{personal.name},</span>
             <br />
             {personal.title}
           </h1>
-          <p className="mb-7 max-w-[440px] text-[14.5px] leading-[1.7] text-[#6f6f63]">
-            {personal.subtitle}
-          </p>
-          <div className="flex items-center gap-[14px]">
-            <Link
-              href="/project-details"
-              className="cta flex items-center gap-2 rounded-[40px] bg-olive py-[6px] pl-6 pr-2"
+          <ul className="mb-8 flex max-w-[520px] flex-col gap-[15px]">
+            {(personal.highlights ?? []).map((h, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="mt-[1px] flex h-[24px] w-[24px] flex-shrink-0 items-center justify-center rounded-full bg-gold text-[13px] font-bold text-white">
+                  ✓
+                </span>
+                <span className="text-[15.5px] font-medium leading-[1.5] text-[#4a4a3e]">
+                  {h}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <div className="flex flex-wrap items-center gap-[14px]">
+            <a
+              href="#projects"
+              className="cta flex w-full max-w-[280px] min-[380px]:w-[210px] h-[52px] items-center justify-between rounded-[40px] bg-olive pl-6 pr-2"
             >
               <span className="text-[15px] font-semibold text-white">
                 View my Portfolio
               </span>
-              <span className="arrow flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white text-gold">
+              <span className="arrow flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white text-gold flex-shrink-0">
                 →
               </span>
-            </Link>
-            <button className="rounded-[40px] border-[1.5px] border-[#d8d6cb] bg-transparent px-7 py-[13px] font-sans text-[15px] font-semibold text-ink">
+            </a>
+            <a
+              href="#contact"
+              className="flex w-full max-w-[280px] min-[380px]:w-[210px] h-[52px] items-center justify-center rounded-[40px] border-[1.5px] border-[#d8d6cb] bg-transparent font-sans text-[15px] font-semibold text-ink transition-colors hover:border-gold hover:text-gold"
+            >
               Hire Me
-            </button>
+            </a>
           </div>
         </div>
-        <div className="relative mx-auto h-[320px] w-[320px] sm:h-[400px] sm:w-[400px] lg:h-[440px] lg:w-[440px] max-w-full animate-omUp [animation-delay:150ms]">
+
+        {/* RIGHT: portrait */}
+        <div className="relative mx-auto h-[340px] w-[340px] sm:h-[460px] sm:w-[460px] lg:h-[540px] lg:w-[540px] max-w-full animate-omUp [animation-delay:150ms]">
           <div className="absolute right-[6%] top-[6%] h-[84%] w-[84%] rounded-full bg-gold" />
           <div className="absolute right-[3%] top-[3%] h-[90%] w-[90%] overflow-hidden rounded-full">
             <ImageSlot
@@ -109,43 +128,25 @@ export default function HomePage() {
               src={personal.heroImage}
               placeholder={personal.name}
               priority
-              sizes="(max-width: 768px) 90vw, 376px"
+              sizes="(max-width: 768px) 90vw, 500px"
             />
-          </div>
-          <div className="absolute bottom-[10%] left-0 sm:left-5 animate-floaty rounded-[30px] bg-olive px-[14px] py-[7px] sm:px-[18px] sm:py-[9px] text-[11px] sm:text-[13px] font-semibold text-white shadow-[0_8px_20px_rgba(0,0,0,.15)]">
-            Google Ads Specialist
-          </div>
-          <div className="absolute right-0 sm:right-[10px] top-[25%] sm:top-[130px] animate-floaty rounded-[30px] bg-white px-[14px] py-[7px] sm:px-[18px] sm:py-[9px] text-[11px] sm:text-[13px] font-semibold text-ink shadow-[0_8px_20px_rgba(0,0,0,.12)] [animation-delay:1.3s]">
-            PPC Coach
           </div>
         </div>
       </div>
 
+
       {/* <Marquee bg="#188bf6" color="#ffffff" padding="16px 0" /> */}
 
-      {/* SERVICES PREVIEW */}
-      <div className="mx-auto mb-5 mt-14 max-w-[1120px] px-5 md:px-10">
-        <div className="mb-8 flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
-          <div>
-            <div className="mb-2 text-[14px] font-semibold text-gold">Services</div>
-            <h2 className="m-0 text-[26px] md:text-[34px] font-extrabold">
-              <span className="italic text-gold">Services</span> I Provide
-            </h2>
-          </div>
-          <Link
-            href="/services"
-            className="cta flex items-center gap-2 rounded-[40px] bg-olive py-[7px] pl-[22px] pr-2"
-          >
-            <span className="text-[14px] font-semibold text-white">
-              View All Services
-            </span>
-            <span className="arrow flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white text-gold">
-              →
-            </span>
-          </Link>
+      {/* SERVICES */}
+      <div id="services" className="mx-auto my-20 md:my-28 max-w-[1120px] scroll-mt-[90px] px-5 md:px-10">
+        <div className="mb-8">
+          <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">Services</div>
+          <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
+            <span className="italic text-gold">Services</span> I Provide
+          </h2>
         </div>
         <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[26px]">
-          {servicesTop.map((s, i) => (
+          {services.map((s, i) => (
             <div
               key={i}
               data-card="16"
@@ -158,78 +159,117 @@ export default function HomePage() {
               <p className="m-0 text-[13.5px] leading-[1.65] text-[#7a7a6e]">
                 {s.desc}
               </p>
-              <Link
-                href="/services"
-                className="group mt-[2px] inline-flex items-center gap-[7px] text-[14px] font-semibold text-gold"
-              >
-                Learn more <span className="arrow">→</span>
-              </Link>
             </div>
           ))}
         </div>
       </div>
 
       {/* ABOUT ME */}
-      <div className="my-[60px] bg-white px-5 md:px-10 py-[60px] text-ink">
-        <div className="mx-auto grid max-w-[1120px] grid-cols-1 items-center gap-10 lg:grid-cols-[340px_1fr] lg:gap-[60px]">
-          <div className="relative mx-auto h-[260px] w-[260px] sm:h-[300px] sm:w-[300px] max-w-full">
+      <div id="about" className="py-20 md:py-28 my-10 md:my-16 scroll-mt-[90px] bg-white px-5 md:px-10 text-ink">
+        <div className="mx-auto grid max-w-[1120px] grid-cols-1 items-center gap-10 lg:grid-cols-[420px_1fr] lg:gap-[60px]">
+          <div className="relative mx-auto h-[300px] w-[300px] sm:h-[380px] sm:w-[380px] lg:h-[420px] lg:w-[420px] max-w-full">
             <div className="absolute inset-0 overflow-hidden rounded-full">
               <ImageSlot
                 shape="circle"
                 src={personal.profileImage}
                 placeholder={personal.name}
-                sizes="(max-width: 768px) 260px, 300px"
+                sizes="(max-width: 768px) 300px, 420px"
               />
             </div>
-            <span className="absolute right-[-5px] sm:right-[-10px] top-[14px] animate-floaty rounded-[20px] bg-gold px-3 py-[5px] text-[11px] font-semibold text-white">
-              Google Ads
-            </span>
-            <span className="absolute bottom-[60px] left-[-10px] sm:left-[-20px] animate-floaty rounded-[20px] border border-[#dbe7f5] bg-white px-3 py-[5px] text-[11px] font-semibold text-olive shadow-sm [animation-delay:.8s]">
-              PPC Expert
-            </span>
-            <span className="absolute bottom-[6px] right-5 animate-floaty rounded-[20px] border border-[#dbe7f5] bg-white px-3 py-[5px] text-[11px] font-semibold text-olive shadow-sm [animation-delay:1.6s]">
-              Ads Coach
-            </span>
           </div>
           <div>
-            <div className="mb-[10px] text-[14px] font-semibold text-gold">
+            <div className="mb-[10px] text-[14px] font-semibold text-gold tracking-wider uppercase">
               About Me
             </div>
-            <h2 className="mb-4 text-[24px] md:text-[32px] font-extrabold">
+            <h2 className="mb-4 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
               Who is <span className="italic text-gold">{personal.name}?</span>
             </h2>
-            <p className="mb-7 max-w-[540px] text-[14px] leading-[1.7] text-[#5a6474]">
-              {about.paragraphs.join(" ")}
+            <p className="mb-6 max-w-[540px] text-[14px] leading-relaxed text-[#5a6474]">
+              {about.paragraphs[0]}
             </p>
-            <div className="mb-[30px] flex flex-wrap gap-8 sm:gap-10">
-              {stats.map((st, i) => (
-                <div key={i}>
-                  <div className="text-[26px] md:text-[34px] font-extrabold text-gold">{st.num}</div>
-                  <div className="text-[13px] text-[#6b7280]">{st.label}</div>
-                </div>
+            <ul className="mb-8 grid max-w-[560px] grid-cols-1 gap-x-6 gap-y-[13px] sm:grid-cols-2">
+              {(about.highlights ?? []).map((h, i) => (
+                <li key={i} className="flex items-start gap-[10px]">
+                  <span className="mt-[2px] flex h-[20px] w-[20px] flex-shrink-0 items-center justify-center rounded-full bg-gold text-[11px] font-bold text-white">
+                    ✓
+                  </span>
+                  <span className="text-[13.5px] font-medium leading-[1.45] text-[#4a4a3e]">
+                    {h}
+                  </span>
+                </li>
               ))}
-            </div>
-            <div className="flex items-center gap-6">
-              <div className="cta flex cursor-pointer items-center gap-2 rounded-[40px] bg-gold py-[6px] pl-6 pr-2">
+            </ul>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mt-6">
+              <a
+                href="/resume/Nehal Google Ads CV _ Resume.pdf"
+                download="Nehal Google Ads CV & Resume.pdf"
+                className="cta flex items-center gap-2 rounded-[40px] bg-gold py-[6px] pl-6 pr-2 text-white hover:opacity-95 transition-opacity"
+              >
                 <span className="text-[15px] font-semibold text-white">
                   Download CV
                 </span>
                 <span className="arrow flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white text-gold">
                   ↓
                 </span>
-              </div>
-              <span className="text-[26px] italic text-ink opacity-[.85]">
+              </a>
+              <span className="text-[24px] sm:text-[26px] italic text-ink opacity-[.85] font-display self-start sm:self-auto">
                 {personal.signature || personal.name}
               </span>
             </div>
           </div>
         </div>
+
+        <StatsStrip inverted className="mx-auto mt-14 max-w-[1120px]" />
+      </div>
+
+      {/* MY PRINCIPLES */}
+      <div className="bg-olive px-5 py-20 md:px-10 md:py-28 text-white">
+        <div className="mx-auto max-w-[1120px]">
+          <div className="mb-10 text-center">
+            <div className="mb-2 text-[14.5px] font-semibold text-[#dbeafe] tracking-wider uppercase">Methodology</div>
+            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-white leading-tight">
+              My <span className="italic">Core Principles</span>
+            </h2>
+          </div>
+
+          <div data-stagger className="grid grid-cols-1 md:grid-cols-2 gap-[26px]">
+            {about.corePillars.map((p, i) => (
+              <div
+                key={i}
+                data-card="16"
+                className="flex flex-col gap-3 rounded-[16px] bg-white p-[26px] shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 text-gold font-bold text-[15px]">
+                  0{i + 1}
+                </div>
+                <h3 className="m-0 text-[18px] font-bold text-ink">{p.title}</h3>
+                <p className="m-0 text-[13.5px] leading-[1.65] text-[#6b7280]">
+                  {p.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* MY JOURNEY TIMELINE */}
+      <div className="bg-white px-5 py-20 md:px-10 md:py-28">
+        <div className="mx-auto max-w-[800px]">
+          <div className="mb-12 text-center">
+            <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">Timeline</div>
+            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
+              My Career <span className="italic text-gold">Journey</span>
+            </h2>
+          </div>
+
+          <JourneyTimeline items={milestones} />
+        </div>
       </div>
 
       {/* SKILLS */}
-      <div className="mx-auto max-w-[1120px] px-5 md:px-10 pb-10 pt-5 text-center">
-        <div className="mb-2 text-[14px] font-semibold text-gold">My Toolkit</div>
-        <h2 className="mb-9 text-[24px] md:text-[32px] font-extrabold">
+      <div className="mx-auto max-w-[1120px] px-5 md:px-10 py-16 md:py-24 text-center">
+        <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">My Toolkit</div>
+        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
           <span className="italic text-gold">The Skills &amp; Tools</span>
           <br />
           Behind My Campaigns
@@ -251,139 +291,42 @@ export default function HomePage() {
       </div>
 
       {/* PORTFOLIO */}
-      <div className="bg-cream px-5 md:px-10 py-14">
+      <div id="projects" className="scroll-mt-[90px] bg-cream px-5 md:px-10 py-20 md:py-28">
         <div className="mx-auto max-w-[1120px]">
-          <div className="mb-8 flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
-            <div>
-              <div className="mb-2 text-[14px] font-semibold text-gold">
-                Case Studies
-              </div>
-              <h2 className="m-0 text-[26px] md:text-[34px] font-extrabold">
-                My Latest <span className="italic text-gold">Results</span>
-              </h2>
+          <div className="mb-8">
+            <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
+              Case Studies
             </div>
+            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
+              My Latest <span className="italic text-gold">Results</span>
+            </h2>
+          </div>
+          <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 gap-7">
+            {projects.filter((p) => p.details).slice(0, 6).map((p) => (
+              <ProjectCard key={p.id} p={p} />
+            ))}
+          </div>
+          <div className="mt-11 flex justify-center">
             <Link
-              href="/project-details"
-              className="cta flex items-center gap-2 rounded-[40px] bg-olive py-[7px] pl-[22px] pr-2"
+              href="/projects"
+              className="cta flex items-center gap-2 rounded-[40px] bg-olive py-[8px] pl-7 pr-2"
             >
-              <span className="text-[14px] font-semibold text-white">
+              <span className="text-[15px] font-semibold text-white">
                 View All Projects
               </span>
-              <span className="arrow flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white text-gold">
+              <span className="arrow flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white text-gold">
                 →
               </span>
             </Link>
-          </div>
-          <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 gap-7">
-            {portfolio.map((p) => (
-              <Link
-                key={p.id}
-                href={`/projects/${p.slug}`}
-                data-card="16"
-                className="group block rounded-[16px] bg-white p-4 text-inherit"
-              >
-                <div className="relative mb-4 h-[210px] overflow-hidden rounded-[12px]">
-                  <ImageSlot
-                    shape="rounded"
-                    radius={12}
-                    src={p.img}
-                    placeholder="Project"
-                    zoom
-                    sizes="(max-width: 768px) 100vw, 540px"
-                  />
-                </div>
-                <div className="mb-3 flex flex-wrap gap-2">
-                  {p.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="rounded-[20px] border border-gold px-3 py-1 text-[11px] font-semibold text-gold"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <h4 className="mb-[14px] mt-0 text-[18px] font-bold leading-[1.35]">
-                  {p.title}
-                </h4>
-                <div className="flex gap-[22px] border-t border-[#efece2] pt-[14px]">
-                  {p.metrics.map((m, i) => (
-                    <div key={i}>
-                      <div className="text-[18px] font-extrabold text-olive">
-                        {m.value}
-                      </div>
-                      <div className="text-[11px] text-[#8a8a7e]">{m.label}</div>
-                    </div>
-                  ))}
-                </div>
-              </Link>
-            ))}
           </div>
         </div>
       </div>
 
       {/* INDUSTRIES */}
-      <div className="mx-auto my-[60px] max-w-[1000px] px-5 md:px-10">
-        <div className="mb-10 text-center">
-          <div className="mb-2 text-[14px] font-semibold text-gold">Industries</div>
-          <h2 className="m-0 text-[24px] md:text-[32px] font-extrabold">
-            The Niches <span className="italic text-gold">I Scale</span>
-          </h2>
-        </div>
-        <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 gap-[34px]">
-          <div className="rounded-[16px] bg-cream p-[30px]">
-            <div className="mb-[22px] flex items-center gap-3">
-              <span className="flex h-[44px] w-[44px] items-center justify-center rounded-full bg-gold text-white">
-                <Icon name="target" className="h-5 w-5" />
-              </span>
-              <h3 className="m-0 text-[20px] font-bold">Lead Generation</h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[18px] gap-y-3">
-              {leadGen.map((l, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-[9px] text-[13px] text-[#4a4a3e]"
-                >
-                  <span className="flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full bg-gold text-[9px] text-white">
-                    ✓
-                  </span>
-                  {l}
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="rounded-[16px] bg-cream p-[30px]">
-            <div className="mb-[22px] flex items-center gap-3">
-              <span className="flex h-[44px] w-[44px] items-center justify-center rounded-full bg-gold text-white">
-                <Icon name="shopping-bag" className="h-5 w-5" />
-              </span>
-              <h3 className="m-0 text-[20px] font-bold">E-commerce Brands</h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[18px] gap-y-3">
-              {ecommerce.map((e, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-[9px] text-[13px] text-[#4a4a3e]"
-                >
-                  <span className="flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full bg-gold text-[9px] text-white">
-                    ✓
-                  </span>
-                  {e}
-                </div>
-              ))}
-            </div>
-            <div className="mt-[22px] rounded-[12px] bg-olive px-5 py-[18px] text-white">
-              <div className="mb-1 text-[13px] text-[#dbeafe]">
-                Recent e-commerce win
-              </div>
-              <div className="text-[15px] font-bold">
-                $250,000+ in sales for a U.S. renovation products brand.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <NichesExplorer />
 
-      {/* PRICING */}
+      {/* PRICING (Disabled for now) */}
+      {/* 
       <div className="bg-white px-5 md:px-10 py-[60px] text-ink">
         <div className="mx-auto max-w-[1120px]">
           <div className="mb-9 flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
@@ -393,12 +336,12 @@ export default function HomePage() {
                 My <span className="italic text-gold">Management Plans</span>
               </h2>
             </div>
-            <div className="cta flex cursor-pointer items-center gap-2 rounded-[40px] bg-gold py-[6px] pl-[22px] pr-2">
+            <a href="#contact" className="cta flex cursor-pointer items-center gap-2 rounded-[40px] bg-gold py-[6px] pl-[22px] pr-2">
               <span className="text-[14px] font-semibold text-white">Get Started</span>
               <span className="arrow flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white text-gold">
                 →
               </span>
-            </div>
+            </a>
           </div>
           <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[26px]">
             {pricing.map((pr, i) => (
@@ -455,90 +398,38 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      */}
 
-      <ContactSection
-        highlight="Your Next Campaign"
-        intro="Tell me about your business and goals. I will show you how Google Ads can turn spend into revenue."
-        spacing="home"
-      />
+      <div id="contact" className="scroll-mt-[90px]">
+        <ContactSection
+          highlight="Your Next Campaign"
+          intro="Tell me about your business and goals. I will show you how Google Ads can turn spend into revenue."
+          spacing="home"
+        />
+      </div>
 
       {/* TESTIMONIALS */}
-      <div className="mx-auto my-[60px] max-w-[1000px] px-5 md:px-10 text-center">
-        <div className="mb-2 text-[14px] font-semibold text-gold">
+      <div id="testimonials" className="mx-auto my-20 md:my-28 max-w-[1240px] scroll-mt-[90px] px-5 md:px-10 text-center">
+        <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
           Clients Testimonials
         </div>
-        <h2 className="mb-9 text-[24px] md:text-[32px] font-extrabold">
+        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
           The Impact of My Work:
           <br />
           <span className="italic text-gold">Client Testimonials</span>
         </h2>
-        <div data-stagger className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-[900px] mx-auto">
-          {/* Top Video (Centered & Spans 2 Columns on desktop) */}
-          {homeTestimonials[0] && (
-            <div className="md:col-span-2 flex justify-center">
-              <div
-                data-card="16"
-                className="w-full max-w-[560px] rounded-[16px] bg-cream p-5 flex flex-col justify-between shadow-sm border border-[#e8ebd5]"
-              >
-                <div>
-                  <div className="mb-[14px] flex items-center gap-[10px]">
-                    <span className="text-[15px] tracking-[2px] text-gold">★★★★★</span>
-                    <span className="font-extrabold text-ink">5.0</span>
-                  </div>
-                  <video
-                    src={homeTestimonials[0].videoSrc}
-                    controls
-                    className="w-full aspect-video rounded-[10px] bg-black object-cover mb-4 shadow-sm"
-                  />
-                </div>
-                <div className="flex items-center gap-3 border-t border-[#e2e1d7] pt-3 mt-1">
-                  <div>
-                    <div className="text-[14px] font-bold text-ink">{homeTestimonials[0].name}</div>
-                    <div className="text-[12px] text-[#8a8a7e]">{homeTestimonials[0].role}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Bottom Two Videos (Side-by-side on desktop) */}
-          {homeTestimonials.slice(1, 3).map((t) => (
-            <div
-              key={t.id}
-              data-card="16"
-              className="w-full rounded-[16px] bg-cream p-5 flex flex-col justify-between shadow-sm border border-[#e8ebd5]"
-            >
-              <div>
-                <div className="mb-[14px] flex items-center gap-[10px]">
-                  <span className="text-[15px] tracking-[2px] text-gold">★★★★★</span>
-                  <span className="font-extrabold text-ink">5.0</span>
-                </div>
-                <video
-                  src={t.videoSrc}
-                  controls
-                  className="w-full aspect-video rounded-[10px] bg-black object-cover mb-4 shadow-sm"
-                />
-              </div>
-              <div className="flex items-center gap-3 border-t border-[#e2e1d7] pt-3 mt-1">
-                <div>
-                  <div className="text-[14px] font-bold text-ink">{t.name}</div>
-                  <div className="text-[12px] text-[#8a8a7e]">{t.role}</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <TestimonialsCarousel items={homeTestimonials} />
       </div>
 
 
 
       {/* FAQ */}
-      <div className="bg-white px-5 md:px-10 py-[60px] text-ink">
+      <div className="bg-olive px-5 md:px-10 py-20 md:py-28 text-white">
         <div className="mx-auto max-w-[860px]">
           <div className="mb-10 text-center">
-            <div className="mb-2 text-[14px] font-semibold text-gold">FAQs</div>
-            <h2 className="m-0 text-[24px] md:text-[32px] font-extrabold">
-              Questions? <span className="italic text-gold">Look here.</span>
+            <div className="mb-2 text-[14px] font-semibold text-[#dbeafe] tracking-wider uppercase">FAQs</div>
+            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-white leading-tight">
+              Questions? <span className="italic">Look here.</span>
             </h2>
           </div>
           <FaqList items={faqs} />

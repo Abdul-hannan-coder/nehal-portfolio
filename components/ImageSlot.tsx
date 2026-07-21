@@ -13,6 +13,8 @@ export interface ImageSlotProps {
   priority?: boolean;
   /** Responsive sizes hint for the optimizer. */
   sizes?: string;
+  /** object-fit: "cover" (default, fills+crops) or "contain" (whole image, no crop). */
+  fit?: "cover" | "contain";
 }
 
 // Optimised replacement for the design's <image-slot> web component.
@@ -26,6 +28,7 @@ export default function ImageSlot({
   zoom = false,
   priority = false,
   sizes = "(max-width: 768px) 100vw, 640px",
+  fit = "cover",
 }: ImageSlotProps) {
   const borderRadius = shape === "circle" ? "50%" : `${radius}px`;
   return (
@@ -35,8 +38,10 @@ export default function ImageSlot({
       fill
       priority={priority}
       sizes={sizes}
-      className={`object-cover ${zoom ? "zoomable" : ""}`}
-      style={{ background: "#e9e7dd", borderRadius }}
+      className={`${fit === "contain" ? "object-contain" : "object-cover"} ${
+        zoom ? "zoomable" : ""
+      }`}
+      style={{ background: fit === "contain" ? "#f4f6f8" : "#e9e7dd", borderRadius }}
     />
   );
 }

@@ -4,6 +4,7 @@ import ClientEnhance from "@/components/ClientEnhance";
 import Header from "@/components/Header";
 import PageTitle from "@/components/PageTitle";
 import ImageSlot from "@/components/ImageSlot";
+import ProjectGallery from "@/components/ProjectGallery";
 import CreateProject from "@/components/CreateProject";
 import ContactSection from "@/components/ContactSection";
 import LetsConnect from "@/components/LetsConnect";
@@ -13,11 +14,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
-// Statically generate parameters for static export/prerendering
+// Statically generate parameters — only projects that have a full case study.
 export async function generateStaticParams() {
-  return projects.map((p) => ({
-    slug: p.slug,
-  }));
+  return projects
+    .filter((p) => p.details)
+    .map((p) => ({
+      slug: p.slug,
+    }));
 }
 
 // Generate dynamic metadata for SEO compliance!
@@ -44,137 +47,93 @@ export default async function ProjectDetailPage({
   // Find the project inside projects list
   const currentProject = projects.find((p) => p.slug === slug);
 
-  if (!currentProject) {
+  // Only projects with a full case study have a detail page.
+  if (!currentProject || !currentProject.details) {
     notFound();
   }
 
-  // If there are details defined
-  const details = currentProject.details!;
+  const details = currentProject.details;
 
-  const detailRows = [
-    { k: "Project Category :", v: details.category },
-    { k: "Client :", v: details.client },
-    { k: "Duration :", v: details.duration },
-    { k: "Country :", v: details.country, last: true },
-  ];
-
-  // Derive other projects dynamically (excluding current)
-  const otherProjects = projects.filter((p) => p.slug !== slug).slice(0, 2);
+  // Derive other case studies dynamically (excluding current)
+  const otherProjects = projects
+    .filter((p) => p.slug !== slug && p.details)
+    .slice(0, 2);
 
   return (
     <ClientEnhance>
       <Header active="/projects" variant="light" />
       <PageTitle title="Projects" crumb="Project Details" />
 
-      {/* HERO GALLERY */}
+      {/* FULL-WIDTH GALLERY (with zoom-to-fullscreen) */}
       <div className="mx-auto my-9 max-w-[1180px] px-5 md:px-10">
-        <div
-          data-stagger
-          className="flex h-[240px] items-stretch gap-[14px] overflow-x-auto pb-2 [scrollbar-width:none] md:h-[320px] md:overflow-visible md:pb-0 justify-center"
-        >
-          {details.images.map((imgSrc, i) => (
-            <div
-              key={i}
-              className="group relative min-w-[240px] sm:min-w-[340px] md:min-w-[440px] overflow-hidden rounded-[14px] shadow-sm border border-[#eef3fc]"
-              style={{ flex: `1 1 0%` }}
-            >
-              <ImageSlot
-                shape="rounded"
-                radius={14}
-                src={imgSrc}
-                placeholder="Campaign screen"
-                zoom
-                sizes="(max-width: 768px) 60vw, 440px"
-              />
-            </div>
-          ))}
-        </div>
+        <ProjectGallery images={details.images} alt={currentProject.title} />
       </div>
 
-      {/* INTRO + CATEGORY CARD */}
-      <div className="mx-auto grid max-w-[1180px] grid-cols-1 gap-10 px-5 py-6 md:px-10 lg:grid-cols-[1fr_300px] lg:gap-12">
+      {/* CASE STUDY BODY */}
+      <div className="mx-auto max-w-[880px] px-5 py-8 md:px-10">
         <div>
-          <div className="mb-[22px] flex items-start gap-4">
-            <div className="flex h-[44px] w-[44px] flex-shrink-0 items-center justify-center rounded-full bg-olive font-bold text-white">
+          <div className="mb-5 flex items-start gap-4">
+            <div className="flex h-[46px] w-[46px] flex-shrink-0 items-center justify-center rounded-full bg-olive text-[18px] font-bold text-white">
               {details.client.charAt(0)}
             </div>
-            <div>
-              <h2 className="mb-[6px] mt-0 text-[26px] font-extrabold text-ink">
-                <span className="text-gold">{details.client}</span> Google Ads Solution
-              </h2>
-              <p className="m-0 text-[14px] leading-[1.6] text-[#6f6f63]">
-                {details.intro}
-              </p>
-            </div>
+            <h2 className="mt-1 text-[24px] md:text-[28px] font-extrabold leading-[1.2] text-ink">
+              <span className="text-gold">{details.client}</span> Google Ads Solution
+            </h2>
           </div>
-          <p className="mb-4 mt-0 text-[14px] leading-[1.75] text-[#6f6f63]">
+          <p className="mb-4 text-[14.5px] leading-[1.75] text-[#6f6f63]">
             {details.intro}
           </p>
-          <p className="m-0 text-[14px] leading-[1.75] text-[#6f6f63]">
+          <p className="mb-8 text-[14.5px] leading-[1.75] text-[#6f6f63]">
             {details.description}
           </p>
-        </div>
-        <div className="self-start rounded-[18px] bg-olive px-[26px] py-[30px] text-white">
-          {detailRows.map((row, i) => (
-            <div
-              key={i}
-              className={row.last ? "" : "mb-[18px] border-b border-white/[.15] pb-[18px]"}
-            >
-              <div className="mb-[6px] text-[13px] text-[#dbeafe]">{row.k}</div>
-              <div className="text-[16px] font-bold text-white">{row.v}</div>
+
+          {/* Key results */}
+          {currentProject.metrics.length > 0 && (
+            <div className="mb-10 grid grid-cols-3 gap-4 rounded-[16px] border border-[#eef3fc] bg-[#f8fafc] px-5 py-6 sm:gap-6 sm:px-7">
+              {currentProject.metrics.map((m, i) => (
+                <div key={i} className="text-center">
+                  <div className="text-[22px] md:text-[28px] font-extrabold leading-none text-olive">
+                    {m.value}
+                  </div>
+                  <div className="mt-1.5 text-[11.5px] md:text-[12.5px] text-[#8a8a7e]">
+                    {m.label}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </div>
+          )}
 
-      {/* THE CHALLENGE */}
-      <div className="mx-auto max-w-[1180px] px-5 md:px-10 py-5">
-        <h3 className="mb-[14px] mt-0 text-[22px] font-extrabold text-ink">The Challenge</h3>
-        <p className="m-0 text-[14px] leading-[1.8] text-[#6f6f63]">
-          {details.challenge}
-        </p>
-      </div>
-
-      {/* THE SOLUTION */}
-      <div className="mx-auto max-w-[1180px] px-5 md:px-10 py-[22px]">
-        <h3 className="mb-[14px] mt-0 text-[22px] font-extrabold text-ink">The Solution</h3>
-        <p className="mb-6 mt-0 text-[14px] leading-[1.8] text-[#6f6f63]">
-          {details.solution}
-        </p>
-        <div data-stagger className="grid grid-cols-1 min-[360px]:grid-cols-2 md:grid-cols-4 gap-x-[30px] gap-y-5">
-          {details.solutionItems.map((item, i) => (
-            <div key={i} className="flex items-center gap-[10px]">
-              <span className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-gold text-[13px] text-white font-bold">
-                ✓
-              </span>
-              <span className="text-[13.5px] font-medium text-[#4a4a3e]">{item}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* SOLUTION IMAGES */}
-      <div className="mx-auto my-[30px] grid max-w-[1180px] grid-cols-1 gap-[22px] px-5 sm:grid-cols-2 md:h-[320px] md:px-10">
-        {details.images.slice(0, 2).map((imgSrc, i) => (
-          <div key={i} className="group relative h-[220px] overflow-hidden rounded-[16px] md:h-auto shadow-sm border border-[#eef3fc]">
-            <ImageSlot
-              shape="rounded"
-              radius={16}
-              src={imgSrc}
-              placeholder="Case study statistics"
-              zoom
-              sizes="(max-width: 768px) 100vw, 560px"
-            />
+          <div className="mb-9">
+            <h3 className="mb-3 mt-0 text-[21px] font-extrabold text-ink">The Challenge</h3>
+            <p className="m-0 text-[14.5px] leading-[1.8] text-[#6f6f63]">
+              {details.challenge}
+            </p>
           </div>
-        ))}
-      </div>
 
-      {/* THE IMPACT */}
-      <div className="mx-auto max-w-[1180px] px-5 md:px-10 py-5">
-        <h3 className="mb-[14px] mt-0 text-[22px] font-extrabold text-ink">The Impact</h3>
-        <p className="m-0 text-[14px] leading-[1.8] text-[#6f6f63]">
-          {details.impact}
-        </p>
+          <div className="mb-9">
+            <h3 className="mb-3 mt-0 text-[21px] font-extrabold text-ink">The Solution</h3>
+            <p className="mb-5 mt-0 text-[14.5px] leading-[1.8] text-[#6f6f63]">
+              {details.solution}
+            </p>
+            <div className="grid grid-cols-1 gap-x-6 gap-y-[13px] sm:grid-cols-2">
+              {details.solutionItems.map((item, i) => (
+                <div key={i} className="flex items-center gap-[10px]">
+                  <span className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-gold text-[13px] font-bold text-white">
+                    ✓
+                  </span>
+                  <span className="text-[13.5px] font-medium text-[#4a4a3e]">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-3 mt-0 text-[21px] font-extrabold text-ink">The Impact</h3>
+            <p className="m-0 text-[14.5px] leading-[1.8] text-[#6f6f63]">
+              {details.impact}
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* VIEW OTHER PROJECTS */}
@@ -191,13 +150,13 @@ export default async function ProjectDetailPage({
             href={`/projects/${proj.slug}`}
             className="group rounded-[18px] border border-[#ece9df] bg-white p-[18px] text-inherit block hover:shadow-md transition-shadow"
           >
-            <div className="relative mb-[18px] h-[230px] overflow-hidden rounded-[12px]">
+            <div className="relative mb-[18px] h-[230px] overflow-hidden rounded-[10px] bg-[#f4f6f8]">
               <ImageSlot
                 shape="rounded"
-                radius={12}
+                radius={10}
                 src={proj.img}
                 placeholder="Project preview"
-                zoom
+                fit="contain"
                 sizes="(max-width: 768px) 100vw, 460px"
               />
             </div>

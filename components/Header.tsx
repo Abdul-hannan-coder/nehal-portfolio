@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { nav, personal } from "@/lib/data";
+import { personal } from "@/lib/data";
 import MobileNav from "./MobileNav";
+import PrimaryNav from "./PrimaryNav";
 
 export interface HeaderProps {
   active?: string;
@@ -21,27 +21,15 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
     </span>
   );
 
-  const DesktopNav = (
-    <nav className="hidden items-center gap-[30px] text-[15px] font-medium text-ink lg:flex">
-      {nav.map((n) => (
-        <Link
-          key={n.label}
-          href={n.href}
-          data-active={n.href === active}
-          className={`nav-link ${
-            n.href === active ? "font-semibold text-gold" : "text-ink hover:text-gold"
-          }`}
-        >
-          {n.label}
-        </Link>
-      ))}
-    </nav>
-  );
+  const DesktopNav = <PrimaryNav />;
 
   const ContactBtn = (
-    <button className="hidden rounded-[40px] border-none bg-gold px-[26px] py-[13px] font-sans text-[15px] font-semibold text-white lg:block">
+    <a
+      href="/#contact"
+      className="hidden rounded-[40px] border-none bg-gold px-[26px] py-[13px] font-sans text-[15px] font-semibold text-white lg:block"
+    >
       Contact Me
-    </button>
+    </a>
   );
 
   const inner =

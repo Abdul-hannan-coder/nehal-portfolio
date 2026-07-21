@@ -74,7 +74,9 @@ export interface Testimonial {
   name: string;
   role: string;
   quote: string;
-  videoSrc?: string;
+  vimeoId?: string;
+  /** Video width / height (e.g. 1.7778 for 16:9, 0.5667 for portrait). */
+  aspect?: number;
 }
 export interface Faq {
   q: string;
@@ -116,6 +118,7 @@ export interface AboutData {
   bioParagraphs: string[];
   badge1: string;
   badge2: string;
+  highlights?: string[];
   corePillars: CorePillar[];
 }
 export interface PersonalData {
@@ -127,6 +130,7 @@ export interface PersonalData {
   profileImage: string;
   heroImage: string;
   signature?: string;
+  highlights?: string[];
 }
 export interface SocialItem {
   name: string;
@@ -181,7 +185,8 @@ export const testimonials: Testimonial[] = portfolioData.testimonials.map((t, id
   name: t.name,
   role: t.role,
   quote: "",
-  videoSrc: t.videoSrc
+  vimeoId: t.vimeoId,
+  aspect: t.aspect
 }));
 export const homeTestimonials: Testimonial[] = testimonials;
 

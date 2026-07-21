@@ -4,9 +4,15 @@
     "initials": "NK",
     "title": "Google Ads Specialist & Coach",
     "subtitle": "Google Certified Ads Specialist and Coach with 7+ years of hands on experience scaling businesses through Google Ads. I help marketers and owners master performance marketing.",
-    "tagline": "Hello There !",
+    "tagline": "7+ Years Experience",
     "profileImage": "/nehal.jpeg",
-    "heroImage": "/nehal.jpeg"
+    "heroImage": "/nehal.jpeg",
+    "highlights": [
+      "Google Certified Ads Specialist",
+      "Performance Max, Shopping & Search Ads expert",
+      "$5 million revenue generated",
+      "300K+ marketers reached through coaching"
+    ]
   },
   "about": {
     "title": "About Me",
@@ -22,6 +28,12 @@
     ],
     "badge1": "7+ Years Experience",
     "badge2": "Google Ads Certified",
+    "highlights": [
+      "High-ROI Shopping & Performance Max campaigns",
+      "Conversion tracking & Google Tag Manager setups",
+      "Scaling lead-generation & e-commerce brands",
+      "1:1 PPC coaching & training programs"
+    ],
     "corePillars": [
       {
         "title": "Data-Driven Strategy",
@@ -45,27 +57,27 @@
     {
       "label": "Home",
       "icon": "home",
-      "href": "/"
+      "href": "/#home"
     },
     {
       "label": "Services",
       "icon": "settings",
-      "href": "/services"
+      "href": "/#services"
     },
     {
       "label": "About",
       "icon": "person",
-      "href": "/about"
+      "href": "/#about"
     },
     {
       "label": "Projects",
       "icon": "work",
-      "href": "/projects"
+      "href": "/#projects"
     },
     {
       "label": "Testimonials",
       "icon": "comment",
-      "href": "/testimonials"
+      "href": "/#testimonials"
     }
   ],
   "timeline": [
@@ -124,34 +136,39 @@
   ],
   "social": [
     {
+      "name": "whatsapp",
+      "href": "https://wa.me/923203469521",
+      "icon": "whatsapp"
+    },
+    {
+      "name": "upwork",
+      "href": "https://www.upwork.com/freelancers/~01b09f30e01f0432e9",
+      "icon": "upwork"
+    },
+    {
+      "name": "fiverr",
+      "href": "https://www.fiverr.com/nehalahmed_khan",
+      "icon": "fiverr"
+    },
+    {
       "name": "facebook",
-      "href": "https://facebook.com",
+      "href": "https://www.facebook.com/nehalahmedkhan.official",
       "icon": "facebook"
     },
     {
-      "name": "behance",
-      "href": "https://behance.net",
-      "icon": "behance"
-    },
-    {
-      "name": "youtube",
-      "href": "https://youtube.com",
-      "icon": "youtube"
-    },
-    {
-      "name": "x",
-      "href": "https://x.com",
-      "icon": "x"
-    },
-    {
       "name": "linkedin",
-      "href": "https://linkedin.com",
+      "href": "https://www.linkedin.com/in/nehalkhanofficial/",
       "icon": "linkedin"
     },
     {
       "name": "instagram",
-      "href": "https://instagram.com",
+      "href": "https://www.instagram.com/nehalahmedkhan.official/",
       "icon": "instagram"
+    },
+    {
+      "name": "behance",
+      "href": "https://www.behance.net/gallery/192165231/PPC-Management",
+      "icon": "behance"
     }
   ],
   "certifications": [
@@ -173,19 +190,22 @@
   },
   "testimonials": [
     {
-      "name": "Dustin Bradley",
-      "role": "Owner, Dumpster & Trailer Rental, USA",
-      "videoSrc": "/projects/Video Testimonials/Dustin from California Video Testimonial.mp4"
+      "name": "Qamar Toor",
+      "role": "Agency Owner, USA",
+      "vimeoId": "1211649839",
+      "aspect": 1.3333
     },
     {
       "name": "Waqas",
       "role": "Owner, Ahmed Solutions Agency, Ireland",
-      "videoSrc": "/projects/Video Testimonials/Waqas From Ireland Video Testimonial.mp4"
+      "vimeoId": "1211650298",
+      "aspect": 1.7778
     },
     {
-      "name": "Qamar Toor",
-      "role": "Agency Owner, USA",
-      "videoSrc": "/projects/Video Testimonials/Qamar From Missouri Video Testimonial.mp4"
+      "name": "Dustin Bradley",
+      "role": "Owner, Dumpster & Trailer Rental, USA",
+      "vimeoId": "1211637724",
+      "aspect": 0.5667
     }
   ],
   "stats": [
@@ -202,19 +222,29 @@
     { "name": "SEM", "pct": "90%", "mark": "SEM", "bg": "#0f6fd0" }
   ],
   "leadGen": [
-    "Landscaping",
-    "Tree Services",
+    "Landscaping Service",
+    "Tree Service",
     "Moving Companies",
     "Storage Rentals",
+    "Dumpster & Portable Trailer Rental",
+    "Limo Services & Car Rentals",
+    "Airport Transfer Services",
     "Locksmith Services",
-    "Roofing & Repair",
-    "Solar Installation",
-    "Junk Removal",
+    "Auto Mechanic & Tyre Puncture",
+    "Probate & Divorce Lawyers",
     "Dental Implants",
+    "Upholstery, Curtains & Blinds",
+    "Junk Removal & Steam Cleaning",
+    "Solar Installation Services",
+    "Roofing Installation & Repair",
+    "Electronic Recycling Services",
+    "E-book Sales",
+    "Event Signups in Dubai",
+    "Deep Cleanup Services",
     "Home Improvement"
   ],
   "ecommerce": [
-    "Flooring & Renovation",
+    "Flooring & Renovation Products",
     "Fashion & Apparel",
     "Boxing Equipment",
     "Electric Scooters",
@@ -331,7 +361,7 @@
     { "label": "Search Ads", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" }
   ],
   "contactInfo": [
-    { "icon": "phone", "text": "+1(406) 555-0120" },
+    { "icon": "phone", "text": "+92 320 3469521" },
     { "icon": "mail", "text": "example@gmail.com" },
     { "icon": "youtube", "text": "300K+ views on YouTube" },
     { "icon": "map-pin", "text": "Serving the USA, UK, and Dubai" }

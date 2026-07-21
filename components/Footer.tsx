@@ -1,9 +1,11 @@
-import Link from "next/link";
 import { socials, personal } from "@/lib/data";
 import Icon from "./Icon";
 
 // Official brand colours for the social row.
 const socialBg: Record<string, string> = {
+  whatsapp: "#25D366",
+  upwork: "#14A800",
+  fiverr: "#1DBF73",
   facebook: "#1877F2",
   behance: "#1769FF",
   youtube: "#FF0000",
@@ -14,11 +16,11 @@ const socialBg: Record<string, string> = {
 };
 
 const footerNav = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
-  { label: "Testimonials", href: "/testimonials" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Testimonials", href: "/#testimonials" },
 ];
 
 export default function Footer() {
@@ -56,13 +58,13 @@ export default function Footer() {
         <h5 className="mb-4 text-[15px] font-bold">Navigation</h5>
         <div className="flex flex-col gap-[11px] text-[13.5px]">
           {footerNav.map((n) => (
-            <Link
+            <a
               key={n.label}
               href={n.href}
               className="w-max text-[#7a7a6e] transition-colors hover:text-gold"
             >
               {n.label}
-            </Link>
+            </a>
           ))}
         </div>
       </div>
@@ -70,7 +72,9 @@ export default function Footer() {
       <div>
         <h5 className="mb-4 text-[15px] font-bold">Contact</h5>
         <div className="flex flex-col gap-[11px] text-[13.5px] text-[#7a7a6e]">
-          <span>+0123-456-789</span>
+          <a href="tel:+923203469521" className="w-max transition-colors hover:text-gold">
+            +92 320 3469521
+          </a>
           <span>www.example.com</span>
           <span>example@gmail.com</span>
           <span>

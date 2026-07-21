@@ -123,6 +123,15 @@
     width: 100%;
   }
 
+  /* Forces a rounded, overflow-hidden box to actually clip a transformed/scaling
+     child (Chromium leaks square corners otherwise). Use on image wrappers that
+     contain a `.zoomable`. */
+  .round-clip {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+    transform: translateZ(0);
+  }
+
   /* Image zoom-on-hover inside a card group */
   .zoomable {
     transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);

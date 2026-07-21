@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { nav, personal } from "@/lib/data";
 
@@ -65,7 +64,7 @@ export default function MobileNav({ active = "/" }: { active?: string }) {
           {nav.map((n) => {
             const isActive = n.href === active;
             return (
-              <Link
+              <a
                 key={n.label}
                 href={n.href}
                 onClick={() => setOpen(false)}
@@ -74,15 +73,19 @@ export default function MobileNav({ active = "/" }: { active?: string }) {
                 }`}
               >
                 {n.label}
-              </Link>
+              </a>
             );
           })}
         </nav>
 
         <div className="px-4 pb-8">
-          <button className="w-full rounded-[40px] bg-gold px-6 py-[14px] text-[15px] font-semibold text-white">
+          <a
+            href="/#contact"
+            onClick={() => setOpen(false)}
+            className="block w-full rounded-[40px] bg-gold px-6 py-[14px] text-center text-[15px] font-semibold text-white"
+          >
             Contact Me
-          </button>
+          </a>
         </div>
       </aside>
     </div>
