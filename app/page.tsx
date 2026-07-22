@@ -84,13 +84,13 @@ export default function HomePage() {
       <Header active="/" />
 
       {/* HERO */}
-      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] scroll-mt-[90px] grid-cols-1 items-stretch gap-x-[60px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.05fr_1fr]">
+      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] scroll-mt-[90px] grid-cols-1 items-stretch gap-x-[50px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.15fr_0.88fr]">
         <div className="animate-omUp">
           <div className="mb-[16px] inline-flex items-center rounded-full bg-[#eef4ff] px-[12px] py-[5px] text-[11px] font-semibold uppercase tracking-[0.2em] text-[#5c6c89] shadow-[0_2px_8px_rgba(24,139,246,.08)]">
             7+ Years of Experience
           </div>
 
-          <h1 className="mb-[16px] max-w-[620px] text-[30px] font-extrabold leading-[1.04] tracking-[-0.03em] text-ink min-[420px]:text-[38px] min-[500px]:text-[46px] sm:text-[56px] sm:leading-[0.95] sm:tracking-[-0.05em] lg:text-[64px]">
+          <h1 className="mb-[16px] max-w-[700px] text-[30px] font-extrabold leading-[1.04] tracking-[-0.03em] text-ink min-[420px]:text-[38px] min-[500px]:text-[46px] sm:text-[54px] sm:leading-[0.95] sm:tracking-[-0.05em] lg:text-[58px]">
             I&rsquo;m <span className="text-gold">{personal.name}</span>,
             <br />
             Google Ads
