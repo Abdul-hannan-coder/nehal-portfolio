@@ -74,8 +74,8 @@ export default function Select({
         type="button"
         disabled={disabled}
         onClick={() => setOpen((o) => !o)}
-        className={`flex h-[46px] w-full items-center justify-between gap-2 rounded-[10px] border border-[#dfe4ec] bg-white px-[14px] text-[14px] font-medium outline-none transition-all hover:border-[#c9d3e0] focus:border-gold focus:ring-4 focus:ring-gold/15 disabled:cursor-not-allowed disabled:opacity-50 ${
-          open ? "border-gold ring-4 ring-gold/15" : ""
+        className={`flex h-[50px] w-full items-center justify-between gap-2 rounded-[12px] border border-[#e4e9f2] bg-[#fbfcfe] px-[14px] text-[14px] font-medium outline-none transition-all hover:border-[#c9d3e0] focus:border-[#1f74f0] focus:bg-white focus:ring-4 focus:ring-[#1f74f0]/12 disabled:cursor-not-allowed disabled:opacity-50 ${
+          open ? "border-[#1f74f0] bg-white ring-4 ring-[#1f74f0]/12" : ""
         } ${selected ? "text-ink" : "text-[#9aa3b2]"} ${className}`}
       >
         <span className="truncate">{selected?.label ?? placeholder ?? "—"}</span>

@@ -25,7 +25,7 @@ const footerNav = [
 
 export default function Footer() {
   return (
-    <footer className="mx-auto grid max-w-[1120px] grid-cols-1 gap-10 px-5 pb-10 pt-5 sm:grid-cols-2 md:px-10 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
+    <footer className="mx-auto grid max-w-[1280px] grid-cols-1 gap-10 px-5 pb-10 pt-5 sm:grid-cols-2 md:px-10 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
       <div>
         <div className="mb-4 flex items-center gap-[10px]">
           <div className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-gold font-extrabold text-white">

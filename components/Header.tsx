@@ -13,14 +13,11 @@ export interface HeaderProps {
 // Sticky, responsive blue + white header. Desktop shows the full nav; below the
 // `lg` breakpoint it collapses to a hamburger that opens a right-side drawer.
 export default function Header({ active = "/", variant = "dark" }: HeaderProps) {
-  const Logo = (
-    <div className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-gold text-[18px] font-extrabold text-white">
-      {personal.initials.charAt(0)}
-    </div>
-  );
+  // Logo circle removed per request — wordmark stands alone.
+  const Logo = null;
   const Wordmark = (
     <span className="text-[19px] font-bold text-ink">
-      {personal.name.split(" ")[0]}<span className="text-gold">.</span>
+      {personal.name}<span className="text-gold">.</span>
     </span>
   );
 
@@ -39,7 +36,7 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
 
   const inner =
     variant === "light" ? (
-      <header className="mx-auto flex max-w-[1240px] items-center justify-between px-5 py-[18px] sm:px-8 lg:px-[60px]">
+      <header className="mx-auto flex max-w-[1280px] items-center justify-between px-5 py-[18px] md:px-10">
         <div className="flex items-center gap-3">
           {Logo}
           {Wordmark}
@@ -49,7 +46,7 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
         <MobileNav active={active} />
       </header>
       ) : (
-      <div className="mx-auto max-w-[1240px] px-4 pb-2 pt-[18px] sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1280px] px-4 pb-2 pt-[18px] sm:px-6 lg:px-10">
         <header className={`flex items-center justify-between rounded-[44px] py-[11px] pl-5 pr-3 transition-all ${
           scrolled
             ? "border border-[#e7ebf1] bg-white shadow-[0_6px_24px_rgba(16,24,40,.06)]"

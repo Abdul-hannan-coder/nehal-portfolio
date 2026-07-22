@@ -115,7 +115,7 @@ export default function TestimonialsCarousel({
 
   return (
     <div
-      className="relative mx-auto w-full max-w-[1240px]"
+      className="relative mx-auto w-full max-w-[1280px]"
       style={
         {
           height: "calc(var(--card-h) + 160px)",
@@ -317,7 +317,7 @@ export default function TestimonialsCarousel({
 
             {/* Caption */}
             <div className="mt-3 flex flex-col items-center text-center">
-              <span className="text-[14px] tracking-[2px] text-gold">★★★★★</span>
+              <span className="text-[14px] tracking-[2px] text-[#FBBC05]">★★★★★</span>
               <div className="mt-1 text-[15px] font-bold text-ink">{t.name}</div>
               <div className="text-[12px] text-[#8a8a7e]">{t.role}</div>
             </div>
@@ -332,7 +332,7 @@ export default function TestimonialsCarousel({
             type="button"
             aria-label="Previous testimonial"
             onClick={() => stepWithStop(-1)}
-            className="absolute left-0 top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#e7ebf1] bg-white text-ink shadow-md"
+            className="absolute left-0 top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#e7ebf1] bg-white text-ink shadow-md transition-colors hover:-translate-y-1/2 hover:border-gold hover:bg-gold hover:text-white"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -340,7 +340,7 @@ export default function TestimonialsCarousel({
             type="button"
             aria-label="Next testimonial"
             onClick={() => stepWithStop(1)}
-            className="absolute right-0 top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#e7ebf1] bg-white text-ink shadow-md"
+            className="absolute right-0 top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#e7ebf1] bg-white text-ink shadow-md transition-colors hover:-translate-y-1/2 hover:border-gold hover:bg-gold hover:text-white"
           >
             <ChevronRight className="h-5 w-5" />
           </button>

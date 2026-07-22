@@ -10,10 +10,10 @@ import Footer from "@/components/Footer";
 import Copyright from "@/components/Copyright";
 import FaqList from "@/components/FaqList";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import TestimonialsVideo from "@/components/TestimonialsVideo";
 import StatsStrip from "@/components/StatsStrip";
 import Icon from "@/components/Icon";
 import NichesExplorer from "@/components/NichesExplorer";
-import JourneyTimeline from "@/components/JourneyTimeline";
 import ProjectCard from "@/components/ProjectCard";
 import {
   services,
@@ -26,7 +26,6 @@ import {
   faqs,
   personal,
   about,
-  milestones,
 } from "@/lib/data";
 
 // Handwritten script face for the About signature.
@@ -90,7 +89,7 @@ export default function HomePage() {
             7+ Years of Experience
           </div>
 
-          <h1 className="mb-[16px] max-w-[700px] text-[30px] font-extrabold leading-[1.04] tracking-[-0.03em] text-ink min-[420px]:text-[38px] min-[500px]:text-[46px] sm:text-[54px] sm:leading-[0.95] sm:tracking-[-0.05em] lg:text-[58px]">
+          <h1 className="mb-[18px] max-w-[700px] text-[30px] font-extrabold leading-[1.18] tracking-[-0.03em] text-ink min-[420px]:text-[38px] min-[500px]:text-[46px] sm:text-[54px] sm:leading-[1.1] sm:tracking-[-0.04em] lg:text-[58px]">
             I&rsquo;m <span className="text-gold">{personal.name}</span>,
             <br />
             Google Ads
@@ -105,18 +104,18 @@ export default function HomePage() {
 
           <div className="grid max-w-[620px] grid-cols-1 gap-x-8 gap-y-3.5 sm:grid-cols-2">
             {(personal.highlights ?? []).slice(0, 4).map((h, i) => (
-              <div key={i} className="flex items-start gap-3">
-                <span className="mt-[1px] flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0] text-[12px] font-bold text-white shadow-[0_6px_14px_rgba(31,116,240,.25)]">
+              <div key={i} className="flex items-center gap-3">
+                <span className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0] text-[12px] font-bold text-white shadow-[0_6px_14px_rgba(31,116,240,.25)]">
                   ✓
                 </span>
-                <span className="max-w-[220px] text-[13px] font-medium leading-[1.45] tracking-[-0.01em] text-[#3f4958] sm:text-[13.5px]">
+                <span className="whitespace-nowrap text-[13px] font-medium tracking-[-0.01em] text-[#3f4958] sm:text-[13.5px]">
                   {i === 0
-                    ? "Google Certified Ads Specialist"
+                    ? "Google Certified Specialist"
                     : i === 1
-                    ? "Performance Max, Shopping & Search Ads Expert"
+                    ? "Shopping & Search Ads Expert"
                     : i === 2
-                    ? "$5M+ revenue generated for clients"
-                    : "300K+ marketers reached through coaching"}
+                    ? "$5M+ revenue generated"
+                    : "300K+ marketers coached"}
                 </span>
               </div>
             ))}
@@ -145,9 +144,12 @@ export default function HomePage() {
           <div className="mt-7 max-w-[700px] rounded-[20px] border border-[#edf1f7] bg-white px-4 py-3.5 shadow-[0_12px_34px_rgba(16,24,40,.08)] sm:px-6 sm:py-4">
             <div className="grid grid-cols-2 gap-3.5 md:grid-cols-4 md:gap-0 md:divide-x md:divide-[#edf1f7]">
               <div className="flex items-center gap-2.5 md:pr-4">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f3f7ff] text-[20px]">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6">
-                    <path fill="#EA4335" d="M12 10.2v3.8h5.3c-.2 1.3-1.6 3.8-5.3 3.8-3.2 0-5.8-2.6-5.8-5.8S8.8 6.2 12 6.2c1.8 0 3 .8 3.7 1.5l2.5-2.5C16.7 3.8 14.6 3 12 3 7 3 3 7 3 12s4 9 9 9c5.2 0 8.7-3.7 8.7-8.8 0-.6-.1-1.1-.2-1.6H12z"/>
+                <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="h-[30px] w-[30px]">
+                    <path fill="#4285F4" d="M23.06 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h6.2c-.27 1.44-1.08 2.66-2.3 3.48v2.9h3.72c2.18-2 3.44-4.96 3.44-8.39z" />
+                    <path fill="#34A853" d="M12 24c3.11 0 5.72-1.03 7.62-2.79l-3.72-2.9c-1.03.69-2.35 1.1-3.9 1.1-3 0-5.54-2.03-6.45-4.75H1.7v2.99A11.5 11.5 0 0 0 12 24z" />
+                    <path fill="#FBBC05" d="M5.55 14.66A7.14 7.14 0 0 1 5.17 12c0-.92.16-1.82.38-2.66V6.35H1.7A11.5 11.5 0 0 0 .5 12c0 1.86.45 3.62 1.2 5.65z" />
+                    <path fill="#EA4335" d="M12 4.77c1.69 0 3.2.58 4.4 1.72l3.3-3.3C17.72 1.2 15.11 0 12 0 7.34 0 3.31 2.69 1.7 6.35l3.85 2.99C6.46 6.8 9 4.77 12 4.77z" />
                   </svg>
                 </span>
                 <div>
@@ -156,11 +158,8 @@ export default function HomePage() {
               </div>
 
               <div className="flex items-center gap-2.5 md:px-4">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f3f7ff] text-[20px]">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6">
-                    <path fill="#4285F4" d="M2 5.5L9.7 13 2 20.5h4.5L13.9 13 6.5 5.5z"/>
-                    <path fill="#34A853" d="M10.2 5.5L18 13l-7.8 7.5H15L22.5 13 15 5.5z"/>
-                  </svg>
+                <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center">
+                  <img src="/icons/google-ads.svg" alt="Google Ads" className="h-[30px] w-[30px]" />
                 </span>
                 <div>
                   <div className="text-[12px] font-semibold tracking-[-0.01em] text-[#253046]">Google Ads</div>
@@ -169,10 +168,10 @@ export default function HomePage() {
               </div>
 
               <div className="flex items-center gap-2.5 md:px-4">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f3f7ff] text-[20px]">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6">
-                    <rect x="3" y="6" width="18" height="12" rx="3" fill="#FF0000" />
-                    <path d="M10 9.5v5l4.5-2.5z" fill="#fff" />
+                <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="h-8 w-8">
+                    <rect x="2" y="5" width="20" height="14" rx="4.5" fill="#FF0000" />
+                    <path d="M10 9v6l5.5-3z" fill="#fff" />
                   </svg>
                 </span>
                 <div>
@@ -182,9 +181,10 @@ export default function HomePage() {
               </div>
 
               <div className="flex items-center gap-2.5 md:pl-4">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f3f7ff] text-[20px]">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6">
-                    <path fill="#1f74f0" d="M12 2 4 5v6c0 5.5 3.7 10.5 8 11 4.3-.5 8-5.5 8-11V5l-8-3zm0 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" />
+                <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="h-8 w-8">
+                    <path fill="#1f74f0" d="M12 2 4 5v6c0 5.5 3.7 10.5 8 11 4.3-.5 8-5.5 8-11V5l-8-3z" />
+                    <path d="m8.5 12 2.5 2.5 4.5-5" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 <div>
@@ -198,29 +198,28 @@ export default function HomePage() {
 
         {/* RIGHT: portrait & floating stat cards */}
         <div className="relative mx-auto flex min-h-[500px] w-full max-w-[640px] items-end justify-center animate-omUp [animation-delay:150ms] sm:min-h-[600px]">
-          {/* Soft background glow & radial accents */}
-          <div className="pointer-events-none absolute right-[5%] top-[5%] h-[90%] w-[90%] rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.22)_0%,_rgba(219,234,254,0.4)_40%,_transparent_75%)] blur-xl" />
-          <div className="pointer-events-none absolute right-[8%] top-[8%] h-[82%] w-[78%] rounded-full border border-blue-100/60 bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.08)_0%,_transparent_70%)]" />
-          <div className="pointer-events-none absolute right-[0%] top-[18%] h-[200px] w-[120px] opacity-30 bg-[radial-gradient(#3b82f6_1.5px,transparent_1.5px)] [background-size:14px_14px]" />
+          {/* Vibrant background glow & radial accents - centered exactly behind Nehal's head/shoulder */}
+          <div className="pointer-events-none absolute left-[42%] top-[45%] h-[85%] w-[85%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,_rgba(37,99,235,0.36)_0%,_rgba(59,130,246,0.18)_45%,_transparent_70%)] blur-2xl" />
+          <div className="pointer-events-none absolute left-[42%] top-[45%] h-[76%] w-[76%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-200/50 bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.06)_0%,_transparent_65%)]" />
+          <div className="pointer-events-none absolute right-[0%] top-[18%] h-[200px] w-[120px] opacity-25 bg-[radial-gradient(#3b82f6_1.5px,transparent_1.5px)] [background-size:14px_14px]" />
 
-          {/* Main Subject - Nehal transparent cutout portrait (bottom fades out
-              so the flat chest crop never shows a hard line) */}
+          {/* Main Subject - Nehal transparent cutout portrait (centered at left-[42%] to align with background) */}
           <img
-            src="/nehal-cutout.png"
+            src="/nehal-portrait.png"
             alt={personal.name}
-            className="pointer-events-none absolute bottom-0 left-1/2 z-10 h-[92%] w-auto max-w-full -translate-x-1/2 object-contain object-bottom [-webkit-mask-image:linear-gradient(to_bottom,#000_86%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_86%,transparent_100%)]"
+            className="pointer-events-none absolute bottom-0 left-[42%] z-10 h-[92%] w-auto max-w-full -translate-x-1/2 object-contain object-bottom sm:h-[98%] lg:h-[102%] [-webkit-mask-image:linear-gradient(to_bottom,#000_92%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_92%,transparent_100%)]"
           />
 
           {/* Card 1: Conversions (Top Right) */}
-          <div className="absolute right-[0%] sm:right-[2%] top-[2%] z-20 hidden items-center justify-between sm:flex gap-2.5 sm:gap-3 rounded-[18px] border border-[#edf2f7] bg-white/95 px-3 py-2 sm:px-[14px] sm:py-2.5 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
+          <div className="absolute right-[6%] sm:right-[10%] top-[2%] z-20 hidden items-center justify-between sm:flex gap-2 sm:gap-2.5 rounded-[16px] border border-[#edf2f7] bg-white/95 px-2.5 py-1.5 sm:px-3 sm:py-2 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
             <div className="flex flex-col">
-              <span className="text-[9.5px] sm:text-[10.5px] font-medium text-[#667085]">Conversions</span>
-              <span className="mt-0.5 text-[16px] sm:text-[19px] font-extrabold tracking-tight text-[#101828]">1.27K</span>
+              <span className="text-[9px] sm:text-[10px] font-medium text-[#667085]">Conversions</span>
+              <span className="mt-0.5 text-[14px] sm:text-[17px] font-extrabold tracking-tight text-[#101828]">1.27K</span>
               <span className="mt-0.5 text-[11px] font-semibold text-[#16a34a] flex items-center gap-0.5">
                 <span>▲</span> 45.6%
               </span>
             </div>
-            <div className="h-6 w-11 sm:h-7 sm:w-[52px] flex items-center justify-end">
+            <div className="h-5 w-9 sm:h-6 sm:w-11 flex items-center justify-end">
               <svg className="h-full w-full text-[#3b82f6]" viewBox="0 0 60 30" fill="none">
                 <defs>
                   <linearGradient id="spark-blue-1" x1="0" y1="0" x2="0" y2="1">
@@ -235,43 +234,43 @@ export default function HomePage() {
           </div>
 
           {/* Card 2: Google Ads Logo Card (Middle Left) */}
-          <div className="absolute left-[2%] sm:left-[6%] top-[20%] z-20 hidden h-[64px] w-[64px] items-center justify-center rounded-[20px] border border-[#edf2f7] bg-white/95 p-3 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02] sm:flex sm:h-[80px] sm:w-[80px] sm:p-4">
+          <div className="absolute left-[0%] sm:left-[2%] top-[24%] z-20 hidden h-[64px] w-[64px] items-center justify-center rounded-[20px] border border-[#edf2f7] bg-white/95 p-3 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02] sm:flex sm:h-[80px] sm:w-[80px] sm:p-4">
             <img src="/icons/google-ads.svg" alt="Google Ads" className="h-10 w-10 sm:h-12 sm:w-12 object-contain" />
           </div>
 
           {/* Card 3: ROAS (Middle Right) */}
-          <div className="absolute right-[0%] sm:right-[2%] top-[28%] z-20 hidden items-center justify-between sm:flex gap-2.5 sm:gap-3 rounded-[18px] border border-[#edf2f7] bg-white/95 px-3 py-2 sm:px-[14px] sm:py-2.5 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
+          <div className="absolute right-[0%] sm:right-[0%] top-[26%] z-20 hidden items-center justify-between sm:flex gap-2 sm:gap-2.5 rounded-[16px] border border-[#edf2f7] bg-white/95 px-2.5 py-1.5 sm:px-3 sm:py-2 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
             <div className="flex flex-col">
-              <span className="text-[9.5px] sm:text-[10.5px] font-medium text-[#667085]">ROAS</span>
-              <span className="mt-0.5 text-[16px] sm:text-[19px] font-extrabold tracking-tight text-[#101828]">458%</span>
+              <span className="text-[9px] sm:text-[10px] font-medium text-[#667085]">ROAS</span>
+              <span className="mt-0.5 text-[14px] sm:text-[17px] font-extrabold tracking-tight text-[#101828]">458%</span>
               <span className="mt-0.5 text-[11px] font-semibold text-[#16a34a] flex items-center gap-0.5">
                 <span>▲</span> 62.3%
               </span>
             </div>
-            <div className="h-6 w-11 sm:h-7 sm:w-[52px] flex items-center justify-end">
-              <svg className="h-full w-full text-[#22c55e]" viewBox="0 0 60 30" fill="none">
+            <div className="h-5 w-9 sm:h-6 sm:w-11 flex items-center justify-end">
+              <svg className="h-full w-full text-[#3b82f6]" viewBox="0 0 60 30" fill="none">
                 <defs>
                   <linearGradient id="spark-green-1" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#22c55e" stopOpacity="0.25" />
-                    <stop offset="100%" stopColor="#22c55e" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.25" />
+                    <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
                   </linearGradient>
                 </defs>
                 <path d="M 2 26 Q 15 20 28 22 T 45 12 T 58 6 L 58 30 L 2 30 Z" fill="url(#spark-green-1)" />
-                <path d="M 2 26 Q 15 20 28 22 T 45 12 T 58 6" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M 2 26 Q 15 20 28 22 T 45 12 T 58 6" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
           </div>
 
           {/* Card 4: Revenue (Lower Middle Right) */}
-          <div className="absolute right-[0%] sm:right-[2%] top-[54%] z-20 hidden items-center justify-between sm:flex gap-2.5 sm:gap-3 rounded-[18px] border border-[#edf2f7] bg-white/95 px-3 py-2 sm:px-[14px] sm:py-2.5 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
+          <div className="absolute right-[6%] sm:right-[10%] top-[50%] z-20 hidden items-center justify-between sm:flex gap-2 sm:gap-2.5 rounded-[16px] border border-[#edf2f7] bg-white/95 px-2.5 py-1.5 sm:px-3 sm:py-2 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
             <div className="flex flex-col">
-              <span className="text-[9.5px] sm:text-[10.5px] font-medium text-[#667085]">Revenue</span>
-              <span className="mt-0.5 text-[16px] sm:text-[19px] font-extrabold tracking-tight text-[#101828]">$250K+</span>
+              <span className="text-[9px] sm:text-[10px] font-medium text-[#667085]">Revenue</span>
+              <span className="mt-0.5 text-[14px] sm:text-[17px] font-extrabold tracking-tight text-[#101828]">$250K+</span>
               <span className="mt-0.5 text-[11px] font-semibold text-[#16a34a] flex items-center gap-0.5">
                 <span>▲</span> 78.4%
               </span>
             </div>
-            <div className="h-6 w-11 sm:h-7 sm:w-[52px] flex items-center justify-end">
+            <div className="h-5 w-9 sm:h-6 sm:w-11 flex items-center justify-end">
               <svg className="h-full w-full text-[#3b82f6]" viewBox="0 0 60 30" fill="none">
                 <defs>
                   <linearGradient id="spark-blue-2" x1="0" y1="0" x2="0" y2="1">
@@ -286,15 +285,15 @@ export default function HomePage() {
           </div>
 
           {/* Card 5: Leads (Bottom Right) */}
-          <div className="absolute right-[4%] sm:right-[7%] top-[78%] z-20 hidden items-center justify-between sm:flex gap-2.5 sm:gap-3 rounded-[18px] border border-[#edf2f7] bg-white/95 px-3 py-2 sm:px-[14px] sm:py-2.5 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
+          <div className="absolute right-[0%] sm:right-[2%] top-[74%] z-20 hidden items-center justify-between sm:flex gap-2 sm:gap-2.5 rounded-[16px] border border-[#edf2f7] bg-white/95 px-2.5 py-1.5 sm:px-3 sm:py-2 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
             <div className="flex flex-col">
-              <span className="text-[9.5px] sm:text-[10.5px] font-medium text-[#667085]">Leads</span>
-              <span className="mt-0.5 text-[16px] sm:text-[19px] font-extrabold tracking-tight text-[#101828]">2.3K</span>
+              <span className="text-[9px] sm:text-[10px] font-medium text-[#667085]">Leads</span>
+              <span className="mt-0.5 text-[14px] sm:text-[17px] font-extrabold tracking-tight text-[#101828]">2.3K</span>
               <span className="mt-0.5 text-[11px] font-semibold text-[#16a34a] flex items-center gap-0.5">
                 <span>▲</span> 55.2%
               </span>
             </div>
-            <div className="h-6 w-11 sm:h-7 sm:w-[52px] flex items-center justify-end">
+            <div className="h-5 w-9 sm:h-6 sm:w-11 flex items-center justify-end">
               <svg className="h-full w-full text-[#3b82f6]" viewBox="0 0 60 30" fill="none">
                 <defs>
                   <linearGradient id="spark-blue-3" x1="0" y1="0" x2="0" y2="1">
@@ -314,10 +313,10 @@ export default function HomePage() {
       {/* <Marquee bg="#188bf6" color="#ffffff" padding="16px 0" /> */}
 
       {/* SERVICES */}
-      <div id="services" className="mx-auto my-20 md:my-28 max-w-[1120px] scroll-mt-[90px] px-5 md:px-10">
+      <div id="services" className="mx-auto my-20 md:my-28 max-w-[1280px] scroll-mt-[90px] px-5 md:px-10">
         <div className="mb-8">
           <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">Services</div>
-          <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
+          <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-[1.35]">
             <span className="italic text-gold">Services</span> I Provide
           </h2>
         </div>
@@ -345,19 +344,19 @@ export default function HomePage() {
         id="about"
         className="scroll-mt-[90px] bg-gradient-to-b from-[#f7faff] to-white px-5 py-20 text-ink md:px-10 md:py-28"
       >
-        <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-16 lg:grid-cols-[460px_1fr] lg:gap-[70px]">
+        <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-16 lg:grid-cols-[460px_1fr] lg:gap-[70px]">
           {/* LEFT: cutout portrait on orbit-ring gradient + floating badge */}
           <div className="relative mx-auto w-full max-w-[430px]">
             <div className="relative aspect-square">
-              {/* Orbit ring + node */}
-              <div className="absolute inset-0 rounded-full border-[1.5px] border-[#d9e6fb]" />
-              <div className="absolute right-[9%] top-[15%] h-2.5 w-2.5 rounded-full bg-[#1f74f0] shadow-[0_0_0_5px_rgba(31,116,240,.14)]" />
-              {/* Gradient fill circle with the portrait */}
-              <div className="absolute inset-[6%] overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_30%,#dcebfe_0%,#eaf3ff_58%,#f5f9ff_100%)]">
+              {/* Rounded-square frame + accent node */}
+              <div className="absolute inset-0 rounded-[36px] border-[1.5px] border-[#d9e6fb]" />
+              <div className="absolute right-[7%] top-[8%] h-2.5 w-2.5 rounded-full bg-[#1f74f0] shadow-[0_0_0_5px_rgba(31,116,240,.14)]" />
+              {/* Gradient fill (rounded square) with the portrait */}
+              <div className="absolute inset-[5%] overflow-hidden rounded-[30px] bg-[radial-gradient(circle_at_50%_30%,#dcebfe_0%,#eaf3ff_58%,#f5f9ff_100%)]">
                 <img
                   src="/nehal-cutout.png"
                   alt={personal.name}
-                  className="pointer-events-none absolute bottom-0 left-1/2 h-[97%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom"
+                  className="pointer-events-none absolute bottom-0 left-1/2 h-[98%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom"
                 />
               </div>
             </div>
@@ -382,7 +381,7 @@ export default function HomePage() {
             <div className="inline-flex items-center rounded-full bg-[#eef4ff] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#3f6fd8]">
               About Me
             </div>
-            <h2 className="mt-4 text-[28px] font-extrabold leading-[1.1] tracking-[-0.02em] text-ink sm:text-[34px] md:text-[40px]">
+            <h2 className="mt-4 text-[28px] font-extrabold leading-[1.2] tracking-[-0.02em] text-ink sm:text-[34px] md:text-[40px]">
               Who is <span className="text-gold">{personal.name}?</span>
             </h2>
             <div className="mb-6 mt-4 flex items-center gap-2">
@@ -394,11 +393,11 @@ export default function HomePage() {
             </p>
             <ul className="mb-9 grid max-w-[600px] grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
               {(about.highlights ?? []).map((h, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="mt-[1px] flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0] text-[12px] font-bold text-white shadow-[0_6px_14px_rgba(31,116,240,.25)]">
+                <li key={i} className="flex items-center gap-3">
+                  <span className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0] text-[12px] font-bold text-white shadow-[0_6px_14px_rgba(31,116,240,.25)]">
                     ✓
                   </span>
-                  <span className="text-[13.5px] font-medium leading-[1.45] text-[#3f4958]">
+                  <span className="whitespace-nowrap text-[13.5px] font-medium text-[#3f4958]">
                     {h}
                   </span>
                 </li>
@@ -427,57 +426,13 @@ export default function HomePage() {
           </div>
         </div>
 
-        <StatsStrip inverted className="mx-auto mt-16 max-w-[1180px]" />
-      </div>
-
-      {/* MY PRINCIPLES */}
-      <div className="bg-olive px-5 py-20 md:px-10 md:py-28 text-white">
-        <div className="mx-auto max-w-[1120px]">
-          <div className="mb-10 text-center">
-            <div className="mb-2 text-[14.5px] font-semibold text-[#dbeafe] tracking-wider uppercase">Methodology</div>
-            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-white leading-tight">
-              My <span className="italic">Core Principles</span>
-            </h2>
-          </div>
-
-          <div data-stagger className="grid grid-cols-1 md:grid-cols-2 gap-[26px]">
-            {about.corePillars.map((p, i) => (
-              <div
-                key={i}
-                data-card="16"
-                className="flex flex-col gap-3 rounded-[16px] bg-white p-[26px] shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 text-gold font-bold text-[15px]">
-                  0{i + 1}
-                </div>
-                <h3 className="m-0 text-[18px] font-bold text-ink">{p.title}</h3>
-                <p className="m-0 text-[13.5px] leading-[1.65] text-[#6b7280]">
-                  {p.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* MY JOURNEY TIMELINE */}
-      <div className="bg-white px-5 py-20 md:px-10 md:py-28">
-        <div className="mx-auto max-w-[800px]">
-          <div className="mb-12 text-center">
-            <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">Timeline</div>
-            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
-              My Career <span className="italic text-gold">Journey</span>
-            </h2>
-          </div>
-
-          <JourneyTimeline items={milestones} />
-        </div>
+        <StatsStrip inverted className="mx-auto mt-16 max-w-[1280px]" />
       </div>
 
       {/* SKILLS */}
-      <div className="mx-auto max-w-[1120px] px-5 md:px-10 py-16 md:py-24 text-center">
+      <div className="mx-auto max-w-[1280px] px-5 md:px-10 py-16 md:py-24 text-center">
         <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">My Toolkit</div>
-        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
+        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-[1.35]">
           <span className="italic text-gold">The Skills &amp; Tools</span>
           <br />
           Behind My Campaigns
@@ -500,12 +455,12 @@ export default function HomePage() {
 
       {/* PORTFOLIO */}
       <div id="projects" className="scroll-mt-[90px] bg-cream px-5 md:px-10 py-20 md:py-28">
-        <div className="mx-auto max-w-[1120px]">
+        <div className="mx-auto max-w-[1280px]">
           <div className="mb-8">
             <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
               Case Studies
             </div>
-            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
+            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-[1.35]">
               My Latest <span className="italic text-gold">Results</span>
             </h2>
           </div>
@@ -530,13 +485,10 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* INDUSTRIES */}
-      <NichesExplorer />
-
       {/* PRICING (Disabled for now) */}
       {/* 
       <div className="bg-white px-5 md:px-10 py-[60px] text-ink">
-        <div className="mx-auto max-w-[1120px]">
+        <div className="mx-auto max-w-[1280px]">
           <div className="mb-9 flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
             <div>
               <div className="mb-2 text-[14px] font-semibold text-gold">Pricing</div>
@@ -608,6 +560,25 @@ export default function HomePage() {
       </div>
       */}
 
+      {/* TESTIMONIALS */}
+      <div id="testimonials" className="mx-auto my-20 md:my-28 max-w-[1280px] scroll-mt-[90px] px-5 md:px-10 text-center">
+        <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
+          Clients Testimonials
+        </div>
+        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-[1.35]">
+          The Impact of My Work:
+          <br />
+          <span className="italic text-gold">Client Testimonials</span>
+        </h2>
+        <TestimonialsCarousel items={homeTestimonials} />
+      </div>
+
+      {/* TESTIMONIALS — DUPLICATE (video-card style) for comparison */}
+      <div className="my-20 md:my-28">
+        <TestimonialsVideo />
+      </div>
+
+      {/* CONTACT — moved after both testimonials sections */}
       <div id="contact" className="scroll-mt-[90px]">
         <ContactSection
           highlight="Your Next Campaign"
@@ -616,27 +587,15 @@ export default function HomePage() {
         />
       </div>
 
-      {/* TESTIMONIALS */}
-      <div id="testimonials" className="mx-auto my-20 md:my-28 max-w-[1240px] scroll-mt-[90px] px-5 md:px-10 text-center">
-        <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
-          Clients Testimonials
-        </div>
-        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
-          The Impact of My Work:
-          <br />
-          <span className="italic text-gold">Client Testimonials</span>
-        </h2>
-        <TestimonialsCarousel items={homeTestimonials} />
-      </div>
-
-
+      {/* INDUSTRIES — moved below both testimonials sections */}
+      <NichesExplorer />
 
       {/* FAQ */}
       <div className="bg-olive px-5 md:px-10 py-20 md:py-28 text-white">
         <div className="mx-auto max-w-[860px]">
           <div className="mb-10 text-center">
             <div className="mb-2 text-[14px] font-semibold text-[#dbeafe] tracking-wider uppercase">FAQs</div>
-            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-white leading-tight">
+            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-white leading-[1.35]">
               Questions? <span className="italic">Look here.</span>
             </h2>
           </div>

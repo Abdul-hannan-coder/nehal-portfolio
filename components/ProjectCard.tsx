@@ -35,24 +35,26 @@ export default function ProjectCard({ p }: { p: Project }) {
         </div>
       )}
 
-      <h4 className="mb-[6px] mt-0 text-[17px] font-bold leading-[1.35]">
+      <h4 className="mb-2 mt-0 text-[17px] font-bold leading-[1.55]">
         {p.title}
       </h4>
 
       {p.metrics.length > 0 ? (
-        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 border-t border-[#efece2] pt-[14px]">
+        <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 border-t border-[#efece2] pt-4">
           {p.metrics.map((m, i) => {
             const isRoas = m.label.toLowerCase().includes("roas");
             return (
-              <div key={i}>
+              <div key={i} className="leading-snug">
                 <div
-                  className={`text-[17px] font-extrabold ${
+                  className={`text-[17px] font-extrabold leading-tight ${
                     isRoas ? "text-[#16a34a]" : "text-olive"
                   }`}
                 >
                   {m.value}
                 </div>
-                <div className="text-[11px] text-[#8a8a7e]">{m.label}</div>
+                <div className="mt-1 text-[11px] leading-tight text-[#8a8a7e]">
+                  {m.label}
+                </div>
               </div>
             );
           })}

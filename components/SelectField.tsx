@@ -18,9 +18,11 @@ export default function SelectField({ label, options }: SelectFieldProps) {
 
   return (
     <div>
-      <label className="mb-2 block text-[13px] font-medium text-[#5a6474]">
-        {label}
-      </label>
+      {label ? (
+        <label className="mb-2 block text-[13px] font-medium text-[#5a6474]">
+          {label}
+        </label>
+      ) : null}
       <Select
         value={value}
         onChange={setValue}

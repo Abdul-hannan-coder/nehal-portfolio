@@ -29,10 +29,10 @@
     "badge1": "7+ Years Experience",
     "badge2": "Google Ads Certified",
     "highlights": [
-      "High-ROI Shopping & Performance Max campaigns",
-      "Conversion tracking & Google Tag Manager setups",
-      "Scaling lead-generation & e-commerce brands",
-      "1:1 PPC coaching & training programs"
+      "High-ROI Shopping & PMax",
+      "Conversion tracking & GTM",
+      "Lead-gen & e-commerce scaling",
+      "1:1 PPC coaching & training"
     ],
     "corePillars": [
       {
@@ -91,7 +91,11 @@
       "description": [
         "Started working in search engine marketing (SEM), mastering keyword bidding strategies and lead generation setups."
       ],
-      "skills": ["Google Ads", "SEM", "Lead Generation"],
+      "skills": [
+        "Google Ads",
+        "SEM",
+        "Lead Generation"
+      ],
       "company": "Freelance"
     },
     {
@@ -104,7 +108,11 @@
       "description": [
         "Shifted focus towards scaling physical products, successfully running multi-channel performance marketing campaigns for brands in the US and Europe."
       ],
-      "skills": ["E-commerce", "Performance Max", "Shopping Ads"],
+      "skills": [
+        "E-commerce",
+        "Performance Max",
+        "Shopping Ads"
+      ],
       "company": "Freelance"
     },
     {
@@ -117,7 +125,11 @@
       "description": [
         "Launched a dedicated PPC training program and YouTube channel, helping thousands of marketers learn performance ads (gaining 300K+ views)."
       ],
-      "skills": ["Coaching", "PPC Training", "YouTube Content Creation"],
+      "skills": [
+        "Coaching",
+        "PPC Training",
+        "YouTube Content Creation"
+      ],
       "company": "Freelance"
     },
     {
@@ -130,7 +142,11 @@
       "description": [
         "Overseeing Google Ads setups for high-performing lead generation and e-commerce companies across Dubai, the UK, and the USA."
       ],
-      "skills": ["Global Campaign Management", "Account Auditing", "Scaling"],
+      "skills": [
+        "Global Campaign Management",
+        "Account Auditing",
+        "Scaling"
+      ],
       "company": "Freelance"
     }
   ],
@@ -180,7 +196,11 @@
       "icon": "verified",
       "iconColor": "blue",
       "image": "/certificates/google-ads.jpg",
-      "skills": ["Google Ads", "Search Campaigns", "PPC"],
+      "skills": [
+        "Google Ads",
+        "Search Campaigns",
+        "PPC"
+      ],
       "description": "Validation of expertise in creating, managing, measuring, and optimizing Google Search campaigns."
     }
   ],
@@ -209,17 +229,56 @@
     }
   ],
   "stats": [
-    { "num": "7+", "label": "Years Experience" },
-    { "num": "300K+", "label": "YouTube Views" },
-    { "num": "$250K+", "label": "Sales Generated" }
+    {
+      "num": "7+",
+      "label": "Years Experience"
+    },
+    {
+      "num": "300K+",
+      "label": "YouTube Views"
+    },
+    {
+      "num": "$250K+",
+      "label": "Sales Generated"
+    }
   ],
   "tools": [
-    { "name": "Google Ads", "pct": "98%", "mark": "G", "bg": "#188bf6" },
-    { "name": "Tag Manager", "pct": "92%", "mark": "GTM", "bg": "#2a6fb0" },
-    { "name": "Performance Max", "pct": "90%", "mark": "PM", "bg": "#0f6fd0" },
-    { "name": "Shopping Ads", "pct": "88%", "mark": "Sh", "bg": "#3aa0f5" },
-    { "name": "Search Ads", "pct": "95%", "mark": "Se", "bg": "#64b5f8" },
-    { "name": "SEM", "pct": "90%", "mark": "SEM", "bg": "#0f6fd0" }
+    {
+      "name": "Google Ads",
+      "pct": "98%",
+      "mark": "G",
+      "bg": "#188bf6"
+    },
+    {
+      "name": "Tag Manager",
+      "pct": "92%",
+      "mark": "GTM",
+      "bg": "#2a6fb0"
+    },
+    {
+      "name": "Performance Max",
+      "pct": "90%",
+      "mark": "PM",
+      "bg": "#0f6fd0"
+    },
+    {
+      "name": "Shopping Ads",
+      "pct": "88%",
+      "mark": "Sh",
+      "bg": "#3aa0f5"
+    },
+    {
+      "name": "Search Ads",
+      "pct": "95%",
+      "mark": "Se",
+      "bg": "#64b5f8"
+    },
+    {
+      "name": "SEM",
+      "pct": "90%",
+      "mark": "SEM",
+      "bg": "#0f6fd0"
+    }
   ],
   "leadGen": [
     "Landscaping Service",
@@ -346,24 +405,101 @@
     }
   ],
   "skillTags": [
-    { "label": "Google Ads", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
-    { "label": "PPC", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
-    { "label": "Lead Generation", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
-    { "label": "E-commerce Ads", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
-    { "label": "Shopping Ads", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
-    { "label": "Performance Max", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
-    { "label": "SEM", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
-    { "label": "Google AdWords", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
-    { "label": "Conversion Tracking", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
-    { "label": "ROAS Optimization", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
-    { "label": "Local Service Ads", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" },
-    { "label": "Google Tag Manager", "bg": "#fff", "fg": "#188bf6", "border": "#188bf6" },
-    { "label": "Search Ads", "bg": "#188bf6", "fg": "#fff", "border": "#188bf6" }
+    {
+      "label": "Google Ads",
+      "bg": "#fff",
+      "fg": "#188bf6",
+      "border": "#188bf6"
+    },
+    {
+      "label": "PPC",
+      "bg": "#188bf6",
+      "fg": "#fff",
+      "border": "#188bf6"
+    },
+    {
+      "label": "Lead Generation",
+      "bg": "#fff",
+      "fg": "#188bf6",
+      "border": "#188bf6"
+    },
+    {
+      "label": "E-commerce Ads",
+      "bg": "#188bf6",
+      "fg": "#fff",
+      "border": "#188bf6"
+    },
+    {
+      "label": "Shopping Ads",
+      "bg": "#fff",
+      "fg": "#188bf6",
+      "border": "#188bf6"
+    },
+    {
+      "label": "Performance Max",
+      "bg": "#188bf6",
+      "fg": "#fff",
+      "border": "#188bf6"
+    },
+    {
+      "label": "SEM",
+      "bg": "#188bf6",
+      "fg": "#fff",
+      "border": "#188bf6"
+    },
+    {
+      "label": "Google AdWords",
+      "bg": "#188bf6",
+      "fg": "#fff",
+      "border": "#188bf6"
+    },
+    {
+      "label": "Conversion Tracking",
+      "bg": "#fff",
+      "fg": "#188bf6",
+      "border": "#188bf6"
+    },
+    {
+      "label": "ROAS Optimization",
+      "bg": "#188bf6",
+      "fg": "#fff",
+      "border": "#188bf6"
+    },
+    {
+      "label": "Local Service Ads",
+      "bg": "#188bf6",
+      "fg": "#fff",
+      "border": "#188bf6"
+    },
+    {
+      "label": "Google Tag Manager",
+      "bg": "#fff",
+      "fg": "#188bf6",
+      "border": "#188bf6"
+    },
+    {
+      "label": "Search Ads",
+      "bg": "#188bf6",
+      "fg": "#fff",
+      "border": "#188bf6"
+    }
   ],
   "contactInfo": [
-    { "icon": "phone", "text": "+92 320 3469521" },
-    { "icon": "mail", "text": "example@gmail.com" },
-    { "icon": "youtube", "text": "300K+ views on YouTube" },
-    { "icon": "map-pin", "text": "Serving Australia, UAE, USA, UK, and Ireland" }
+    {
+      "icon": "phone",
+      "text": "+92 320 3469521"
+    },
+    {
+      "icon": "mail",
+      "text": "example@gmail.com"
+    },
+    {
+      "icon": "youtube",
+      "text": "300K+ views on YouTube"
+    },
+    {
+      "icon": "map-pin",
+      "text": "Serving AU, UAE, US, UK & IE"
+    }
   ]
 }
