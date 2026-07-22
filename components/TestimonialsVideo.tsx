@@ -4,16 +4,24 @@ import { useRef, useState } from "react";
 import { Play } from "lucide-react";
 
 type VItem = {
-  video: string;
+  vimeoId: string;
+  /** Aspect ratio (w/h) of the source video, used to cover-fill the card. */
+  aspect: number;
+  poster: string;
   brand: string;
   quote: string;
   name: string;
   company: string;
 };
 
+// Streamed from Vimeo (same hosted clips the carousel uses) so they work on
+// Vercel — the local .mp4 originals are 80-140MB each and git-ignored, so they
+// never deploy.
 const items: VItem[] = [
   {
-    video: "/projects/Video Testimonials/Qamar From Missouri Video Testimonial.mp4",
+    vimeoId: "1211649839",
+    aspect: 1.7778,
+    poster: "/projects/video-posters/qamar.jpg",
     brand: "The Green Dumpster",
     quote:
       "From $16 CPL to $7 CPL in just 60 days. Incredible results and communication!",
@@ -21,7 +29,9 @@ const items: VItem[] = [
     company: "The Green Dumpster",
   },
   {
-    video: "/projects/Video Testimonials/Dustin from California Video Testimonial.mp4",
+    vimeoId: "1211637724",
+    aspect: 0.5667,
+    poster: "/projects/video-posters/dustin.jpg",
     brand: "All Site Rentals",
     quote:
       "Nehal transformed our Google Ads completely. Leads increased by 4X at a lower cost.",
@@ -29,7 +39,9 @@ const items: VItem[] = [
     company: "All Site Rentals",
   },
   {
-    video: "/projects/Video Testimonials/Waqas From Ireland Video Testimonial.mp4",
+    vimeoId: "1211650298",
+    aspect: 1.7778,
+    poster: "/projects/video-posters/waqas.jpg",
     brand: "Ahmed Solutions",
     quote:
       "Our ROAS improved by 380%. Highly recommend Nehal for any business.",
@@ -65,40 +77,41 @@ const LinkedInIcon = ({ className = "h-4 w-4" }: { className?: string }) => (
 
 function VideoCard({ t }: { t: VItem }) {
   const [playing, setPlaying] = useState(false);
-  const ref = useRef<HTMLVideoElement>(null);
-  // seek a frame in so a still shows before playback
-  const src = encodeURI(t.video) + "#t=1.5";
-
-  const play = () => {
-    const v = ref.current;
-    if (!v) return;
-    v.muted = false;
-    v.controls = true;
-    setPlaying(true);
-    // called directly inside the click handler → counts as a user gesture
-    v.play().catch(() => {});
-  };
 
   return (
     <div className="overflow-hidden rounded-[22px] border border-[#eef1f6] bg-white shadow-[0_4px_14px_rgba(16,24,40,.05)]">
-      <div className="relative aspect-[4/3] bg-gradient-to-br from-[#41505f] to-[#141d2b]">
-        <video
-          ref={ref}
-          src={src}
-          className="h-full w-full object-cover"
-          preload="metadata"
-          playsInline
-        />
-        {!playing && (
+      <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-[#41505f] to-[#141d2b]">
+        {playing ? (
+          // Scale the iframe so the video COVERS the 4:3 card (no letterbox
+          // bars), the way the old testimonials filled their frame.
+          <iframe
+            src={`https://player.vimeo.com/video/${t.vimeoId}?autoplay=1&title=0&byline=0&portrait=0`}
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            style={
+              t.aspect >= 4 / 3
+                ? { height: "100%", width: `${(t.aspect / (4 / 3)) * 100}%` }
+                : { width: "100%", height: `${((4 / 3) / t.aspect) * 100}%` }
+            }
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            title={`${t.name} testimonial`}
+          />
+        ) : (
           <>
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/10" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={t.poster}
+              alt={`${t.name} testimonial preview`}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-black/15" />
             <span className="absolute left-4 top-4 rounded-md bg-white/90 px-2.5 py-1 text-[12px] font-extrabold tracking-tight text-[#0b1f3a] shadow">
               {t.brand}
             </span>
             <button
               type="button"
               aria-label="Play testimonial"
-              onClick={play}
+              onClick={() => setPlaying(true)}
               className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-[#1f74f0] shadow-[0_10px_30px_rgba(0,0,0,.35)] backdrop-blur transition-transform hover:scale-105"
             >
               <Play className="ml-0.5 h-6 w-6 fill-current" />

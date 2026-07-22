@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Sora, Inter } from "next/font/google";
-import ScrollToTop from "@/components/ScrollToTop";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 // Display face for headings — modern, confident, premium.
 const sora = Sora({
@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en" className={`${sora.variable} ${inter.variable}`}>
       <body className="font-sans">
         {children}
-        <ScrollToTop />
+        <WhatsAppFloat />
       </body>
     </html>
   );
