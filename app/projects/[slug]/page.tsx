@@ -61,7 +61,7 @@ export default async function ProjectDetailPage({
 
   return (
     <ClientEnhance>
-      <Header active="/projects" variant="light" />
+      <Header active="/projects" />
       <PageTitle title="Projects" crumb="Project Details" />
 
       {/* FULL-WIDTH GALLERY (with zoom-to-fullscreen) */}

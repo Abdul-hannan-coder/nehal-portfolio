@@ -120,6 +120,10 @@
         {
           "value": "$9.01",
           "label": "Cost / Conv."
+        },
+        {
+          "value": "412%",
+          "label": "ROAS"
         }
       ],
       "details": {
@@ -152,7 +156,24 @@
         "Google Ads"
       ],
       "title": "Big Orange Malaga",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "$9.2K",
+          "label": "Ad Spend"
+        },
+        {
+          "value": "157",
+          "label": "Leads"
+        },
+        {
+          "value": "$58.62",
+          "label": "Cost / Conv."
+        },
+        {
+          "value": "376%",
+          "label": "ROAS"
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Big Orange Malaga",
@@ -183,7 +204,24 @@
         "Google Ads"
       ],
       "title": "Branch Specialist Rochester",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "$4,103",
+          "label": "Ad Spend"
+        },
+        {
+          "value": "94",
+          "label": "Leads"
+        },
+        {
+          "value": "$43",
+          "label": "Cost / Conv."
+        },
+        {
+          "value": "256%",
+          "label": "ROAS"
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Branch Specialist Rochester",
@@ -213,7 +251,20 @@
         "Google Ads"
       ],
       "title": "Closing Curtain",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "118",
+          "label": "Conversions"
+        },
+        {
+          "value": "Dh 41.25",
+          "label": "Cost / Conv."
+        },
+        {
+          "value": "301%",
+          "label": "ROAS"
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Closing Curtain",
@@ -245,7 +296,24 @@
         "Google Ads"
       ],
       "title": "Dumpster Rental",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "$4.58K",
+          "label": "Ad Spend"
+        },
+        {
+          "value": "297",
+          "label": "Conversions"
+        },
+        {
+          "value": "$15.41",
+          "label": "Cost / Conv."
+        },
+        {
+          "value": "470%",
+          "label": "ROAS"
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Dumpster Rental",
@@ -288,6 +356,10 @@
         {
           "value": "$123",
           "label": "Cost / Conv."
+        },
+        {
+          "value": "320%",
+          "label": "ROAS"
         }
       ],
       "details": {
@@ -320,7 +392,20 @@
         "Google Ads"
       ],
       "title": "Fabrica Home LLC",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "Dh 4.51K",
+          "label": "Ad Spend"
+        },
+        {
+          "value": "115",
+          "label": "Conversions"
+        },
+        {
+          "value": "Dh 39.22",
+          "label": "Cost / Conv."
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Fabrica Home LLC",
@@ -401,7 +486,16 @@
         "Google Ads"
       ],
       "title": "Google Ads Turnaround From $58 to $5.79 CPL",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "221",
+          "label": "Leads"
+        },
+        {
+          "value": "$5.79",
+          "label": "CPL"
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Google Ads Turnaround From $58 to $5.79 CPL",
@@ -462,7 +556,12 @@
         "Google Ads"
       ],
       "title": "Merchant Center",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "76K",
+          "label": "Approved Products"
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Merchant Center",
@@ -492,7 +591,20 @@
         "Google Ads"
       ],
       "title": "Norwalk Car Service",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "221",
+          "label": "Conversions"
+        },
+        {
+          "value": "$200",
+          "label": "Rev / Conv."
+        },
+        {
+          "value": "$44.2K",
+          "label": "Revenue"
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Norwalk Car Service",
@@ -528,7 +640,20 @@
         "Google Ads"
       ],
       "title": "One Roof Solar",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "125",
+          "label": "Conversions"
+        },
+        {
+          "value": "$8,000",
+          "label": "Rev / Conv."
+        },
+        {
+          "value": "$1M",
+          "label": "Revenue"
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "One Roof Solar",
@@ -561,7 +686,20 @@
         "Google Ads"
       ],
       "title": "Packers & Movers Service",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "40",
+          "label": "Phone Calls"
+        },
+        {
+          "value": "$116",
+          "label": "Ad Spend"
+        },
+        {
+          "value": "$6.12",
+          "label": "Cost / Conv."
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Packers & Movers Service",
@@ -594,7 +732,20 @@
         "Google Ads"
       ],
       "title": "Paper Event Registration Dubai",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "$431",
+          "label": "Ad Spend"
+        },
+        {
+          "value": "116",
+          "label": "Conversions"
+        },
+        {
+          "value": "$3.72",
+          "label": "Cost / Conv."
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Paper Event Registration Dubai",
@@ -661,16 +812,16 @@
       "title": "Rafplay UAE",
       "metrics": [
         {
-          "value": "AED 12.7K",
+          "value": "Dh 12.7K",
           "label": "Ad Spend"
         },
         {
-          "value": "34.2K",
-          "label": "Clicks"
+          "value": "Dh 281K",
+          "label": "Revenue"
         },
         {
-          "value": "AED 281K",
-          "label": "Revenue"
+          "value": "22X",
+          "label": "ROAS"
         }
       ],
       "details": {
@@ -734,7 +885,20 @@
         "Google Ads"
       ],
       "title": "Storage Spot",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "$19.6K",
+          "label": "Ad Spend"
+        },
+        {
+          "value": "318",
+          "label": "Leads"
+        },
+        {
+          "value": "$61.51",
+          "label": "Cost / Conv."
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Storage Spot",
@@ -765,7 +929,20 @@
         "Google Ads"
       ],
       "title": "Tree Soldiers Rochester",
-      "metrics": [],
+      "metrics": [
+        {
+          "value": "$6.6K",
+          "label": "Ad Spend"
+        },
+        {
+          "value": "865",
+          "label": "Conversions"
+        },
+        {
+          "value": "$7.70",
+          "label": "Cost / Conv."
+        }
+      ],
       "details": {
         "category": "Google Ads Management",
         "client": "Tree Soldiers Rochester",
@@ -800,15 +977,15 @@
       "title": "Tree Soldiers Campaign",
       "metrics": [
         {
-          "value": "$2.2K",
+          "value": "$2,230",
           "label": "Invested"
         },
         {
           "value": "$36K",
-          "label": "Revenue"
+          "label": "Returned"
         },
         {
-          "value": "16X",
+          "value": "4X",
           "label": "ROAS"
         }
       ],

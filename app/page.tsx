@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Dancing_Script } from "next/font/google";
 import ClientEnhance from "@/components/ClientEnhance";
 import Header from "@/components/Header";
 import Marquee from "@/components/Marquee";
@@ -27,6 +28,13 @@ import {
   about,
   milestones,
 } from "@/lib/data";
+
+// Handwritten script face for the About signature.
+const signatureFont = Dancing_Script({
+  subsets: ["latin"],
+  weight: ["600"],
+  display: "swap",
+});
 
 const toolIcons: Record<string, React.ReactNode> = {
   "Google Ads": (
@@ -76,60 +84,228 @@ export default function HomePage() {
       <Header active="/" />
 
       {/* HERO */}
-      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] scroll-mt-[90px] grid-cols-1 items-center gap-x-[60px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.05fr_1fr]">
+      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] scroll-mt-[90px] grid-cols-1 items-stretch gap-x-[60px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.05fr_1fr]">
         <div className="animate-omUp">
-          <div className="mb-[22px] inline-flex items-center gap-2 rounded-[30px] bg-[#eaf2fd] px-4 py-[7px] text-[13px] font-semibold text-[#5a5a4e]">
-            {personal.tagline}
+          <div className="mb-[16px] inline-flex items-center rounded-full bg-[#eef4ff] px-[12px] py-[5px] text-[11px] font-semibold uppercase tracking-[0.2em] text-[#5c6c89] shadow-[0_2px_8px_rgba(24,139,246,.08)]">
+            7+ Years of Experience
           </div>
-          <h1 className="mb-[24px] text-[28px] min-[380px]:text-[34px] min-[480px]:text-[40px] sm:text-[50px] lg:text-[60px] font-extrabold leading-[1.08] tracking-tight">
-            I&rsquo;m <span className="italic text-gold">{personal.name},</span>
+
+          <h1 className="mb-[16px] max-w-[620px] text-[30px] font-extrabold leading-[1.04] tracking-[-0.03em] text-ink min-[420px]:text-[38px] min-[500px]:text-[46px] sm:text-[56px] sm:leading-[0.95] sm:tracking-[-0.05em] lg:text-[64px]">
+            I&rsquo;m <span className="text-gold">{personal.name}</span>,
             <br />
-            {personal.title}
+            Google Ads
+            <br />
+            Specialist &amp; Coach
           </h1>
-          <ul className="mb-8 flex max-w-[520px] flex-col gap-[15px]">
-            {(personal.highlights ?? []).map((h, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <span className="mt-[1px] flex h-[24px] w-[24px] flex-shrink-0 items-center justify-center rounded-full bg-gold text-[13px] font-bold text-white">
+
+          <p className="mb-6 max-w-[540px] text-[14.5px] leading-[1.75] tracking-[-0.01em] text-[#5f6879] sm:text-[16px]">
+            I help businesses generate more leads, sales, and revenue through
+            data-driven Google Ads strategies that scale.
+          </p>
+
+          <div className="grid max-w-[620px] grid-cols-1 gap-x-8 gap-y-3.5 sm:grid-cols-2">
+            {(personal.highlights ?? []).slice(0, 4).map((h, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <span className="mt-[1px] flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0] text-[12px] font-bold text-white shadow-[0_6px_14px_rgba(31,116,240,.25)]">
                   ✓
                 </span>
-                <span className="text-[15.5px] font-medium leading-[1.5] text-[#4a4a3e]">
-                  {h}
+                <span className="max-w-[220px] text-[13px] font-medium leading-[1.45] tracking-[-0.01em] text-[#3f4958] sm:text-[13.5px]">
+                  {i === 0
+                    ? "Google Certified Ads Specialist"
+                    : i === 1
+                    ? "Performance Max, Shopping & Search Ads Expert"
+                    : i === 2
+                    ? "$5M+ revenue generated for clients"
+                    : "300K+ marketers reached through coaching"}
                 </span>
-              </li>
+              </div>
             ))}
-          </ul>
-          <div className="flex flex-wrap items-center gap-[14px]">
+          </div>
+
+          <div className="mt-7 flex flex-wrap items-center gap-[14px]">
             <a
               href="#projects"
-              className="cta flex w-full max-w-[280px] min-[380px]:w-[210px] h-[52px] items-center justify-between rounded-[40px] bg-olive pl-6 pr-2"
+              className="cta flex h-[50px] w-full max-w-[230px] items-center justify-between rounded-[40px] bg-[#1f74f0] pl-5 pr-2 shadow-[0_10px_24px_rgba(31,116,240,.28)] transition-transform hover:-translate-y-0.5 min-[380px]:w-[225px]"
             >
-              <span className="text-[15px] font-semibold text-white">
-                View my Portfolio
+              <span className="text-[13.5px] font-semibold tracking-[-0.01em] text-white">
+                View My Portfolio
               </span>
-              <span className="arrow flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white text-gold flex-shrink-0">
+              <span className="arrow flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center rounded-full bg-white text-[#1f74f0]">
                 →
               </span>
             </a>
             <a
               href="#contact"
-              className="flex w-full max-w-[280px] min-[380px]:w-[210px] h-[52px] items-center justify-center rounded-[40px] border-[1.5px] border-[#d8d6cb] bg-transparent font-sans text-[15px] font-semibold text-ink transition-colors hover:border-gold hover:text-gold"
+              className="flex h-[50px] w-full max-w-[160px] items-center justify-center rounded-[40px] border border-[#e6e8ee] bg-white px-5 font-sans text-[13.5px] font-semibold tracking-[-0.01em] text-ink shadow-[0_8px_20px_rgba(16,24,40,.04)] transition-transform hover:-translate-y-0.5 min-[380px]:w-[160px]"
             >
               Hire Me
             </a>
           </div>
+
+          <div className="mt-7 max-w-[700px] rounded-[20px] border border-[#edf1f7] bg-white px-4 py-3.5 shadow-[0_12px_34px_rgba(16,24,40,.08)] sm:px-6 sm:py-4">
+            <div className="grid grid-cols-2 gap-3.5 md:grid-cols-4 md:gap-0 md:divide-x md:divide-[#edf1f7]">
+              <div className="flex items-center gap-2.5 md:pr-4">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f3f7ff] text-[20px]">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6">
+                    <path fill="#EA4335" d="M12 10.2v3.8h5.3c-.2 1.3-1.6 3.8-5.3 3.8-3.2 0-5.8-2.6-5.8-5.8S8.8 6.2 12 6.2c1.8 0 3 .8 3.7 1.5l2.5-2.5C16.7 3.8 14.6 3 12 3 7 3 3 7 3 12s4 9 9 9c5.2 0 8.7-3.7 8.7-8.8 0-.6-.1-1.1-.2-1.6H12z"/>
+                  </svg>
+                </span>
+                <div>
+                  <div className="text-[12px] font-semibold tracking-[-0.01em] text-[#253046]">Google Partner</div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2.5 md:px-4">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f3f7ff] text-[20px]">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6">
+                    <path fill="#4285F4" d="M2 5.5L9.7 13 2 20.5h4.5L13.9 13 6.5 5.5z"/>
+                    <path fill="#34A853" d="M10.2 5.5L18 13l-7.8 7.5H15L22.5 13 15 5.5z"/>
+                  </svg>
+                </span>
+                <div>
+                  <div className="text-[12px] font-semibold tracking-[-0.01em] text-[#253046]">Google Ads</div>
+                  <div className="text-[11px] text-[#6b7280]">Certified</div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2.5 md:px-4">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f3f7ff] text-[20px]">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6">
+                    <rect x="3" y="6" width="18" height="12" rx="3" fill="#FF0000" />
+                    <path d="M10 9.5v5l4.5-2.5z" fill="#fff" />
+                  </svg>
+                </span>
+                <div>
+                  <div className="text-[12px] font-semibold tracking-[-0.01em] text-[#253046]">300K+</div>
+                  <div className="text-[11px] text-[#6b7280]">YouTube Views</div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2.5 md:pl-4">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f3f7ff] text-[20px]">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6">
+                    <path fill="#1f74f0" d="M12 2 4 5v6c0 5.5 3.7 10.5 8 11 4.3-.5 8-5.5 8-11V5l-8-3zm0 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" />
+                  </svg>
+                </span>
+                <div>
+                  <div className="text-[12px] font-semibold tracking-[-0.01em] text-[#253046]">7+</div>
+                  <div className="text-[11px] text-[#6b7280]">Years Experience</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* RIGHT: portrait */}
-        <div className="relative mx-auto h-[340px] w-[340px] sm:h-[460px] sm:w-[460px] lg:h-[540px] lg:w-[540px] max-w-full animate-omUp [animation-delay:150ms]">
-          <div className="absolute right-[6%] top-[6%] h-[84%] w-[84%] rounded-full bg-gold" />
-          <div className="absolute right-[3%] top-[3%] h-[90%] w-[90%] overflow-hidden rounded-full">
-            <ImageSlot
-              shape="circle"
-              src={personal.heroImage}
-              placeholder={personal.name}
-              priority
-              sizes="(max-width: 768px) 90vw, 500px"
-            />
+        {/* RIGHT: portrait & floating stat cards */}
+        <div className="relative mx-auto flex min-h-[500px] w-full max-w-[640px] items-end justify-center animate-omUp [animation-delay:150ms] sm:min-h-[600px]">
+          {/* Soft background glow & radial accents */}
+          <div className="pointer-events-none absolute right-[5%] top-[5%] h-[90%] w-[90%] rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.22)_0%,_rgba(219,234,254,0.4)_40%,_transparent_75%)] blur-xl" />
+          <div className="pointer-events-none absolute right-[8%] top-[8%] h-[82%] w-[78%] rounded-full border border-blue-100/60 bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.08)_0%,_transparent_70%)]" />
+          <div className="pointer-events-none absolute right-[0%] top-[18%] h-[200px] w-[120px] opacity-30 bg-[radial-gradient(#3b82f6_1.5px,transparent_1.5px)] [background-size:14px_14px]" />
+
+          {/* Main Subject - Nehal transparent cutout portrait (bottom fades out
+              so the flat chest crop never shows a hard line) */}
+          <img
+            src="/nehal-cutout.png"
+            alt={personal.name}
+            className="pointer-events-none absolute bottom-0 left-1/2 z-10 h-[92%] w-auto max-w-full -translate-x-1/2 object-contain object-bottom [-webkit-mask-image:linear-gradient(to_bottom,#000_86%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_86%,transparent_100%)]"
+          />
+
+          {/* Card 1: Conversions (Top Right) */}
+          <div className="absolute right-[0%] sm:right-[2%] top-[2%] z-20 hidden items-center justify-between sm:flex gap-2.5 sm:gap-3 rounded-[18px] border border-[#edf2f7] bg-white/95 px-3 py-2 sm:px-[14px] sm:py-2.5 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
+            <div className="flex flex-col">
+              <span className="text-[9.5px] sm:text-[10.5px] font-medium text-[#667085]">Conversions</span>
+              <span className="mt-0.5 text-[16px] sm:text-[19px] font-extrabold tracking-tight text-[#101828]">1.27K</span>
+              <span className="mt-0.5 text-[11px] font-semibold text-[#16a34a] flex items-center gap-0.5">
+                <span>▲</span> 45.6%
+              </span>
+            </div>
+            <div className="h-6 w-11 sm:h-7 sm:w-[52px] flex items-center justify-end">
+              <svg className="h-full w-full text-[#3b82f6]" viewBox="0 0 60 30" fill="none">
+                <defs>
+                  <linearGradient id="spark-blue-1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.25" />
+                    <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <path d="M 2 24 Q 15 22 25 14 T 42 10 T 58 4 L 58 30 L 2 30 Z" fill="url(#spark-blue-1)" />
+                <path d="M 2 24 Q 15 22 25 14 T 42 10 T 58 4" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Card 2: Google Ads Logo Card (Middle Left) */}
+          <div className="absolute left-[2%] sm:left-[6%] top-[20%] z-20 hidden h-[64px] w-[64px] items-center justify-center rounded-[20px] border border-[#edf2f7] bg-white/95 p-3 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02] sm:flex sm:h-[80px] sm:w-[80px] sm:p-4">
+            <img src="/icons/google-ads.svg" alt="Google Ads" className="h-10 w-10 sm:h-12 sm:w-12 object-contain" />
+          </div>
+
+          {/* Card 3: ROAS (Middle Right) */}
+          <div className="absolute right-[0%] sm:right-[2%] top-[28%] z-20 hidden items-center justify-between sm:flex gap-2.5 sm:gap-3 rounded-[18px] border border-[#edf2f7] bg-white/95 px-3 py-2 sm:px-[14px] sm:py-2.5 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
+            <div className="flex flex-col">
+              <span className="text-[9.5px] sm:text-[10.5px] font-medium text-[#667085]">ROAS</span>
+              <span className="mt-0.5 text-[16px] sm:text-[19px] font-extrabold tracking-tight text-[#101828]">458%</span>
+              <span className="mt-0.5 text-[11px] font-semibold text-[#16a34a] flex items-center gap-0.5">
+                <span>▲</span> 62.3%
+              </span>
+            </div>
+            <div className="h-6 w-11 sm:h-7 sm:w-[52px] flex items-center justify-end">
+              <svg className="h-full w-full text-[#22c55e]" viewBox="0 0 60 30" fill="none">
+                <defs>
+                  <linearGradient id="spark-green-1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#22c55e" stopOpacity="0.25" />
+                    <stop offset="100%" stopColor="#22c55e" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <path d="M 2 26 Q 15 20 28 22 T 45 12 T 58 6 L 58 30 L 2 30 Z" fill="url(#spark-green-1)" />
+                <path d="M 2 26 Q 15 20 28 22 T 45 12 T 58 6" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Card 4: Revenue (Lower Middle Right) */}
+          <div className="absolute right-[0%] sm:right-[2%] top-[54%] z-20 hidden items-center justify-between sm:flex gap-2.5 sm:gap-3 rounded-[18px] border border-[#edf2f7] bg-white/95 px-3 py-2 sm:px-[14px] sm:py-2.5 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
+            <div className="flex flex-col">
+              <span className="text-[9.5px] sm:text-[10.5px] font-medium text-[#667085]">Revenue</span>
+              <span className="mt-0.5 text-[16px] sm:text-[19px] font-extrabold tracking-tight text-[#101828]">$250K+</span>
+              <span className="mt-0.5 text-[11px] font-semibold text-[#16a34a] flex items-center gap-0.5">
+                <span>▲</span> 78.4%
+              </span>
+            </div>
+            <div className="h-6 w-11 sm:h-7 sm:w-[52px] flex items-center justify-end">
+              <svg className="h-full w-full text-[#3b82f6]" viewBox="0 0 60 30" fill="none">
+                <defs>
+                  <linearGradient id="spark-blue-2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.25" />
+                    <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <path d="M 2 24 Q 16 18 28 20 T 44 10 T 58 4 L 58 30 L 2 30 Z" fill="url(#spark-blue-2)" />
+                <path d="M 2 24 Q 16 18 28 20 T 44 10 T 58 4" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Card 5: Leads (Bottom Right) */}
+          <div className="absolute right-[4%] sm:right-[7%] top-[78%] z-20 hidden items-center justify-between sm:flex gap-2.5 sm:gap-3 rounded-[18px] border border-[#edf2f7] bg-white/95 px-3 py-2 sm:px-[14px] sm:py-2.5 shadow-[0_12px_32px_rgba(16,24,40,0.08)] backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
+            <div className="flex flex-col">
+              <span className="text-[9.5px] sm:text-[10.5px] font-medium text-[#667085]">Leads</span>
+              <span className="mt-0.5 text-[16px] sm:text-[19px] font-extrabold tracking-tight text-[#101828]">2.3K</span>
+              <span className="mt-0.5 text-[11px] font-semibold text-[#16a34a] flex items-center gap-0.5">
+                <span>▲</span> 55.2%
+              </span>
+            </div>
+            <div className="h-6 w-11 sm:h-7 sm:w-[52px] flex items-center justify-end">
+              <svg className="h-full w-full text-[#3b82f6]" viewBox="0 0 60 30" fill="none">
+                <defs>
+                  <linearGradient id="spark-blue-3" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.25" />
+                    <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <path d="M 2 25 Q 14 20 26 22 T 42 12 T 58 5 L 58 30 L 2 30 Z" fill="url(#spark-blue-3)" />
+                <path d="M 2 25 Q 14 20 26 22 T 42 12 T 58 5" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -165,61 +341,93 @@ export default function HomePage() {
       </div>
 
       {/* ABOUT ME */}
-      <div id="about" className="py-20 md:py-28 my-10 md:my-16 scroll-mt-[90px] bg-white px-5 md:px-10 text-ink">
-        <div className="mx-auto grid max-w-[1120px] grid-cols-1 items-center gap-10 lg:grid-cols-[420px_1fr] lg:gap-[60px]">
-          <div className="relative mx-auto h-[300px] w-[300px] sm:h-[380px] sm:w-[380px] lg:h-[420px] lg:w-[420px] max-w-full">
-            <div className="absolute inset-0 overflow-hidden rounded-full">
-              <ImageSlot
-                shape="circle"
-                src={personal.profileImage}
-                placeholder={personal.name}
-                sizes="(max-width: 768px) 300px, 420px"
-              />
+      <div
+        id="about"
+        className="scroll-mt-[90px] bg-gradient-to-b from-[#f7faff] to-white px-5 py-20 text-ink md:px-10 md:py-28"
+      >
+        <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-16 lg:grid-cols-[460px_1fr] lg:gap-[70px]">
+          {/* LEFT: cutout portrait on orbit-ring gradient + floating badge */}
+          <div className="relative mx-auto w-full max-w-[430px]">
+            <div className="relative aspect-square">
+              {/* Orbit ring + node */}
+              <div className="absolute inset-0 rounded-full border-[1.5px] border-[#d9e6fb]" />
+              <div className="absolute right-[9%] top-[15%] h-2.5 w-2.5 rounded-full bg-[#1f74f0] shadow-[0_0_0_5px_rgba(31,116,240,.14)]" />
+              {/* Gradient fill circle with the portrait */}
+              <div className="absolute inset-[6%] overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_30%,#dcebfe_0%,#eaf3ff_58%,#f5f9ff_100%)]">
+                <img
+                  src="/nehal-cutout.png"
+                  alt={personal.name}
+                  className="pointer-events-none absolute bottom-0 left-1/2 h-[97%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom"
+                />
+              </div>
+            </div>
+            {/* Floating credential badge */}
+            <div className="absolute -bottom-3 left-0 z-10 flex items-center gap-2.5 rounded-2xl border border-[#eef2f8] bg-white px-4 py-3 shadow-[0_18px_44px_rgba(16,24,40,.16)] sm:-left-4">
+              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-[#1f74f0]">
+                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 2 4 5v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V5z" fill="#fff" stroke="none" />
+                  <path d="m9 12 2 2 4-4" stroke="#1f74f0" />
+                </svg>
+              </span>
+              <div className="text-[12.5px] font-bold leading-tight text-ink">
+                Google Certified
+                <br />
+                Ads Specialist
+              </div>
             </div>
           </div>
+
+          {/* RIGHT: copy */}
           <div>
-            <div className="mb-[10px] text-[14px] font-semibold text-gold tracking-wider uppercase">
+            <div className="inline-flex items-center rounded-full bg-[#eef4ff] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#3f6fd8]">
               About Me
             </div>
-            <h2 className="mb-4 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-tight">
-              Who is <span className="italic text-gold">{personal.name}?</span>
+            <h2 className="mt-4 text-[28px] font-extrabold leading-[1.1] tracking-[-0.02em] text-ink sm:text-[34px] md:text-[40px]">
+              Who is <span className="text-gold">{personal.name}?</span>
             </h2>
-            <p className="mb-6 max-w-[540px] text-[14px] leading-relaxed text-[#5a6474]">
+            <div className="mb-6 mt-4 flex items-center gap-2">
+              <span className="h-[3px] w-14 rounded-full bg-gold" />
+              <span className="h-[3px] w-[3px] rounded-full bg-gold/60" />
+            </div>
+            <p className="mb-7 max-w-[560px] text-[14.5px] leading-[1.75] text-[#5a6474]">
               {about.paragraphs[0]}
             </p>
-            <ul className="mb-8 grid max-w-[560px] grid-cols-1 gap-x-6 gap-y-[13px] sm:grid-cols-2">
+            <ul className="mb-9 grid max-w-[600px] grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
               {(about.highlights ?? []).map((h, i) => (
-                <li key={i} className="flex items-start gap-[10px]">
-                  <span className="mt-[2px] flex h-[20px] w-[20px] flex-shrink-0 items-center justify-center rounded-full bg-gold text-[11px] font-bold text-white">
+                <li key={i} className="flex items-start gap-3">
+                  <span className="mt-[1px] flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0] text-[12px] font-bold text-white shadow-[0_6px_14px_rgba(31,116,240,.25)]">
                     ✓
                   </span>
-                  <span className="text-[13.5px] font-medium leading-[1.45] text-[#4a4a3e]">
+                  <span className="text-[13.5px] font-medium leading-[1.45] text-[#3f4958]">
                     {h}
                   </span>
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mt-6">
+            <div className="flex flex-wrap items-center gap-6">
               <a
                 href="/resume/Nehal Google Ads CV _ Resume.pdf"
                 download="Nehal Google Ads CV & Resume.pdf"
-                className="cta flex items-center gap-2 rounded-[40px] bg-gold py-[6px] pl-6 pr-2 text-white hover:opacity-95 transition-opacity"
+                className="cta flex h-[52px] items-center gap-2 rounded-[40px] bg-[#1f74f0] pl-6 pr-2 text-white shadow-[0_12px_26px_rgba(31,116,240,.3)] transition-transform hover:-translate-y-0.5"
               >
-                <span className="text-[15px] font-semibold text-white">
-                  Download CV
-                </span>
-                <span className="arrow flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white text-gold">
+                <span className="text-[14.5px] font-semibold">Download CV</span>
+                <span className="arrow flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white text-[#1f74f0]">
                   ↓
                 </span>
               </a>
-              <span className="text-[24px] sm:text-[26px] italic text-ink opacity-[.85] font-display self-start sm:self-auto">
-                {personal.signature || personal.name}
-              </span>
+              <div className="flex items-center gap-5">
+                <span className="hidden h-8 w-px bg-[#e3e8f0] sm:block" />
+                <span
+                  className={`${signatureFont.className} text-[30px] leading-none text-ink sm:text-[34px]`}
+                >
+                  {personal.name}
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
-        <StatsStrip inverted className="mx-auto mt-14 max-w-[1120px]" />
+        <StatsStrip inverted className="mx-auto mt-16 max-w-[1180px]" />
       </div>
 
       {/* MY PRINCIPLES */}

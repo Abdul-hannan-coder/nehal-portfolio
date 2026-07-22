@@ -22,7 +22,7 @@ export default function ProjectsPage() {
 
   return (
     <ClientEnhance>
-      <Header active="/projects" variant="light" />
+      <Header active="/projects" />
       <PageTitle title="Projects" crumb="All Projects" />
 
       <div className="bg-cream px-5 md:px-10 pb-20 pt-14">

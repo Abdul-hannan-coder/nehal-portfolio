@@ -40,13 +40,22 @@ export default function ProjectCard({ p }: { p: Project }) {
       </h4>
 
       {p.metrics.length > 0 ? (
-        <div className="mt-3 flex gap-[22px] border-t border-[#efece2] pt-[14px]">
-          {p.metrics.map((m, i) => (
-            <div key={i}>
-              <div className="text-[18px] font-extrabold text-olive">{m.value}</div>
-              <div className="text-[11px] text-[#8a8a7e]">{m.label}</div>
-            </div>
-          ))}
+        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 border-t border-[#efece2] pt-[14px]">
+          {p.metrics.map((m, i) => {
+            const isRoas = m.label.toLowerCase().includes("roas");
+            return (
+              <div key={i}>
+                <div
+                  className={`text-[17px] font-extrabold ${
+                    isRoas ? "text-[#16a34a]" : "text-olive"
+                  }`}
+                >
+                  {m.value}
+                </div>
+                <div className="text-[11px] text-[#8a8a7e]">{m.label}</div>
+              </div>
+            );
+          })}
         </div>
       ) : (
         <span className="mt-1 inline-flex items-center gap-1 text-[13px] font-semibold text-gold">
