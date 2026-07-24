@@ -2,6 +2,7 @@ import ClientEnhance from "@/components/ClientEnhance";
 import Header from "@/components/Header";
 import PageTitle from "@/components/PageTitle";
 import ProjectCard from "@/components/ProjectCard";
+import TestimonialsVideo from "@/components/TestimonialsVideo";
 import ContactSection from "@/components/ContactSection";
 import LetsConnect from "@/components/LetsConnect";
 import Footer from "@/components/Footer";
@@ -26,15 +27,15 @@ export default function ProjectsPage() {
       <PageTitle title="Projects" crumb="All Projects" />
 
       <div className="bg-cream px-5 md:px-10 pb-20 pt-14">
-        <div className="mx-auto max-w-[1180px] 2xl:max-w-[1500px]">
+        <div className="mx-auto max-w-[1120px]">
           <div className="mb-8 text-center">
             <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
               Case Studies &amp; Results
             </div>
-            <h2 className="m-0 text-[26px] md:text-[34px] 2xl:text-[42px] font-extrabold text-ink">
+            <h2 className="m-0 text-[26px] md:text-[34px] font-extrabold text-ink">
               Every <span className="italic text-gold">Campaign</span> I&rsquo;ve Scaled
             </h2>
-            <p className="mx-auto mt-3 max-w-[560px] 2xl:max-w-[640px] text-[14px] 2xl:text-[15.5px] leading-[1.7] text-[#6f6f63]">
+            <p className="mx-auto mt-3 max-w-[560px] text-[14px] leading-[1.7] text-[#6f6f63]">
               Real Google Ads results across lead generation and e-commerce. Click a
               case study for the full breakdown, or open any result to view it in full.
             </p>
@@ -49,6 +50,10 @@ export default function ProjectsPage() {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="my-20 md:my-28">
+        <TestimonialsVideo />
       </div>
 
       <ContactSection

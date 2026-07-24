@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { personal } from "@/lib/data";
 import MobileNav from "./MobileNav";
 import PrimaryNav from "./PrimaryNav";
@@ -13,12 +14,12 @@ export interface HeaderProps {
 // Sticky, responsive blue + white header. Desktop shows the full nav; below the
 // `lg` breakpoint it collapses to a hamburger that opens a right-side drawer.
 export default function Header({ active = "/", variant = "dark" }: HeaderProps) {
-  // Logo circle removed per request — wordmark stands alone.
-  const Logo = null;
-  const Wordmark = (
-    <span className="text-[19px] font-bold text-ink">
-      {personal.name}<span className="text-gold">.</span>
-    </span>
+  const Brand = (
+    <Link href="/" className="flex items-center gap-2.5 text-inherit no-underline">
+      <span className="text-[19px] font-bold text-ink">
+        {personal.name}<span className="text-gold">.</span>
+      </span>
+    </Link>
   );
 
   const DesktopNav = <PrimaryNav />;
@@ -37,10 +38,7 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
   const inner =
     variant === "light" ? (
       <header className="mx-auto flex max-w-[1120px] items-center justify-between px-5 py-[18px] md:px-10">
-        <div className="flex items-center gap-3">
-          {Logo}
-          {Wordmark}
-        </div>
+        {Brand}
         {DesktopNav}
         {ContactBtn}
         <MobileNav active={active} />
@@ -52,10 +50,7 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
             ? "border border-[#e7ebf1] bg-white shadow-[0_6px_24px_rgba(16,24,40,.06)]"
             : "bg-transparent"
         }`}>
-          <div className="flex items-center gap-[11px]">
-            {Logo}
-            {Wordmark}
-          </div>
+          {Brand}
           {DesktopNav}
           {ContactBtn}
           <MobileNav active={active} />

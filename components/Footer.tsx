@@ -28,11 +28,8 @@ export default function Footer() {
     <footer className="mx-auto grid max-w-[1120px] grid-cols-1 gap-10 px-5 pb-10 pt-5 sm:grid-cols-2 md:px-10 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
       <div>
         <div className="mb-4 flex items-center gap-[10px]">
-          <div className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-gold font-extrabold text-white">
-            {personal.initials.charAt(0)}
-          </div>
           <span className="text-[19px] font-bold">
-            {personal.name.split(" ")[0]}<span className="text-gold">.</span>
+            {personal.name}<span className="text-gold">.</span>
           </span>
         </div>
         <p className="mb-[18px] max-w-[250px] text-[13.5px] leading-[1.7] text-[#7a7a6e]">
