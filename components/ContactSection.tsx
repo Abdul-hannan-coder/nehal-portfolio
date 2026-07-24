@@ -112,7 +112,7 @@ export default function ContactSection({ spacing = "inner" }: ContactSectionProp
       id="contact"
       className={`bg-gradient-to-b from-[#f5f9ff] to-white px-5 text-ink md:px-10 ${pad}`}
     >
-      <div className="mx-auto max-w-[1280px] 2xl:max-w-[1440px]">
+      <div className="mx-auto max-w-[1120px]">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-14 2xl:gap-20">
           {/* LEFT */}
           <div>

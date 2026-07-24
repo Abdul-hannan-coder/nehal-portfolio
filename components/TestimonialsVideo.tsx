@@ -173,7 +173,7 @@ export default function TestimonialsVideo() {
   const scroller = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="mx-auto max-w-[1280px] 2xl:max-w-[1440px] px-5 md:px-10">
+    <div className="mx-auto max-w-[1120px] px-5 md:px-10">
       <div className="mb-8 text-left">
         <div className="mb-2 text-[14px] font-semibold uppercase tracking-wider text-gold">
           Testimonials

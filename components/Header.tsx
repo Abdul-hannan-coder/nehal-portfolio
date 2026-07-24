@@ -36,7 +36,7 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
 
   const inner =
     variant === "light" ? (
-      <header className="mx-auto flex max-w-[1280px] 2xl:max-w-[1440px] items-center justify-between px-5 py-[18px] md:px-10">
+      <header className="mx-auto flex max-w-[1120px] items-center justify-between px-5 py-[18px] md:px-10">
         <div className="flex items-center gap-3">
           {Logo}
           {Wordmark}
@@ -46,7 +46,7 @@ export default function Header({ active = "/", variant = "dark" }: HeaderProps) 
         <MobileNav active={active} />
       </header>
       ) : (
-      <div className="mx-auto max-w-[1280px] 2xl:max-w-[1440px] px-4 pb-2 pt-[18px] sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1120px] px-5 pb-2 pt-[18px] md:px-10">
         <header className={`flex items-center justify-between rounded-[44px] py-[11px] pl-5 pr-3 transition-all ${
           scrolled
             ? "border border-[#e7ebf1] bg-white shadow-[0_6px_24px_rgba(16,24,40,.06)]"

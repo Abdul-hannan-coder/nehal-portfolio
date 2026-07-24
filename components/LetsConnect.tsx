@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function LetsConnect() {
   return (
-    <div className="mx-auto mb-10 mt-14 flex max-w-[1280px] 2xl:max-w-[1440px] flex-col items-start gap-5 px-5 sm:flex-row sm:items-center sm:justify-between md:px-10">
+    <div className="mx-auto mb-10 mt-14 flex max-w-[1120px] flex-col items-start gap-5 px-5 sm:flex-row sm:items-center sm:justify-between md:px-10">
       <h2 className="m-0 text-[24px] md:text-[32px] 2xl:text-[38px] font-extrabold">
         Let&rsquo;s <span className="italic text-gold">Connect</span> there
       </h2>

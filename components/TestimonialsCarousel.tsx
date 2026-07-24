@@ -115,7 +115,7 @@ export default function TestimonialsCarousel({
 
   return (
     <div
-      className="relative mx-auto w-full max-w-[1280px] 2xl:max-w-[1440px]"
+      className="relative mx-auto w-full max-w-[1280px]"
       style={
         {
           height: "calc(var(--card-h) + 200px)",
