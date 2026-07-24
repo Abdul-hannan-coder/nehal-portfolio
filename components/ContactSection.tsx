@@ -105,7 +105,7 @@ function InputWithIcon({
 
 // "Contact Us" band — full reference redesign.
 export default function ContactSection({ spacing = "inner" }: ContactSectionProps) {
-  const pad = spacing === "home" ? "pt-4 pb-20" : "py-20";
+  const pad = "py-20 md:py-28";
 
   return (
     <div
