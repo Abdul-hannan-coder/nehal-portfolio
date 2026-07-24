@@ -115,15 +115,15 @@ export default function TestimonialsCarousel({
 
   return (
     <div
-      className="relative mx-auto w-full max-w-[1280px]"
+      className="relative mx-auto w-full max-w-[1280px] 2xl:max-w-[1600px]"
       style={
         {
-          height: "calc(var(--card-h) + 160px)",
+          height: "calc(var(--card-h) + 200px)",
           // Each video is bounded by BOTH a max height and a max width, keeping its
           // real aspect (no letterboxing) while stopping wide 16:9 clips from
           // becoming far larger than the portrait/4:3 ones.
-          ["--card-h" as string]: "clamp(340px, 62vh, 640px)",
-          ["--card-w" as string]: "clamp(260px, 44vw, 680px)",
+          ["--card-h" as string]: "clamp(340px, 62vh, 760px)",
+          ["--card-w" as string]: "clamp(260px, 44vw, 800px)",
           ["--side-scale" as string]: "0.72",
           ["--active-aspect" as string]: String(activeAspect),
           ["--side-aspect" as string]: String(SIDE_BOX),

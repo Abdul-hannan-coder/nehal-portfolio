@@ -65,25 +65,25 @@ export default async function ProjectDetailPage({
       <PageTitle title="Projects" crumb="Project Details" />
 
       {/* FULL-WIDTH GALLERY (with zoom-to-fullscreen) */}
-      <div className="mx-auto my-9 max-w-[1180px] px-5 md:px-10">
+      <div className="mx-auto my-9 max-w-[1180px] 2xl:max-w-[1500px] px-5 md:px-10">
         <ProjectGallery images={details.images} alt={currentProject.title} />
       </div>
 
       {/* CASE STUDY BODY */}
-      <div className="mx-auto max-w-[880px] px-5 py-8 md:px-10">
+      <div className="mx-auto max-w-[880px] 2xl:max-w-[1140px] px-5 py-8 md:px-10">
         <div>
           <div className="mb-5 flex items-start gap-4">
             <div className="flex h-[46px] w-[46px] flex-shrink-0 items-center justify-center rounded-full bg-olive text-[18px] font-bold text-white">
               {details.client.charAt(0)}
             </div>
-            <h2 className="mt-1 text-[24px] md:text-[28px] font-extrabold leading-[1.2] text-ink">
+            <h2 className="mt-1 text-[24px] md:text-[28px] 2xl:text-[34px] font-extrabold leading-[1.2] text-ink">
               <span className="text-gold">{details.client}</span> Google Ads Solution
             </h2>
           </div>
-          <p className="mb-4 text-[14.5px] leading-[1.75] text-[#6f6f63]">
+          <p className="mb-4 text-[14.5px] 2xl:text-[16px] leading-[1.75] text-[#6f6f63]">
             {details.intro}
           </p>
-          <p className="mb-8 text-[14.5px] leading-[1.75] text-[#6f6f63]">
+          <p className="mb-8 text-[14.5px] 2xl:text-[16px] leading-[1.75] text-[#6f6f63]">
             {details.description}
           </p>
 
@@ -104,15 +104,15 @@ export default async function ProjectDetailPage({
           )}
 
           <div className="mb-9">
-            <h3 className="mb-3 mt-0 text-[21px] font-extrabold text-ink">The Challenge</h3>
-            <p className="m-0 text-[14.5px] leading-[1.8] text-[#6f6f63]">
+            <h3 className="mb-3 mt-0 text-[21px] 2xl:text-[25px] font-extrabold text-ink">The Challenge</h3>
+            <p className="m-0 text-[14.5px] 2xl:text-[16px] leading-[1.8] text-[#6f6f63]">
               {details.challenge}
             </p>
           </div>
 
           <div className="mb-9">
-            <h3 className="mb-3 mt-0 text-[21px] font-extrabold text-ink">The Solution</h3>
-            <p className="mb-5 mt-0 text-[14.5px] leading-[1.8] text-[#6f6f63]">
+            <h3 className="mb-3 mt-0 text-[21px] 2xl:text-[25px] font-extrabold text-ink">The Solution</h3>
+            <p className="mb-5 mt-0 text-[14.5px] 2xl:text-[16px] leading-[1.8] text-[#6f6f63]">
               {details.solution}
             </p>
             <div className="grid grid-cols-1 gap-x-6 gap-y-[13px] sm:grid-cols-2">
@@ -121,15 +121,15 @@ export default async function ProjectDetailPage({
                   <span className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-gold text-[13px] font-bold text-white">
                     ✓
                   </span>
-                  <span className="text-[13.5px] font-medium text-[#4a4a3e]">{item}</span>
+                  <span className="text-[13.5px] 2xl:text-[15px] font-medium text-[#4a4a3e]">{item}</span>
                 </div>
               ))}
             </div>
           </div>
 
           <div>
-            <h3 className="mb-3 mt-0 text-[21px] font-extrabold text-ink">The Impact</h3>
-            <p className="m-0 text-[14.5px] leading-[1.8] text-[#6f6f63]">
+            <h3 className="mb-3 mt-0 text-[21px] 2xl:text-[25px] font-extrabold text-ink">The Impact</h3>
+            <p className="m-0 text-[14.5px] 2xl:text-[16px] leading-[1.8] text-[#6f6f63]">
               {details.impact}
             </p>
           </div>
@@ -137,13 +137,13 @@ export default async function ProjectDetailPage({
       </div>
 
       {/* VIEW OTHER PROJECTS */}
-      <div className="mx-auto mb-[30px] mt-14 max-w-[1000px] px-5 md:px-10 text-center">
+      <div className="mx-auto mb-[30px] mt-14 max-w-[1000px] 2xl:max-w-[1360px] px-5 md:px-10 text-center">
         <div className="mb-2 text-[14px] font-semibold text-gold">View Projects</div>
         <h2 className="m-0 text-[26px] md:text-[34px] font-extrabold text-ink">
           View Other <span className="italic text-gold">Projects</span>
         </h2>
       </div>
-      <div className="mx-auto mb-[60px] grid max-w-[1000px] grid-cols-1 sm:grid-cols-2 gap-[34px] px-5 md:px-10">
+      <div className="mx-auto mb-[60px] grid max-w-[1000px] 2xl:max-w-[1360px] grid-cols-1 sm:grid-cols-2 gap-[34px] px-5 md:px-10">
         {otherProjects.map((proj) => (
           <Link
             key={proj.id}

@@ -83,13 +83,13 @@ export default function HomePage() {
       <Header active="/" />
 
       {/* HERO */}
-      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] scroll-mt-[90px] grid-cols-1 items-stretch gap-x-[50px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.15fr_0.88fr]">
+      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] 2xl:max-w-[1600px] scroll-mt-[90px] grid-cols-1 items-stretch gap-x-[50px] 2xl:gap-x-[80px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.15fr_0.88fr]">
         <div className="animate-omUp">
           <div className="mb-[16px] inline-flex items-center rounded-full bg-[#eef4ff] px-[12px] py-[5px] text-[11px] font-semibold uppercase tracking-[0.2em] text-[#5c6c89] shadow-[0_2px_8px_rgba(24,139,246,.08)]">
             7+ Years of Experience
           </div>
 
-          <h1 className="mb-[18px] max-w-[700px] text-[30px] font-extrabold leading-[1.18] tracking-[-0.03em] text-ink min-[420px]:text-[38px] min-[500px]:text-[46px] sm:text-[54px] sm:leading-[1.1] sm:tracking-[-0.04em] lg:text-[58px]">
+          <h1 className="mb-[18px] max-w-[700px] 2xl:max-w-[820px] text-[30px] font-extrabold leading-[1.18] tracking-[-0.03em] text-ink min-[420px]:text-[38px] min-[500px]:text-[46px] sm:text-[54px] sm:leading-[1.1] sm:tracking-[-0.04em] lg:text-[58px] 2xl:text-[68px] 2xl:leading-[1.05]">
             I&rsquo;m <span className="text-gold">{personal.name}</span>,
             <br />
             Google Ads
@@ -97,18 +97,18 @@ export default function HomePage() {
             Specialist &amp; Coach
           </h1>
 
-          <p className="mb-6 max-w-[540px] text-[14.5px] leading-[1.75] tracking-[-0.01em] text-[#5f6879] sm:text-[16px]">
+          <p className="mb-6 max-w-[540px] 2xl:max-w-[620px] text-[14.5px] leading-[1.75] tracking-[-0.01em] text-[#5f6879] sm:text-[16px] 2xl:text-[18px]">
             I help businesses generate more leads, sales, and revenue through
             data-driven Google Ads strategies that scale.
           </p>
 
-          <div className="grid max-w-[620px] grid-cols-1 gap-x-8 gap-y-3.5 sm:grid-cols-2">
+          <div className="grid max-w-[620px] 2xl:max-w-[700px] grid-cols-1 gap-x-8 gap-y-3.5 2xl:gap-y-4 sm:grid-cols-2">
             {(personal.highlights ?? []).slice(0, 4).map((h, i) => (
               <div key={i} className="flex items-center gap-3">
                 <span className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0] text-[12px] font-bold text-white shadow-[0_6px_14px_rgba(31,116,240,.25)]">
                   ✓
                 </span>
-                <span className="whitespace-nowrap text-[13px] font-medium tracking-[-0.01em] text-[#3f4958] sm:text-[13.5px]">
+                <span className="whitespace-nowrap text-[13px] font-medium tracking-[-0.01em] text-[#3f4958] sm:text-[13.5px] 2xl:text-[15px]">
                   {i === 0
                     ? "Google Certified Specialist"
                     : i === 1
@@ -141,7 +141,7 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div className="mt-7 max-w-[700px] rounded-[20px] border border-[#edf1f7] bg-white px-4 py-3.5 shadow-[0_12px_34px_rgba(16,24,40,.08)] sm:px-6 sm:py-4">
+          <div className="mt-7 max-w-[700px] 2xl:max-w-[800px] rounded-[20px] border border-[#edf1f7] bg-white px-4 py-3.5 2xl:px-8 2xl:py-5 shadow-[0_12px_34px_rgba(16,24,40,.08)] sm:px-6 sm:py-4">
             <div className="grid grid-cols-2 gap-3.5 md:grid-cols-4 md:gap-0 md:divide-x md:divide-[#edf1f7]">
               <div className="flex items-center gap-2.5 md:pr-4">
                 <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center">
@@ -197,7 +197,7 @@ export default function HomePage() {
         </div>
 
         {/* RIGHT: portrait & floating stat cards */}
-        <div className="relative mx-auto flex min-h-[500px] w-full max-w-[640px] items-end justify-center animate-omUp [animation-delay:150ms] sm:min-h-[600px]">
+        <div className="relative mx-auto flex min-h-[500px] w-full max-w-[640px] 2xl:max-w-[760px] items-end justify-center animate-omUp [animation-delay:150ms] sm:min-h-[600px] 2xl:min-h-[680px]">
           {/* Vibrant background glow & radial accents - centered exactly behind Nehal's head/shoulder */}
           <div className="pointer-events-none absolute left-[42%] top-[45%] h-[85%] w-[85%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,_rgba(37,99,235,0.36)_0%,_rgba(59,130,246,0.18)_45%,_transparent_70%)] blur-2xl" />
           <div className="pointer-events-none absolute left-[42%] top-[45%] h-[76%] w-[76%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-200/50 bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.06)_0%,_transparent_65%)]" />
@@ -207,7 +207,7 @@ export default function HomePage() {
           <img
             src="/nehal-portrait.png"
             alt={personal.name}
-            className="pointer-events-none absolute bottom-0 left-[42%] z-10 h-[92%] w-auto max-w-full -translate-x-1/2 object-contain object-bottom sm:h-[98%] lg:h-[102%] [-webkit-mask-image:linear-gradient(to_bottom,#000_92%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_92%,transparent_100%)]"
+            className="pointer-events-none absolute bottom-0 left-[42%] z-10 h-[92%] w-auto max-w-full -translate-x-1/2 object-contain object-bottom sm:h-[98%] lg:h-[102%] 2xl:h-[104%] [-webkit-mask-image:linear-gradient(to_bottom,#000_92%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_92%,transparent_100%)]"
           />
 
           {/* Card 1: Conversions (Top Right) */}
@@ -313,25 +313,25 @@ export default function HomePage() {
       {/* <Marquee bg="#188bf6" color="#ffffff" padding="16px 0" /> */}
 
       {/* SERVICES */}
-      <div id="services" className="mx-auto my-20 md:my-28 max-w-[1280px] scroll-mt-[90px] px-5 md:px-10">
+      <div id="services" className="mx-auto my-20 md:my-28 max-w-[1280px] 2xl:max-w-[1600px] scroll-mt-[90px] px-5 md:px-10">
         <div className="mb-8">
           <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">Services</div>
-          <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-[1.35]">
+          <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] 2xl:text-[44px] font-extrabold text-ink leading-[1.35]">
             <span className="italic text-gold">Services</span> I Provide
           </h2>
         </div>
-        <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[26px]">
+        <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[26px] 2xl:gap-8">
           {services.map((s, i) => (
             <div
               key={i}
               data-card="16"
-              className="flex flex-col gap-4 rounded-[16px] bg-cream px-[26px] py-7"
+              className="flex flex-col gap-4 2xl:gap-5 rounded-[16px] bg-cream px-[26px] py-7 2xl:px-8 2xl:py-9"
             >
               <div className="flex h-[60px] w-[60px] items-center justify-center rounded-[14px] bg-white text-gold">
                 <Icon name={s.icon} className="h-7 w-7" />
               </div>
-              <h3 className="m-0 text-[19px] font-bold">{s.title}</h3>
-              <p className="m-0 text-[13.5px] leading-[1.65] text-[#7a7a6e]">
+              <h3 className="m-0 text-[19px] 2xl:text-[21px] font-bold">{s.title}</h3>
+              <p className="m-0 text-[13.5px] 2xl:text-[15px] leading-[1.65] text-[#7a7a6e]">
                 {s.desc}
               </p>
             </div>
@@ -344,15 +344,15 @@ export default function HomePage() {
         id="about"
         className="scroll-mt-[90px] bg-gradient-to-b from-[#f7faff] to-white px-5 py-20 text-ink md:px-10 md:py-28"
       >
-        <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-16 lg:grid-cols-[460px_1fr] lg:gap-[70px]">
+        <div className="mx-auto grid max-w-[1280px] 2xl:max-w-[1600px] grid-cols-1 items-center gap-16 lg:grid-cols-[460px_1fr] lg:gap-[70px] 2xl:grid-cols-[540px_1fr] 2xl:gap-[100px]">
           {/* LEFT: cutout portrait on orbit-ring gradient + floating badge */}
-          <div className="relative mx-auto w-full max-w-[430px]">
+          <div className="relative mx-auto w-full max-w-[430px] 2xl:max-w-[500px]">
             <div className="relative aspect-square">
-              {/* Rounded-square frame + accent node */}
-              <div className="absolute inset-0 rounded-[36px] border-[1.5px] border-[#d9e6fb]" />
-              <div className="absolute right-[7%] top-[8%] h-2.5 w-2.5 rounded-full bg-[#1f74f0] shadow-[0_0_0_5px_rgba(31,116,240,.14)]" />
-              {/* Gradient fill (rounded square) with the portrait */}
-              <div className="absolute inset-[5%] overflow-hidden rounded-[30px] bg-[radial-gradient(circle_at_50%_30%,#dcebfe_0%,#eaf3ff_58%,#f5f9ff_100%)]">
+              {/* Circular frame + accent node on the rim */}
+              <div className="absolute inset-0 rounded-full border-[1.5px] border-[#d9e6fb]" />
+              <div className="absolute right-[14.6%] top-[14.6%] h-2.5 w-2.5 rounded-full bg-[#1f74f0] shadow-[0_0_0_5px_rgba(31,116,240,.14)]" />
+              {/* Gradient fill (circle) with the portrait */}
+              <div className="absolute inset-[5%] overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_30%,#dcebfe_0%,#eaf3ff_58%,#f5f9ff_100%)]">
                 <img
                   src="/nehal-cutout.png"
                   alt={personal.name}
@@ -381,23 +381,23 @@ export default function HomePage() {
             <div className="inline-flex items-center rounded-full bg-[#eef4ff] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#3f6fd8]">
               About Me
             </div>
-            <h2 className="mt-4 text-[28px] font-extrabold leading-[1.2] tracking-[-0.02em] text-ink sm:text-[34px] md:text-[40px]">
+            <h2 className="mt-4 text-[28px] sm:text-[34px] md:text-[40px] 2xl:text-[48px] font-extrabold leading-[1.2] tracking-[-0.02em] text-ink">
               Who is <span className="text-gold">{personal.name}?</span>
             </h2>
             <div className="mb-6 mt-4 flex items-center gap-2">
               <span className="h-[3px] w-14 rounded-full bg-gold" />
               <span className="h-[3px] w-[3px] rounded-full bg-gold/60" />
             </div>
-            <p className="mb-7 max-w-[560px] text-[14.5px] leading-[1.75] text-[#5a6474]">
+            <p className="mb-7 max-w-[560px] 2xl:max-w-[640px] text-[14.5px] 2xl:text-[16.5px] leading-[1.75] text-[#5a6474]">
               {about.paragraphs[0]}
             </p>
-            <ul className="mb-9 grid max-w-[600px] grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+            <ul className="mb-9 grid max-w-[600px] 2xl:max-w-[680px] grid-cols-1 gap-x-8 gap-y-4 2xl:gap-y-5 sm:grid-cols-2">
               {(about.highlights ?? []).map((h, i) => (
                 <li key={i} className="flex items-center gap-3">
                   <span className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0] text-[12px] font-bold text-white shadow-[0_6px_14px_rgba(31,116,240,.25)]">
                     ✓
                   </span>
-                  <span className="whitespace-nowrap text-[13.5px] font-medium text-[#3f4958]">
+                  <span className="whitespace-nowrap text-[13.5px] 2xl:text-[15px] font-medium text-[#3f4958]">
                     {h}
                   </span>
                 </li>
@@ -426,18 +426,18 @@ export default function HomePage() {
           </div>
         </div>
 
-        <StatsStrip inverted className="mx-auto mt-16 max-w-[1280px]" />
+        <StatsStrip inverted className="mx-auto mt-16 max-w-[1280px] 2xl:max-w-[1600px]" />
       </div>
 
       {/* SKILLS */}
-      <div className="mx-auto max-w-[1280px] px-5 md:px-10 py-16 md:py-24 text-center">
+      <div className="mx-auto max-w-[1280px] 2xl:max-w-[1600px] px-5 md:px-10 py-16 md:py-24 text-center">
         <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">My Toolkit</div>
-        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-[1.35]">
+        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] 2xl:text-[44px] font-extrabold text-ink leading-[1.35]">
           <span className="italic text-gold">The Skills &amp; Tools</span>
           <br />
           Behind My Campaigns
         </h2>
-        <div data-stagger className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-5 gap-y-8">
+        <div data-stagger className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-5 gap-y-8 2xl:gap-x-8 2xl:gap-y-10">
           {tools.map((t, i) => (
             <div
               key={i}
@@ -446,25 +446,27 @@ export default function HomePage() {
               <div className="flex h-[64px] w-[64px] items-center justify-center mb-1">
                 {toolIcons[t.name] || <span className="text-[18px] font-extrabold text-[#7a7a6e]">{t.mark}</span>}
               </div>
-              <div className="text-[24px] font-extrabold text-ink">{t.pct}</div>
-              <div className="text-[13.5px] font-medium text-[#5a6474]">{t.name}</div>
+              <div className="text-[24px] 2xl:text-[28px] font-extrabold text-ink">{t.pct}</div>
+              <div className="text-[13.5px] 2xl:text-[15px] font-medium text-[#5a6474]">{t.name}</div>
             </div>
           ))}
         </div>
       </div>
 
+      <NichesExplorer />
+
       {/* PORTFOLIO */}
       <div id="projects" className="scroll-mt-[90px] bg-cream px-5 md:px-10 py-20 md:py-28">
-        <div className="mx-auto max-w-[1280px]">
+        <div className="mx-auto max-w-[1280px] 2xl:max-w-[1600px]">
           <div className="mb-8">
             <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
               Case Studies
             </div>
-            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-[1.35]">
+            <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] 2xl:text-[44px] font-extrabold text-ink leading-[1.35]">
               My Latest <span className="italic text-gold">Results</span>
             </h2>
           </div>
-          <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 gap-7">
+          <div data-stagger className="grid grid-cols-1 sm:grid-cols-2 gap-7 2xl:gap-9">
             {projects.filter((p) => p.details).slice(0, 6).map((p) => (
               <ProjectCard key={p.id} p={p} />
             ))}
@@ -561,17 +563,19 @@ export default function HomePage() {
       */}
 
       {/* TESTIMONIALS */}
-      <div id="testimonials" className="mx-auto my-20 md:my-28 max-w-[1280px] scroll-mt-[90px] px-5 md:px-10 text-center">
+      {/* 
+      <div id="testimonials" className="mx-auto my-20 md:my-28 max-w-[1280px] 2xl:max-w-[1600px] scroll-mt-[90px] px-5 md:px-10 text-center">
         <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
           Clients Testimonials
         </div>
-        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink leading-[1.35]">
+        <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] 2xl:text-[44px] font-extrabold text-ink leading-[1.35]">
           The Impact of My Work:
           <br />
           <span className="italic text-gold">Client Testimonials</span>
         </h2>
         <TestimonialsCarousel items={homeTestimonials} />
       </div>
+      */}
 
       {/* TESTIMONIALS — DUPLICATE (video-card style) for comparison */}
       <div className="my-20 md:my-28">
@@ -586,9 +590,6 @@ export default function HomePage() {
           spacing="home"
         />
       </div>
-
-      {/* INDUSTRIES — moved below both testimonials sections */}
-      <NichesExplorer />
 
       {/* FAQ */}
       <div className="bg-olive px-5 md:px-10 py-20 md:py-28 text-white">

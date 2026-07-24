@@ -74,7 +74,7 @@ const IconCheck = (p: React.SVGProps<SVGSVGElement>) => (
 const contactItems = [
   { icon: <IconPhone className="h-[18px] w-[18px]" />, title: "+92 320 3469521", sub: "Call / WhatsApp" },
   { icon: <IconMail className="h-[18px] w-[18px]" />, title: "hello@nehalsolutions.com", sub: "Email Me" },
-  { icon: <IconPlay className="h-[18px] w-[18px]" />, title: "300K+ views on YouTube", sub: "Let’s Uncover" },
+
   { icon: <IconPin className="h-[18px] w-[18px]" />, title: "Serving AU, UAE, US, UK & IE", sub: "Global Client Base" },
 ];
 
@@ -112,8 +112,8 @@ export default function ContactSection({ spacing = "inner" }: ContactSectionProp
       id="contact"
       className={`bg-gradient-to-b from-[#f5f9ff] to-white px-5 text-ink md:px-10 ${pad}`}
     >
-      <div className="mx-auto max-w-[1280px]">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:gap-14">
+      <div className="mx-auto max-w-[1280px] 2xl:max-w-[1600px]">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-14 2xl:gap-20">
           {/* LEFT */}
           <div>
             <div className="mb-5 flex items-center gap-2.5">
@@ -128,14 +128,14 @@ export default function ContactSection({ spacing = "inner" }: ContactSectionProp
               </span>
             </div>
 
-            <h2 className="text-[38px] font-extrabold leading-[1.05] tracking-[-0.03em] text-ink sm:text-[44px]">
-              Let&rsquo;s Talk for
+            <h2 className="text-[38px] font-extrabold leading-[1.05] tracking-[-0.03em] text-ink sm:text-[44px] 2xl:text-[48px]">
+              Send Me a Message
               <br />
-              <span className="text-[#1f74f0]">Your Next Campaign</span>
+              <span className="text-[#1f74f0]">&amp; Let&rsquo;s Talk</span>
             </h2>
             <div className="mb-6 mt-5 h-[3px] w-16 rounded-full bg-[#1f74f0]" />
 
-            <p className="mb-8 max-w-[380px] text-[15px] leading-[1.7] text-[#5a6474]">
+            <p className="mb-8 max-w-[500px] 2xl:max-w-[580px] text-[15px] 2xl:text-[16.5px] leading-[1.7] text-[#5a6474]">
               Share your goals and I&rsquo;ll show you how Google Ads can turn ad
               spend into measurable revenue.
             </p>

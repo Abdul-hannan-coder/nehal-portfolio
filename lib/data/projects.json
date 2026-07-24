@@ -22,7 +22,28 @@
           "value": "836%",
           "label": "ROAS"
         }
-      ]
+      ],
+      "details": {
+        "category": "E-commerce Flooring Google Ads",
+        "client": "Floors Center",
+        "duration": "3 Months",
+        "country": "United States",
+        "images": [
+          "/projects/Floors Center/$94.3K Spent for 789K Conversion value at a ROAS of 836_.png"
+        ],
+        "intro": "Floors Center wanted to scale ecommerce revenue without sacrificing profitability. Rather than simply increasing traffic, the objective was to build a sustainable acquisition system capable of generating consistent online sales.",
+        "description": "Floors Center wanted to scale ecommerce revenue without sacrificing profitability. Rather than simply increasing traffic, the objective was to build a sustainable acquisition system capable of generating consistent online sales.",
+        "challenge": "The account required stronger Shopping campaign structure, improved product feed quality, and more reliable conversion tracking before it could scale efficiently.",
+        "solution": "I optimized Google Shopping campaigns, refined Performance Max, improved Merchant Center product data, enhanced audience signals, and continuously monitored performance to maximize return on ad spend.",
+        "solutionItems": [
+          "Google Shopping",
+          "Performance Max",
+          "Merchant Center",
+          "Feed Optimization",
+          "Conversion Tracking"
+        ],
+        "impact": "Delivered outstanding campaign performance: $94K Ad Spend, $789K Revenue, 836% ROAS, Consistent Ecommerce Growth."
+      }
     },
     {
       "id": "pr-b",
@@ -46,7 +67,27 @@
           "value": "16X",
           "label": "ROAS"
         }
-      ]
+      ],
+      "details": {
+        "category": "Lead Gen Tree Service Google Ads",
+        "client": "Tree Soldiers",
+        "duration": "3 Months",
+        "country": "United States",
+        "images": [
+          "/projects/Tree Soliders/( 4X ROAS ) Amount Invested $2230 Amount Returned $36,000 At A Profit Margin Of 25_.PNG"
+        ],
+        "intro": "Tree Soldiers needed a scalable lead generation system capable of delivering qualified tree service enquiries across competitive service areas.",
+        "description": "Tree Soldiers needed a scalable lead generation system capable of delivering qualified tree service enquiries across competitive service areas.",
+        "challenge": "The account required stronger targeting, better campaign structure, and accurate conversion tracking to consistently generate profitable leads.",
+        "solution": "I rebuilt the account around high-intent tree service searches, optimized local targeting, improved ad relevance, and continuously refined bidding strategies using conversion data.",
+        "solutionItems": [
+          "Google Ads Management",
+          "Search Campaigns",
+          "Local Lead Generation",
+          "Conversion Tracking"
+        ],
+        "impact": "Delivered outstanding campaign performance: 865 Qualified Leads, Improved Lead Quality, Higher Conversion Rate, Scalable Campaign Growth."
+      }
     },
     {
       "id": "pr-c",
@@ -70,7 +111,27 @@
           "value": "$226",
           "label": "Cost / Conv."
         }
-      ]
+      ],
+      "details": {
+        "category": "Lead Gen Home Services Google Ads",
+        "client": "Upkeep Angels",
+        "duration": "3 Months",
+        "country": "United States",
+        "images": [
+          "/projects/Upkeep Angels/$118K Spent For 522 Conversions At A Cost _ Conv Of $226.PNG"
+        ],
+        "intro": "Upkeep Angels wanted to generate premium residential cleaning enquiries by reaching homeowners actively searching for trusted cleaning services.",
+        "description": "Upkeep Angels wanted to generate premium residential cleaning enquiries by reaching homeowners actively searching for trusted cleaning services.",
+        "challenge": "The business needed higher-quality leads while reducing wasted ad spend from broad and low-intent searches.",
+        "solution": "I refined campaign structure, improved keyword targeting, aligned ad messaging with customer intent, strengthened landing page relevance, and implemented accurate conversion tracking.",
+        "solutionItems": [
+          "Google Ads Management",
+          "Lead Generation",
+          "Landing Page Strategy",
+          "Conversion Tracking"
+        ],
+        "impact": "Delivered outstanding campaign performance: Higher Quality Cleaning Enquiries, Improved Campaign Performance, Better Advertising Efficiency, More Qualified Leads."
+      }
     },
     {
       "id": "pr-d",
@@ -94,7 +155,26 @@
           "value": "$123",
           "label": "Cost / Conv."
         }
-      ]
+      ],
+      "details": {
+        "category": "Lead Gen Rentals Google Ads",
+        "client": "Easy Truck Rental",
+        "duration": "3 Months",
+        "country": "United States",
+        "images": [
+          "/projects/Easy Truck Rental/1.25K Conversions At a Cost of $153K Cost _ Conv of $123.png"
+        ],
+        "intro": "Easy Truck Rental wanted to increase rental bookings while maximizing the efficiency of its advertising budget.",
+        "description": "Easy Truck Rental wanted to increase rental bookings while maximizing the efficiency of its advertising budget.",
+        "challenge": "The account required stronger targeting and better optimization to compete in a crowded rental market.",
+        "solution": "I refined keyword targeting, optimized bidding strategies, improved ad relevance, and strengthened conversion tracking.",
+        "solutionItems": [
+          "Search Campaigns",
+          "Local Lead Generation",
+          "Conversion Tracking"
+        ],
+        "impact": "Delivered outstanding campaign performance: More Booking Enquiries, Lower Acquisition Costs, Improved Campaign Efficiency."
+      }
     }
   ],
   "projects": [
@@ -131,21 +211,22 @@
         "client": "AVA Recycling",
         "duration": "3 Months",
         "country": "United States",
-        "intro": "AVA Recycling needed high-quality B2B recycling inquiries in the US. They were struggling to generate qualified leads at a sustainable cost per acquisition.",
-        "description": "I structured high-intent search and call campaigns, refined negative keyword lists, and optimized bids toward qualified B2B recyclers. This delivered 1.03K leads for $9.31K in ad spend, achieving a $9.01 CPL.",
-        "challenge": "Competing in local recycling markets meant bids were high, and their existing setup generated personal/residential inquiries instead of profitable B2B leads.",
-        "solution": "I targeted commercial-only keywords, created dedicated B2B lead capture pages, and set up Google Tag Manager conversion events to track business inquiries exclusively.",
+        "intro": "AVA Recycling needed a predictable system for generating qualified B2B recycling enquiries across the United States. The objective was to reduce wasted advertising spend while consistently attracting commercial clients ready to do business.",
+        "description": "AVA Recycling needed a predictable system for generating qualified B2B recycling enquiries across the United States. The objective was to reduce wasted advertising spend while consistently attracting commercial clients ready to do business.",
+        "challenge": "The existing Google Ads account was attracting residential enquiries instead of high-value commercial opportunities. This resulted in lower lead quality and made it difficult to maintain a profitable cost per acquisition.",
+        "solution": "I rebuilt the account around commercial search intent, segmented campaigns by service type, introduced dedicated B2B landing pages, expanded negative keyword lists, and implemented accurate conversion tracking through Google Tag Manager. Every optimization focused on attracting businesses rather than consumers.",
         "solutionItems": [
-          "B2B Search Ads",
-          "Negative Keyword Audit",
-          "Google Tag Manager",
-          "CPL Optimization"
+          "Google Ads Strategy",
+          "Search Campaigns",
+          "GTM",
+          "Conversion Tracking",
+          "Lead Generation"
         ],
         "images": [
           "/projects/AVA Recycling B2B/AVA Last 90 Days Campaign Statistics.png",
           "/projects/AVA Recycling B2B/$9.31K Cost Spent Got 1.03K Leads at a Cost _ Conv of $9.01.png"
         ],
-        "impact": "Generated 1.03K qualified B2B leads at a low CPL of $9.01, giving AVA Recycling a steady stream of contract inquiries and a highly profitable search ad engine."
+        "impact": "Delivered outstanding campaign performance: $9.31K Ad Spend, 1,030 Qualified Leads, $9.01 Cost Per Lead, 412% ROAS."
       }
     },
     {
@@ -179,21 +260,20 @@
         "client": "Big Orange Malaga",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Big Orange Malaga partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "Big Orange Malaga wanted to increase qualified enquiries while making better use of its Google Ads investment.",
+        "description": "Big Orange Malaga wanted to increase qualified enquiries while making better use of its Google Ads investment.",
+        "challenge": "Campaign performance was inconsistent and unnecessary spend limited profitability.",
+        "solution": "I restructured campaigns, refined keyword targeting, improved ad relevance, and optimized conversion tracking to focus on users with genuine buying intent.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads Management",
+          "Search Campaigns",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Big Orange Malaga/$9.2K Spent Got 157 Leads at a Cost _ Conv of $58.62.png",
           "/projects/Big Orange Malaga/Big Orange Last 90 Days Campaign Statistics.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Better Lead Quality, Improved Efficiency, Reduced Wasted Spend."
       }
     },
     {
@@ -227,20 +307,19 @@
         "client": "Branch Specialist Rochester",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Branch Specialist Rochester partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "Branch Specialist Rochester needed a reliable lead generation system to attract homeowners searching for professional tree services.",
+        "description": "Branch Specialist Rochester needed a reliable lead generation system to attract homeowners searching for professional tree services.",
+        "challenge": "The business faced intense local competition, making it difficult to consistently generate qualified enquiries at an efficient cost.",
+        "solution": "I built localized Search campaigns, grouped keywords by service intent, improved ad relevance, and continuously optimized bidding using conversion data.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Search Ads",
+          "Local Lead Generation",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Branch Specialist Rochester/$4103 spent for 94 Leads At a Cost _ Conv Of $43.jpg"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Higher Quality Local Leads, Improved Conversion Rate, Lower Wasted Spend."
       }
     },
     {
@@ -270,22 +349,21 @@
         "client": "Closing Curtain",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Closing Curtain partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "Closing Curtain wanted to increase enquiries for premium curtains and blinds by reaching homeowners with strong buying intent.",
+        "description": "Closing Curtain wanted to increase enquiries for premium curtains and blinds by reaching homeowners with strong buying intent.",
+        "challenge": "Generic targeting produced inconsistent enquiries and reduced overall campaign efficiency.",
+        "solution": "I refined keyword targeting, strengthened ad messaging, aligned landing pages with user intent, and implemented accurate conversion tracking.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads",
+          "Landing Page Optimization",
+          "Search Campaigns"
         ],
         "images": [
           "/projects/Closing Curtain/118 Conversion in last 30 Days At A Cost _ Conv Of dh 41.25 .PNG",
           "/projects/Closing Curtain/Closing Curtain Campaign Overview in Last 30 Days(1).PNG",
           "/projects/Closing Curtain/Closing Curtain Campaign Overview in Last 30 Days.PNG"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Higher Quality Enquiries, Improved Campaign Performance, Better Lead Quality."
       }
     },
     {
@@ -319,20 +397,19 @@
         "client": "Dumpster Rental",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Dumpster Rental partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "This campaign focused on generating a consistent flow of qualified dumpster rental enquiries while maintaining an efficient cost per lead.",
+        "description": "This campaign focused on generating a consistent flow of qualified dumpster rental enquiries while maintaining an efficient cost per lead.",
+        "challenge": "The previous account generated traffic but struggled to convert visitors into genuine customers.",
+        "solution": "I rebuilt the account around high-intent searches, improved campaign structure, expanded negative keywords, and optimized conversion tracking.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads Management",
+          "Lead Generation",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Dumpster Rental/297 Conversions At a Cost of $4.58K Cost _ Conv of $15.41.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: 297 Qualified Leads, $15.41 Cost Per Lead, Improved Lead Quality."
       }
     },
     {
@@ -367,21 +444,20 @@
         "client": "Easy Truck Rental",
         "duration": "6 Months",
         "country": "United States",
-        "intro": "Easy Truck Rental wanted to increase commercial truck rental bookings and qualified fleet hire leads in the US.",
-        "description": "I deployed high-intent commercial rental keywords, optimized negative lists, and set up call/lead tracking. A $153K spend drove 1.25K conversions at $123 cost per lead.",
-        "challenge": "Very high search volume for general moving keywords that did not translate to commercial rentals.",
-        "solution": "I restricted targets to high-intent commercial and fleet search terms, created highly relevant ad copies, and adjusted bids by device.",
+        "intro": "Easy Truck Rental wanted to increase rental bookings while maximizing the efficiency of its advertising budget.",
+        "description": "Easy Truck Rental wanted to increase rental bookings while maximizing the efficiency of its advertising budget.",
+        "challenge": "The account required stronger targeting and better optimization to compete in a crowded rental market.",
+        "solution": "I refined keyword targeting, optimized bidding strategies, improved ad relevance, and strengthened conversion tracking.",
         "solutionItems": [
-          "Fleet Search Ads",
-          "Device Optimization",
-          "Commercial Targeting",
-          "Budget Allocation"
+          "Search Campaigns",
+          "Local Lead Generation",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Easy Truck Rental/Easy Truck Rental Google Ads Campaign Statistics.png",
           "/projects/Easy Truck Rental/1.25K Conversions At a Cost of $153K Cost _ Conv of $123.png"
         ],
-        "impact": "Generated 1,250 qualified fleet rental leads at a stable acquisition cost of $123 per conversion, driving corporate fleet bookings."
+        "impact": "Delivered outstanding campaign performance: More Booking Enquiries, Lower Acquisition Costs, Improved Campaign Efficiency."
       }
     },
     {
@@ -411,21 +487,20 @@
         "client": "Fabrica Home LLC",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Fabrica Home LLC partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "Fabrica Home LLC required an ecommerce strategy capable of increasing online sales while maintaining profitability.",
+        "description": "Fabrica Home LLC required an ecommerce strategy capable of increasing online sales while maintaining profitability.",
+        "challenge": "The business needed stronger Shopping campaigns, better feed quality, and improved account structure.",
+        "solution": "I optimized Google Shopping, refined Performance Max, enhanced Merchant Center feeds, and continuously monitored performance for profitable growth.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Shopping",
+          "Performance Max",
+          "Merchant Center"
         ],
         "images": [
           "/projects/Fabrica Home LLC/Dh4.51K Spent Results in 115 Conversions at A Cost _ Conv of Dh39.22.png",
           "/projects/Fabrica Home LLC/Fabrica Home LLC Google Ads Campaigns Overview.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Higher Online Sales, Improved ROAS, Sustainable Ecommerce Growth."
       }
     },
     {
@@ -457,25 +532,22 @@
         "client": "Floors Center",
         "duration": "6 Months",
         "country": "United States",
-        "intro": "Floors Center wanted to grow online sales for their flooring and renovation products without letting ad spend run away. The goal was simple: turn Google Ads into a predictable, profitable revenue channel.",
-        "description": "I rebuilt the account around Shopping and Performance Max campaigns, tightened conversion tracking, and continuously optimized bids and creative toward return on ad spend. Over the engagement, $94.3K in ad spend produced $789K in conversion value at an 836% ROAS.",
-        "challenge": "The account was spending on broad, low intent traffic with weak tracking, so it was impossible to tell which campaigns actually drove sales. Margins were thin, competition in flooring was fierce, and every wasted click ate into profit. Floors Center needed spend concentrated only where it produced real revenue.",
-        "solution": "I restructured the account around product profitability, rebuilt Shopping and Performance Max campaigns with clean product feeds, and fixed conversion tracking so every sale was measured accurately. From there it was a cycle of testing, bid optimization, and scaling the winners.",
+        "intro": "Floors Center wanted to scale ecommerce revenue without sacrificing profitability. Rather than simply increasing traffic, the objective was to build a sustainable acquisition system capable of generating consistent online sales.",
+        "description": "Floors Center wanted to scale ecommerce revenue without sacrificing profitability. Rather than simply increasing traffic, the objective was to build a sustainable acquisition system capable of generating consistent online sales.",
+        "challenge": "The account required stronger Shopping campaign structure, improved product feed quality, and more reliable conversion tracking before it could scale efficiently.",
+        "solution": "I optimized Google Shopping campaigns, refined Performance Max, improved Merchant Center product data, enhanced audience signals, and continuously monitored performance to maximize return on ad spend.",
         "solutionItems": [
-          "Account restructure",
-          "Shopping campaigns",
+          "Google Shopping",
           "Performance Max",
-          "Product feed cleanup",
-          "Conversion tracking",
-          "Bid optimization",
-          "Creative testing",
-          "ROAS scaling"
+          "Merchant Center",
+          "Feed Optimization",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Floors Center/Floors Center Google Ads All Campaigns Detailed Statistics.png",
           "/projects/Floors Center/$94.3K Spent for 789K Conversion value at a ROAS of 836_.png"
         ],
-        "impact": "The rebuilt account turned $94.3K in ad spend into $789K in conversion value, an 836% return on ad spend. Google Ads became the brand's most reliable growth channel, scaling revenue while keeping cost of sale under control."
+        "impact": "Delivered outstanding campaign performance: $94K Ad Spend, $789K Revenue, 836% ROAS, Consistent Ecommerce Growth."
       }
     },
     {
@@ -501,21 +573,20 @@
         "client": "Google Ads Turnaround From $58 to $5.79 CPL",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Google Ads Turnaround From $58 to $5.79 CPL partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "This project transformed an underperforming Google Ads account into a profitable lead generation system.",
+        "description": "This project transformed an underperforming Google Ads account into a profitable lead generation system.",
+        "challenge": "The account was generating leads at an unsustainable $58 cost per lead.",
+        "solution": "I completed a full audit, rebuilt campaign structure, improved keyword targeting, optimized ad copy, and implemented reliable conversion tracking.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads Audit",
+          "Campaign Restructuring",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Google Ads Turnaround From $58 to $5.79 CPL/Google Ads (After) 221 Car Booking Leads at $5.79 CPL.png",
           "/projects/Google Ads Turnaround From $58 to $5.79 CPL/Google Ads (Before) 29 Car Booking Leads at $38.55 CPL.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Reduced CPL from $58 to $5.79, Higher Quality Leads, Significant Performance Improvement."
       }
     },
     {
@@ -532,20 +603,20 @@
         "client": "Google Tag Manager",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Google Tag Manager partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "Accurate conversion tracking is the foundation of every successful Google Ads campaign. This project focused on implementing Google Tag Manager to provide reliable data for optimization.",
+        "description": "Accurate conversion tracking is the foundation of every successful Google Ads campaign. This project focused on implementing Google Tag Manager to provide reliable data for optimization.",
+        "challenge": "Without accurate tracking, campaign decisions were based on incomplete data, reducing the effectiveness of automated bidding and reporting.",
+        "solution": "I implemented Google Tag Manager, configured conversion events, integrated GA4 with Google Ads, validated every trigger, and ensured accurate attribution across the customer journey.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Tag Manager",
+          "GA4",
+          "Google Ads Conversion Tracking",
+          "Enhanced Conversions"
         ],
         "images": [
           "/projects/Google Tag Manager/GTM Tracking Customized Furnitures.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Accurate Conversion Tracking, Reliable Reporting, Improved Optimization Decisions."
       }
     },
     {
@@ -567,20 +638,19 @@
         "client": "Merchant Center",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Merchant Center partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "A fully optimized Merchant Center is essential for profitable Shopping campaigns. This project focused on improving feed quality and resolving account issues.",
+        "description": "A fully optimized Merchant Center is essential for profitable Shopping campaigns. This project focused on improving feed quality and resolving account issues.",
+        "challenge": "Product disapprovals and incomplete feed attributes limited visibility and reduced Shopping campaign performance.",
+        "solution": "I optimized product titles, attributes, categories, images, and feed quality while resolving Merchant Center diagnostics to improve product visibility.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Merchant Center",
+          "Product Feed Optimization",
+          "Google Shopping"
         ],
         "images": [
           "/projects/Merchant Center/76K Approved Products on Merchant Center.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Improved Product Visibility, Reduced Feed Errors, Better Shopping Performance."
       }
     },
     {
@@ -610,15 +680,14 @@
         "client": "Norwalk Car Service",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Norwalk Car Service partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "The goal was to increase booking enquiries from customers searching for airport transfers and local transportation services.",
+        "description": "The goal was to increase booking enquiries from customers searching for airport transfers and local transportation services.",
+        "challenge": "Strong local competition and broad targeting were increasing acquisition costs while reducing booking quality.",
+        "solution": "I focused on high-intent local keywords, improved ad relevance, refined location targeting, and implemented accurate conversion tracking to maximize qualified bookings.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Search Ads",
+          "Local Lead Generation",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Norwalk Car Service/221 Conversions in 30 Days ( $200 Revenue Per Conversion ).PNG",
@@ -629,7 +698,7 @@
           "/projects/Norwalk Car Service/ROI = 1,669.23_ ( Amount Invested $1,300 Amount Returned $23,000) .PNG",
           "/projects/Norwalk Car Service/Ranking No.1 Against 6 Competitors .png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Higher Quality Enquiries, Improved Campaign Efficiency, Lower Acquisition Costs."
       }
     },
     {
@@ -659,15 +728,14 @@
         "client": "One Roof Solar",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "One Roof Solar partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "One Roof Solar required a scalable lead generation strategy capable of attracting homeowners actively considering solar installation.",
+        "description": "One Roof Solar required a scalable lead generation strategy capable of attracting homeowners actively considering solar installation.",
+        "challenge": "The existing campaigns struggled to generate qualified homeowner enquiries consistently.",
+        "solution": "I rebuilt the campaign around homeowner intent, refined audience targeting, strengthened conversion tracking, and improved ad messaging to increase lead quality.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads Management",
+          "Lead Generation",
+          "Landing Page Strategy"
         ],
         "images": [
           "/projects/One Roof Solar/125 Conversions in Last 90 Days ( $8,000 Revenue Per Conversion )..PNG",
@@ -675,7 +743,7 @@
           "/projects/One Roof Solar/Last 90 Days Campaign Statistics One Roof Solar.PNG",
           "/projects/One Roof Solar/One Roof Solar Campaign Overview.PNG"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Higher Quality Leads, Improved Conversion Performance, Scalable Lead Generation."
       }
     },
     {
@@ -705,15 +773,14 @@
         "client": "Packers & Movers Service",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Packers & Movers Service partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "The objective was to generate high-quality moving enquiries from customers actively searching for relocation services.",
+        "description": "The objective was to generate high-quality moving enquiries from customers actively searching for relocation services.",
+        "challenge": "Strong competition required highly targeted campaigns capable of producing qualified leads at a sustainable acquisition cost.",
+        "solution": "I built localized Search campaigns, optimized keyword intent, strengthened ad messaging, and implemented conversion tracking to maximize enquiry quality.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Search Ads",
+          "Lead Generation",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Packers & Movers Service/7 Days Results 40 Phone Calls At A Cost Of ₹9.29K ( $116 ) & A Cost _ Conversion Of ₹489 ( $6.12 ) (1).PNG",
@@ -721,7 +788,7 @@
           "/projects/Packers & Movers Service/7 Days Results 40 Phone Calls At A Cost Of ₹9.29K ( $116 ) & A Cost _ Conversion Of ₹489 ( $6.12 ) .PNG",
           "/projects/Packers & Movers Service/Campaign Statistics Packers & Movers Call Only Campaign.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Higher Quality Enquiries, Improved Campaign Efficiency, Reduced Wasted Spend."
       }
     },
     {
@@ -751,21 +818,20 @@
         "client": "Paper Event Registration Dubai",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Paper Event Registration Dubai partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "This campaign focused on driving registrations for a large-scale event within a limited promotional period.",
+        "description": "This campaign focused on driving registrations for a large-scale event within a limited promotional period.",
+        "challenge": "The campaign needed maximum visibility while maintaining efficient budget allocation and consistent registrations.",
+        "solution": "I developed highly targeted Search campaigns, optimized bidding strategies, monitored conversion data daily, and refined audience targeting throughout the campaign.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads Strategy",
+          "Event Marketing",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Paper Event Registration Dubai/$431 Spent Results in 116 Conversions at A Cost _ Conv of $3.72.png",
           "/projects/Paper Event Registration Dubai/Paper Event Registration UAE Google Ads Campaign.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Higher Event Registrations, Strong Campaign Engagement, Efficient Budget Utilization."
       }
     },
     {
@@ -782,22 +848,21 @@
         "client": "Prime Landscaper",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Prime Landscaper partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "Prime Landscaper wanted to generate consistent landscaping enquiries while improving advertising efficiency.",
+        "description": "Prime Landscaper wanted to generate consistent landscaping enquiries while improving advertising efficiency.",
+        "challenge": "Previous campaigns produced inconsistent enquiries and failed to reach homeowners with strong purchase intent.",
+        "solution": "I rebuilt campaign structure, focused on service-specific keywords, improved ad relevance, and optimized bidding using conversion data.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads",
+          "Local Search",
+          "Campaign Optimization"
         ],
         "images": [
           "/projects/Prime Landscaper/14 Days Statistics Sept 2022.PNG",
           "/projects/Prime Landscaper/Campaign Overview Last 14 Days.PNG",
           "/projects/Prime Landscaper/Ranking #1 On Local Business Listing.jpg"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: More Qualified Leads, Better Conversion Rate, Sustainable Lead Generation."
       }
     },
     {
@@ -829,21 +894,21 @@
         "client": "Rafplay",
         "duration": "4 Months",
         "country": "Dubai / UAE",
-        "intro": "Rafplay.com wanted to scale their e-commerce sales for electric rides and scooters in the UAE market without increasing their average cost per acquisition.",
-        "description": "I optimized their Product Feed in Google Merchant Center, set up targeted Shopping and Performance Max campaigns, and scaled their high-ticket items. Over the period, an AED 12.7K spend generated AED 281K in revenue.",
-        "challenge": "High competition from international sellers and high CPCs made scaling difficult. Conversion tracking was not capturing all revenue data.",
-        "solution": "I restructured campaigns to focus on high-value products, set up enhanced e-commerce tracking, and ran targeted search/shopping ad groups.",
+        "intro": "Rafplay UAE needed a scalable ecommerce strategy capable of increasing online sales while maintaining a profitable return on ad spend.",
+        "description": "Rafplay UAE needed a scalable ecommerce strategy capable of increasing online sales while maintaining a profitable return on ad spend.",
+        "challenge": "The account required stronger Shopping campaigns, optimized feeds, and better audience targeting before scaling.",
+        "solution": "I optimized Google Shopping, refined Performance Max campaigns, enhanced Merchant Center data, and continuously improved campaign performance using real conversion data.",
         "solutionItems": [
-          "Merchant Center Audit",
+          "Google Shopping",
           "Performance Max",
-          "CPC Optimization",
-          "Enhanced Tracking"
+          "Merchant Center",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Rafplay UAE/Rafplay Campaign Statistics .PNG",
           "/projects/Rafplay UAE/34.2K Clicks At a Avg.Cpc Of dh0.37 At a Cost Of dh12.7K Generating A Revenue Of dh281K .PNG"
         ],
-        "impact": "Successfully scaled e-commerce revenue to AED 281K on an AED 12.7K spend (over 22X ROAS), establishing Rafplay as a top brand for electric ride-ons in Dubai."
+        "impact": "Delivered outstanding campaign performance: Higher Online Sales, Improved ROAS, Consistent Revenue Growth."
       }
     },
     {
@@ -860,21 +925,20 @@
         "client": "Soil n Seed Landscaping",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Soil n Seed Landscaping partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "This campaign focused on generating premium landscaping enquiries from homeowners actively searching for outdoor improvement services.",
+        "description": "This campaign focused on generating premium landscaping enquiries from homeowners actively searching for outdoor improvement services.",
+        "challenge": "Competing in a crowded local market required highly targeted campaigns with accurate conversion tracking.",
+        "solution": "I developed service-focused campaigns, optimized local targeting, refined keyword strategy, and continuously improved performance based on conversion data.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads Strategy",
+          "Search Campaigns",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Soil n Seed Landscaping/7 Days After Optimization.png",
           "/projects/Soil n Seed Landscaping/7 Days Before Optimization.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Increased Qualified Leads, Lower Cost Per Enquiry, Improved Local Visibility."
       }
     },
     {
@@ -904,21 +968,21 @@
         "client": "Storage Spot",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Storage Spot partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "Storage Spot wanted to generate a steady flow of storage rental enquiries while improving the efficiency of its advertising budget.",
+        "description": "Storage Spot wanted to generate a steady flow of storage rental enquiries while improving the efficiency of its advertising budget.",
+        "challenge": "The existing campaigns struggled to consistently reach customers actively searching for storage solutions, resulting in inconsistent lead quality.",
+        "solution": "I restructured the campaigns around high-intent keywords, refined local targeting, improved ad messaging, and optimized conversion tracking so Google could prioritize qualified enquiries.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Search Ads",
+          "Local Lead Generation",
+          "Conversion Tracking",
+          "Campaign Optimization"
         ],
         "images": [
           "/projects/Storage Spot/$19.6K Spent Got 318 Leads at a Cost _ Conv of $61.51 .png",
           "/projects/Storage Spot/Storage Spot Campaign Statistics Last 90 Days.png"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Increased Storage Enquiries, Higher Lead Quality, Improved Campaign Efficiency, Reduced Wasted Spend."
       }
     },
     {
@@ -948,22 +1012,22 @@
         "client": "Tree Soldiers Rochester",
         "duration": "Ongoing",
         "country": "Global",
-        "intro": "Tree Soldiers Rochester partnered with me to grow their business through high-performing Google Ads campaigns built around real, measurable results.",
-        "description": "I structured the account for profitability — sharpening targeting, tightening conversion tracking, and continuously optimizing bids and creative toward the metrics that actually move revenue.",
-        "challenge": "The account needed a clear, data-driven strategy to turn ad spend into consistent, measurable results without wasting budget on low-intent traffic.",
-        "solution": "I rebuilt the campaign structure, refined keyword and audience targeting, improved tracking accuracy, and ran ongoing tests to scale what worked and cut what didn't.",
+        "intro": "Building on previous success, this campaign focused on expanding into the Rochester market while maintaining lead quality and advertising efficiency.",
+        "description": "Building on previous success, this campaign focused on expanding into the Rochester market while maintaining lead quality and advertising efficiency.",
+        "challenge": "Entering a competitive local market required highly relevant messaging, localized targeting, and a campaign structure designed for long-term scalability.",
+        "solution": "I created location-specific campaigns, optimized keyword intent, strengthened ad copy, and implemented reliable conversion tracking to maximize qualified enquiries.",
         "solutionItems": [
-          "Campaign restructure",
-          "Conversion tracking setup",
-          "Bid & budget optimization",
-          "Continuous A/B testing"
+          "Google Ads Strategy",
+          "Search Campaigns",
+          "Conversion Tracking",
+          "Local Campaign Optimization"
         ],
         "images": [
           "/projects/Tree Soldiers Rochester/$6.6K Spent & 865 Conversions Received At A Cost _ Conv Of $7.70 (1).PNG",
           "/projects/Tree Soldiers Rochester/$6.6K Spent & 865 Conversions Received At A Cost _ Conv Of $7.70 .PNG",
           "/projects/Tree Soldiers Rochester/865 Conversion At A Cost _ Conv Of $7.70 .PNG"
         ],
-        "impact": "The result was a stronger, more predictable flow of qualified leads and sales — exactly as shown in the campaign results above."
+        "impact": "Delivered outstanding campaign performance: Increased Local Enquiries, Better Campaign Performance, Improved Conversion Efficiency, Consistent Lead Generation."
       }
     },
     {
@@ -994,21 +1058,21 @@
         "client": "Tree Soldiers",
         "duration": "5 Months",
         "country": "United States",
-        "intro": "Tree Soldiers needed local tree removal and trimming calls. They wanted to rank at the top of local search results and scale booking revenues.",
-        "description": "I ran targeted local search ads, optimized call-only campaigns, and tracked phone calls. An initial $2,230 investment returned $36,000 in booked tree services.",
-        "challenge": "Tree services are highly seasonal and local click costs are expensive. Wasted spend on out-of-service areas was eating their budget.",
-        "solution": "I built tight geo-targeted radius groups, launched optimized landing pages, and ranked call ads #1 against regional competitors.",
+        "intro": "Tree Soldiers needed a scalable lead generation system capable of delivering qualified tree service enquiries across competitive service areas.",
+        "description": "Tree Soldiers needed a scalable lead generation system capable of delivering qualified tree service enquiries across competitive service areas.",
+        "challenge": "The account required stronger targeting, better campaign structure, and accurate conversion tracking to consistently generate profitable leads.",
+        "solution": "I rebuilt the account around high-intent tree service searches, optimized local targeting, improved ad relevance, and continuously refined bidding strategies using conversion data.",
         "solutionItems": [
-          "Geo-Radius Targeting",
-          "Call-Only Ads",
-          "Negative Keywords",
-          "Bid adjustments"
+          "Google Ads Management",
+          "Search Campaigns",
+          "Local Lead Generation",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Tree Soliders/Ranking #1 Against Competitors in Tree Service Niche in USA.png",
           "/projects/Tree Soliders/( 4X ROAS ) Amount Invested $2230 Amount Returned $36,000 At A Profit Margin Of 25_.PNG"
         ],
-        "impact": "Booked $36K in revenue from a $2.2K investment, ranking #1 for tree services in their niche and securing a steady volume of phone call leads."
+        "impact": "Delivered outstanding campaign performance: 865 Qualified Leads, Improved Lead Quality, Higher Conversion Rate, Scalable Campaign Growth."
       }
     },
     {
@@ -1039,21 +1103,21 @@
         "client": "Upkeep Angels",
         "duration": "6 Months",
         "country": "United States",
-        "intro": "Upkeep Angels wanted to scale bookings for their home restoration services in the US while keeping their cost per acquisition stable.",
-        "description": "I launched targeted search ads, optimized their responsive search ads (RSAs), and refined bids. A $118K ad spend secured 522 high-value booking conversions.",
-        "challenge": "Highly competitive national market with high bids. Booking conversion rates were low due to friction in their contact form.",
-        "solution": "I created simplified lead forms, focused bid strategies on high-conversion times, and streamlined keyword target matching.",
+        "intro": "Upkeep Angels wanted to generate premium residential cleaning enquiries by reaching homeowners actively searching for trusted cleaning services.",
+        "description": "Upkeep Angels wanted to generate premium residential cleaning enquiries by reaching homeowners actively searching for trusted cleaning services.",
+        "challenge": "The business needed higher-quality leads while reducing wasted ad spend from broad and low-intent searches.",
+        "solution": "I refined campaign structure, improved keyword targeting, aligned ad messaging with customer intent, strengthened landing page relevance, and implemented accurate conversion tracking.",
         "solutionItems": [
-          "Lead Form Optimization",
-          "Ad Scheduling",
-          "Keyword Match Audit",
-          "Conversion Bidding"
+          "Google Ads Management",
+          "Lead Generation",
+          "Landing Page Strategy",
+          "Conversion Tracking"
         ],
         "images": [
           "/projects/Upkeep Angels/Upkeep Angels Campaign Overview.PNG",
           "/projects/Upkeep Angels/$118K Spent For 522 Conversions At A Cost _ Conv Of $226.PNG"
         ],
-        "impact": "Secured 522 conversions at a stable CPA of $226, generating highly profitable restoration contract pipelines for Upkeep Angels."
+        "impact": "Delivered outstanding campaign performance: Higher Quality Cleaning Enquiries, Improved Campaign Performance, Better Advertising Efficiency, More Qualified Leads."
       }
     }
   ]

@@ -2,13 +2,13 @@ import { leadGen, ecommerce } from "@/lib/data";
 
 export default function NichesExplorer() {
   return (
-    <div className="mx-auto my-[70px] max-w-[1280px] px-5 md:px-10">
+    <div className="mx-auto my-[70px] max-w-[1280px] 2xl:max-w-[1600px] px-5 md:px-10">
       {/* Title section */}
       <div className="mb-12 text-center">
         <div className="mb-2 text-[13px] font-bold text-gold tracking-widest uppercase">
           Industries
         </div>
-        <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] font-extrabold text-ink">
+        <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] 2xl:text-[44px] font-extrabold text-ink">
           The Niches <span className="italic text-gold bg-gold/5 px-3 py-1 rounded-lg">I Scale</span>
         </h2>
         <p className="mx-auto mt-4 max-w-[560px] text-[14.5px] leading-[1.65] text-[#6f6f63]">

@@ -12,6 +12,7 @@ type VItem = {
   quote: string;
   name: string;
   company: string;
+  avatar?: string;
 };
 
 // Streamed from Vimeo (same hosted clips the carousel uses) so they work on
@@ -27,6 +28,7 @@ const items: VItem[] = [
       "From $16 CPL to $7 CPL in just 60 days. Incredible results and communication!",
     name: "Qamar Toor",
     company: "The Green Dumpster",
+    avatar: "https://media.licdn.com/dms/image/v2/D5603AQGKtW45spPcEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718300284504?e=2147483647&v=beta&t=8zkG6MM_CX_p3mcoplf0Xhtrx_J61Bf5LK7ZokCFFFA",
   },
   {
     vimeoId: "1211637724",
@@ -37,6 +39,7 @@ const items: VItem[] = [
       "Nehal transformed our Google Ads completely. Leads increased by 4X at a lower cost.",
     name: "Dustin Bradley",
     company: "All Site Rentals",
+    avatar: "https://i.ibb.co/YTbfDRt9/Chat-GPT-Image-Jul-24-2026-06-33-07-AM-1.jpg",
   },
   {
     vimeoId: "1211650298",
@@ -47,6 +50,7 @@ const items: VItem[] = [
       "Our ROAS improved by 380%. Highly recommend Nehal for any business.",
     name: "Waqas",
     company: "Ahmed Solutions Agency",
+    avatar: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/490959730_1211403860602788_7876004632205654148_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s200x200&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeETrC2MycB2FIt78790omQ1sPaEC9Aepeaw9oQL0B6l5hhxHF-zGMe3c0Z8sHeorFfVVTKBwV71nDsgVYnNbiHY&_nc_ohc=5qQUP7uNErAQ7kNvwHAYDrG&_nc_oc=AdrCP4WJ7CGT6STAcBNXGmSSUdnssHpf_R-z9PpUCuVgUfPxREFb3xqsag86_p3SomA&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=E_oq3eiI2TAsqffFS5mKRg&_nc_ss=7b2a8&oh=00_AQCBIT5fEhhNumeq85HsgaAo2djjBlRNJqa2K-tSGjtW_Q&oe=6A690954",
   },
 ];
 
@@ -58,6 +62,22 @@ const recommendations = [
       "https://media.licdn.com/dms/image/v2/D5603AQGKtW45spPcEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718300284504?e=2147483647&v=beta&t=8zkG6MM_CX_p3mcoplf0Xhtrx_J61Bf5LK7ZokCFFFA",
     text:
       "“I had the pleasure of working with Nehal on our dental clinic's marketing campaign. He quickly identified significant issues with our previous campaigns that were not producing results. Nehal's expertise in Google PPC was impressive, and his ability to develop a winning strategy was remarkable. He not only established all the necessary tracking and custom triggers to monitor our campaign but the leads and conversions we received were outstanding. If you want to enhance your business lead generation, I highly recommend Nehal.”",
+  },
+  {
+    name: "Amber Johnson",
+    link: "https://www.linkedin.com/in/amber-johnson-90045295/",
+    image:
+      "https://storage.googleapis.com/linkedin_profile_picture/amber-johnson-90045295.jpeg",
+    text:
+      "Fantastic service, Nehal is very passionate about Google Ads and it shows instantly as soon as you start working with him. He is driven and committed and will get you the results you need!",
+  },
+  {
+    name: "Abbas Haider",
+    link: "https://www.linkedin.com/in/abbashaider110/",
+    image:
+      "https://storage.googleapis.com/linkedin_profile_picture/abbashaider110.jpeg",
+    text:
+      "Nehal is a very professional and dedicated PPC Expert out there. He got a Performance Max campaign set up along with a GA4 & Conversion Tracking setup in no time that brought quality results! Hire him!",
   },
   {
     name: "Usman Sajjad",
@@ -126,9 +146,17 @@ function VideoCard({ t }: { t: VItem }) {
           &ldquo;{t.quote}&rdquo;
         </p>
         <div className="flex items-center gap-3 border-t border-[#eef1f6] pt-4">
-          <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0]/10 text-[13px] font-bold text-[#1f74f0]">
-            {t.name.charAt(0)}
-          </span>
+          {t.avatar ? (
+            <img
+              src={t.avatar}
+              alt={t.name}
+              className="h-9 w-9 flex-shrink-0 rounded-full object-cover ring-2 ring-[#eef1f6]"
+            />
+          ) : (
+            <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#1f74f0]/10 text-[13px] font-bold text-[#1f74f0]">
+              {t.name.charAt(0)}
+            </span>
+          )}
           <div>
             <div className="text-[14px] font-bold text-[#1b2436]">{t.name}</div>
             <div className="text-[12px] text-[#8a93a5]">{t.company}</div>
@@ -145,12 +173,12 @@ export default function TestimonialsVideo() {
   const scroller = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="mx-auto max-w-[1280px] px-5 md:px-10">
+    <div className="mx-auto max-w-[1280px] 2xl:max-w-[1600px] px-5 md:px-10">
       <div className="mb-8 text-left">
         <div className="mb-2 text-[14px] font-semibold uppercase tracking-wider text-gold">
           Testimonials
         </div>
-        <h2 className="m-0 text-[26px] font-extrabold leading-[1.2] tracking-[-0.02em] text-ink sm:text-[34px]">
+        <h2 className="m-0 text-[26px] font-extrabold leading-[1.2] tracking-[-0.02em] text-ink sm:text-[34px] 2xl:text-[40px]">
           What <span className="text-gold">Clients Say</span>
         </h2>
       </div>
@@ -204,7 +232,7 @@ export default function TestimonialsVideo() {
                 View →
               </span>
             </div>
-            <p className="text-[13.5px] leading-[1.75] text-[#4a5568]">{r.text}</p>
+            <p className="text-[13.5px] 2xl:text-[15px] leading-[1.75] text-[#4a5568]">{r.text}</p>
           </a>
         ))}
       </div>

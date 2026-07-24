@@ -11,7 +11,7 @@ export default function ProjectCard({ p }: { p: Project }) {
 
   const body = (
     <>
-      <div className="relative mb-4 h-[210px] overflow-hidden rounded-[10px] bg-[#f4f6f8]">
+      <div className="relative mb-4 h-[210px] 2xl:h-[250px] overflow-hidden rounded-[10px] bg-[#f4f6f8]">
         <ImageSlot
           shape="rounded"
           radius={10}
@@ -35,7 +35,7 @@ export default function ProjectCard({ p }: { p: Project }) {
         </div>
       )}
 
-      <h4 className="mb-2 mt-0 text-[17px] font-bold leading-[1.55]">
+      <h4 className="mb-2 mt-0 text-[17px] 2xl:text-[19px] font-bold leading-[1.55]">
         {p.title}
       </h4>
 
@@ -46,13 +46,13 @@ export default function ProjectCard({ p }: { p: Project }) {
             return (
               <div key={i} className="leading-snug">
                 <div
-                  className={`text-[17px] font-extrabold leading-tight ${
+                  className={`text-[17px] 2xl:text-[19px] font-extrabold leading-tight ${
                     isRoas ? "text-[#16a34a]" : "text-olive"
                   }`}
                 >
                   {m.value}
                 </div>
-                <div className="mt-1 text-[11px] leading-tight text-[#8a8a7e]">
+                <div className="mt-1 text-[11px] 2xl:text-[12px] leading-tight text-[#8a8a7e]">
                   {m.label}
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function ProjectCard({ p }: { p: Project }) {
   );
 
   const className =
-    "group block rounded-[16px] bg-white p-4 text-inherit shadow-[0_4px_18px_rgba(16,24,40,.05)] transition-shadow hover:shadow-[0_12px_30px_rgba(16,24,40,.12)]";
+    "group block rounded-[16px] bg-white p-4 2xl:p-5 text-inherit shadow-[0_4px_18px_rgba(16,24,40,.05)] transition-shadow hover:shadow-[0_12px_30px_rgba(16,24,40,.12)]";
 
   return hasDetail ? (
     <Link href={href} data-card="16" className={className}>
