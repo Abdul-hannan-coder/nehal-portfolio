@@ -83,7 +83,7 @@ export default function HomePage() {
       <Header active="/" />
 
       {/* HERO */}
-      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] 2xl:max-w-[1600px] scroll-mt-[90px] grid-cols-1 items-stretch gap-x-[50px] 2xl:gap-x-[80px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.15fr_0.88fr]">
+      <div id="home" className="mx-auto mt-5 grid max-w-[1280px] 2xl:max-w-[1440px] scroll-mt-[90px] grid-cols-1 items-stretch gap-x-[50px] 2xl:gap-x-[80px] gap-y-12 px-5 pt-[36px] md:px-10 lg:grid-cols-[1.15fr_0.88fr]">
         <div className="animate-omUp">
           <div className="mb-[16px] inline-flex items-center rounded-full bg-[#eef4ff] px-[12px] py-[5px] text-[11px] font-semibold uppercase tracking-[0.2em] text-[#5c6c89] shadow-[0_2px_8px_rgba(24,139,246,.08)]">
             7+ Years of Experience
@@ -313,7 +313,7 @@ export default function HomePage() {
       {/* <Marquee bg="#188bf6" color="#ffffff" padding="16px 0" /> */}
 
       {/* SERVICES */}
-      <div id="services" className="mx-auto my-20 md:my-28 max-w-[1280px] 2xl:max-w-[1600px] scroll-mt-[90px] px-5 md:px-10">
+      <div id="services" className="mx-auto my-20 md:my-28 max-w-[1280px] 2xl:max-w-[1440px] scroll-mt-[90px] px-5 md:px-10">
         <div className="mb-8">
           <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">Services</div>
           <h2 className="m-0 text-[24px] sm:text-[30px] md:text-[36px] 2xl:text-[44px] font-extrabold text-ink leading-[1.35]">
@@ -344,7 +344,7 @@ export default function HomePage() {
         id="about"
         className="scroll-mt-[90px] bg-gradient-to-b from-[#f7faff] to-white px-5 py-20 text-ink md:px-10 md:py-28"
       >
-        <div className="mx-auto grid max-w-[1280px] 2xl:max-w-[1600px] grid-cols-1 items-center gap-16 lg:grid-cols-[460px_1fr] lg:gap-[70px] 2xl:grid-cols-[540px_1fr] 2xl:gap-[100px]">
+        <div className="mx-auto grid max-w-[1280px] 2xl:max-w-[1440px] grid-cols-1 items-center gap-16 lg:grid-cols-[460px_1fr] lg:gap-[70px] 2xl:grid-cols-[540px_1fr] 2xl:gap-[100px]">
           {/* LEFT: cutout portrait on orbit-ring gradient + floating badge */}
           <div className="relative mx-auto w-full max-w-[430px] 2xl:max-w-[500px]">
             <div className="relative aspect-square">
@@ -426,11 +426,11 @@ export default function HomePage() {
           </div>
         </div>
 
-        <StatsStrip inverted className="mx-auto mt-16 max-w-[1280px] 2xl:max-w-[1600px]" />
+        <StatsStrip inverted className="mx-auto mt-16 max-w-[1280px] 2xl:max-w-[1440px]" />
       </div>
 
       {/* SKILLS */}
-      <div className="mx-auto max-w-[1280px] 2xl:max-w-[1600px] px-5 md:px-10 py-16 md:py-24 text-center">
+      <div className="mx-auto max-w-[1280px] 2xl:max-w-[1440px] px-5 md:px-10 py-16 md:py-24 text-center">
         <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">My Toolkit</div>
         <h2 className="mb-9 text-[24px] sm:text-[30px] md:text-[36px] 2xl:text-[44px] font-extrabold text-ink leading-[1.35]">
           <span className="italic text-gold">The Skills &amp; Tools</span>
@@ -457,7 +457,7 @@ export default function HomePage() {
 
       {/* PORTFOLIO */}
       <div id="projects" className="scroll-mt-[90px] bg-cream px-5 md:px-10 py-20 md:py-28">
-        <div className="mx-auto max-w-[1280px] 2xl:max-w-[1600px]">
+        <div className="mx-auto max-w-[1280px] 2xl:max-w-[1440px]">
           <div className="mb-8">
             <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
               Case Studies
@@ -564,7 +564,7 @@ export default function HomePage() {
 
       {/* TESTIMONIALS */}
       {/* 
-      <div id="testimonials" className="mx-auto my-20 md:my-28 max-w-[1280px] 2xl:max-w-[1600px] scroll-mt-[90px] px-5 md:px-10 text-center">
+      <div id="testimonials" className="mx-auto my-20 md:my-28 max-w-[1280px] 2xl:max-w-[1440px] scroll-mt-[90px] px-5 md:px-10 text-center">
         <div className="mb-2 text-[14px] font-semibold text-gold tracking-wider uppercase">
           Clients Testimonials
         </div>
