@@ -577,8 +577,8 @@ export default function HomePage() {
       </div>
       */}
 
-      {/* TESTIMONIALS — DUPLICATE (video-card style) for comparison */}
-      <div className="my-20 md:my-28">
+      {/* TESTIMONIALS */}
+      <div id="testimonials" className="scroll-mt-[90px] my-20 md:my-28">
         <TestimonialsVideo />
       </div>
 
